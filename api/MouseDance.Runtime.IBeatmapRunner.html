@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IBeatmapRunner
+   | MouseDance User Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IBeatmapRunner
+   | MouseDance User Docs ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+
+  <body>
+        <div class="top-navbar">
+
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="24" height="24" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+            
+            <a class="brand" href="../index.html">
+              <img src="../logo.svg" alt="MouseDance" class="logomark">
+              <span class="brand-title">MouseDance</span>
+            </a>
+        </div>
+
+        <div class="body-content">
+
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    <div>
+                      <div class="mobile-hide">
+                        
+                        <a class="brand" href="../index.html">
+                          <img src="../logo.svg" alt="MouseDance" class="logomark">
+                          <span class="brand-title">MouseDance</span>
+                        </a>  </div>
+
+                    
+                      <div id="navbar">
+                      </div>
+                    
+                    </div>
+
+
+                    <div class="sidebar-item-separator"></div>
+
+                        
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+
+                </div>
+
+                <div class="footer">
+                  MouseDance User Docs powered by <a href='https://dotnet.github.io/docfx'>DocFx</a>, <a href='https://github.com/jbltx/DiscordFX'>DiscordFx</a>
+                  
+                </div>
+            </nav>
+
+            <main class="main-panel">
+
+
+                <div role="main" class="main-panel-content hide-when-search">
+
+                        
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                    <article class="content wrap" id="_content" data-uid="MouseDance.Runtime.IBeatmapRunner">
+  
+  
+  <h1 id="MouseDance_Runtime_IBeatmapRunner" data-uid="MouseDance.Runtime.IBeatmapRunner" class="text-break">Interface IBeatmapRunner
+  </h1>
+  <div class="markdown level0 summary"><p>Used by Hit Objects to report when they are pressed (for adding score).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MouseDance.Runtime.html">MouseDance.Runtime</a></h6>
+  <h6><strong>Assembly</strong>: MouseDance.Runtime.dll</h6>
+  <h5 id="MouseDance_Runtime_IBeatmapRunner_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBeatmapRunner</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MouseDance_Runtime_IBeatmapRunner_CanCollectSliderPart_" data-uid="MouseDance.Runtime.IBeatmapRunner.CanCollectSliderPart*"></a>
+  <h4 id="MouseDance_Runtime_IBeatmapRunner_CanCollectSliderPart_MouseDance_Runtime_IHitObject_" data-uid="MouseDance.Runtime.IBeatmapRunner.CanCollectSliderPart(MouseDance.Runtime.IHitObject)">CanCollectSliderPart(IHitObject)</h4>
+  <div class="markdown level1 summary"><p>Called by <a class="xref" href="MouseDance.Runtime.Slider.html">Slider</a> to check if we can proceed with collecting a Slider part.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanCollectSliderPart(IHitObject slider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObject.html">IHitObject</a></td>
+        <td><span class="parametername">slider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if we allow the Slider to collect the Slider part.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_IBeatmapRunner_OnUserFinishedSlider_" data-uid="MouseDance.Runtime.IBeatmapRunner.OnUserFinishedSlider*"></a>
+  <h4 id="MouseDance_Runtime_IBeatmapRunner_OnUserFinishedSlider_MouseDance_Runtime_IHitObjectWithEvents_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="MouseDance.Runtime.IBeatmapRunner.OnUserFinishedSlider(MouseDance.Runtime.IHitObjectWithEvents,System.Int32,System.Int32,System.Int32,System.Boolean)">OnUserFinishedSlider(IHitObjectWithEvents, Int32, Int32, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Called by <a class="xref" href="MouseDance.Runtime.Slider.html">Slider</a> to let the BeatmapRunner know that the Slider has finished while user has their mouse down on it at that time.
+This is for letting the BeatmapRunner add score and to tally that the Slider was successfully collected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnUserFinishedSlider(IHitObjectWithEvents slider, int headScore, int collected, int total, bool pressWasEverReleased)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObjectWithEvents.html">IHitObjectWithEvents</a></td>
+        <td><span class="parametername">slider</span></td>
+        <td><p>Slider that was finished.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">headScore</span></td>
+        <td><p>What score the player got when they pressed on the Slider's head.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">collected</span></td>
+        <td><p>How many parts of the Slider was pressed (head, ticks, and tail).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">total</span></td>
+        <td><p>Total number of parts the Slider has (head, ticks, and tail).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">pressWasEverReleased</span></td>
+        <td><p>Even if player has their mouse down right now, did player ever release their press of the button throughout the Slider?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_IBeatmapRunner_OnUserPressedHitCircle_" data-uid="MouseDance.Runtime.IBeatmapRunner.OnUserPressedHitCircle*"></a>
+  <h4 id="MouseDance_Runtime_IBeatmapRunner_OnUserPressedHitCircle_MouseDance_Runtime_IHitObjectWithEvents_" data-uid="MouseDance.Runtime.IBeatmapRunner.OnUserPressedHitCircle(MouseDance.Runtime.IHitObjectWithEvents)">OnUserPressedHitCircle(IHitObjectWithEvents)</h4>
+  <div class="markdown level1 summary"><p>Called by <a class="xref" href="MouseDance.Runtime.HitCircle.html#MouseDance_Runtime_HitCircle_OnPressed_System_Int32_">OnPressed(Int32)</a> to let BeatmapRunner know that
+the user pressed on the HitCircle so it can tally and add to the score.
+Simultaneously, this also lets the Hit Circle know if user pressed within
+correct time window and how much score was received for it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">(float, int) OnUserPressedHitCircle(IHitObjectWithEvents hitCircle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObjectWithEvents.html">IHitObjectWithEvents</a></td>
+        <td><span class="parametername">hitCircle</span></td>
+        <td><p>Hit Circle that was pressed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-2">(T1, T2)</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><p>Single: Normalized value indicating if user pressed within correct time window.
+-1.0 to +1.0 is a hit.
+Any value outside that (lesser than -1.0 or greater than +1.0) means miss
+(negative for too early, positive for too late).
+0.0 means user pressed exactly at hit circle&apos;s time.</p>
+<p>int: score given for this particular pressed hit circle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_IBeatmapRunner_OnUserPressedSliderHead_" data-uid="MouseDance.Runtime.IBeatmapRunner.OnUserPressedSliderHead*"></a>
+  <h4 id="MouseDance_Runtime_IBeatmapRunner_OnUserPressedSliderHead_System_Int32_" data-uid="MouseDance.Runtime.IBeatmapRunner.OnUserPressedSliderHead(System.Int32)">OnUserPressedSliderHead(Int32)</h4>
+  <div class="markdown level1 summary"><p>Called by <a class="xref" href="MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider_OnPressed_System_Int32_">OnPressed(Int32)</a> when user pressed the head (aka Start Cap) of a Slider.
+This is used to let the Slider know if user pressed within the correct time window,
+and what the equivalent score would be for that head press.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">(float, int) OnUserPressedSliderHead(int idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>Index of the Slider that was pressed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-2">(T1, T2)</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><p>Single: Normalized value indicating if user pressed slider&apos;s head within correct time window.
+-1 to +1 is a hit.
+Any value outside that (lesser than -1 or greater than +1) means miss
+(negative for too early, positive for too late).
+0 means user pressed exactly at slider head&apos;s hit time.</p>
+<p>int: Equivalent score for pressing the Slider head.
+The score value here is not added to the player&apos;s score,
+but is calculated to let you know if the user did a perfect press or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+              
+                </div>
+            </main>
+        </div>
+
+        
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<script type="text/javascript" src="../styles/jquery.twbsPagination.js"></script>
+<script type="text/javascript" src="../styles/url.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>

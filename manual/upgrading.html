@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Upgrading and Best Practices Guide | MouseDance User Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Upgrading and Best Practices Guide | MouseDance User Docs ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+
+  <body>
+        <div class="top-navbar">
+
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="24" height="24" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+            
+            <a class="brand" href="../index.html">
+              <img src="../logo.svg" alt="MouseDance" class="logomark">
+              <span class="brand-title">MouseDance</span>
+            </a>
+        </div>
+
+        <div class="body-content">
+
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    <div>
+                      <div class="mobile-hide">
+                        
+                        <a class="brand" href="../index.html">
+                          <img src="../logo.svg" alt="MouseDance" class="logomark">
+                          <span class="brand-title">MouseDance</span>
+                        </a>  </div>
+
+                    
+                      <div id="navbar">
+                      </div>
+                    
+                    </div>
+
+
+                    <div class="sidebar-item-separator"></div>
+
+                        
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+
+                </div>
+
+                <div class="footer">
+                  MouseDance User Docs powered by <a href='https://dotnet.github.io/docfx'>DocFx</a>, <a href='https://github.com/jbltx/DiscordFX'>DiscordFx</a>
+                  
+                </div>
+            </nav>
+
+            <main class="main-panel">
+
+
+                <div role="main" class="main-panel-content hide-when-search">
+
+                        
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                    <article class="content wrap" id="_content" data-uid="">
+<h1 id="upgrading-and-best-practices-guide">Upgrading and Best Practices Guide</h1>
+
+<p>When upgrading your copy of MouseDance to a newer version, always make a backup first. You may want to import the newer version into an empty project first and check what has changed.</p>
+<p>Unity's <a href="https://docs.unity3d.com/Manual/AssetPackagesImport.html">package importing</a> works on file <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">GUIDs</a> instead of the file's path. That means even if you move a file to a new folder, the GUID stays the same, and if you import a newer version of that file (from a package), Unity will overwrite it even though it's not in its original location anymore.</p>
+<p>The package import process also doesn't have any <a href="https://en.wikipedia.org/wiki/Diff">diff</a> checking functionality. When it detects a change, it's either you allow that file to be overwritten or not with a checkbox.</p>
+<p>Until the <a href="https://docs.unity3d.com/Manual/CustomPackages.html">UPM format</a> becomes the de-facto standard for Asset Store packages, this is what the importing experience is like.</p>
+<p><img src="../resources/UnityPackageImport.png" alt="Unity Package Import Window"></p>
+<h2 id="dont-modify-mousedance-source-code-itself-make-extensions">Don't modify MouseDance source code itself, make extensions</h2>
+<p>The mentioned limitations with Unity mean it's best that you do not directly edit the source code of MouseDance.</p>
+<p>Instead, have your own code merely register callbacks to the MouseDance API and/or write a subclass of a MouseDance class that is meant to be subclassed. Keep that code in files that are your own, outside of the MouseDance folder. All sample code in the <a href="code_usage.html">Code Usage</a> section work this way.</p>
+<p>This ensures that when MouseDance files need to be overwritten by a version update, there wouldn't be any edits made by you that will be lost.</p>
+<p>In fact, even without Unity's limitations, this approach is still recommended, since it makes updating your copy of the MouseDance plugin be smooth and seamless.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>A note to developers: If you find yourself deciding that you <em>do</em> need to change the source code inside MouseDance to fit your needs, please contact me first (contact details are in the asset package).</p>
+<p>I can perhaps create a new callback or event that you can subscribe to, a new virtual method that you can override, expose more properties, or whatever works best for you.</p>
+</div>
+<h2 id="use-prefab-variants">Use Prefab Variants</h2>
+<p>When it comes to prefabs, it's better to treat the prefabs that come with MouseDance in a read-only manner. If you want to customize them, either make a new prefab from scratch, duplicate the existing prefab, or better yet, make a <a href="https://docs.unity3d.com/Manual/PrefabVariants.html">Prefab Variant</a>.</p>
+<p>With Prefab Variants, you can take advantage of the existing prefab structure, but at the same time have your edits be separate from the MouseDance plugin.</p>
+<p>This again ensures that when MouseDance prefabs need to be overwritten by a version update, there wouldn't be any edits made by you that will be lost. See <a href="hit_circles.html#creating-a-hit-circle-prefab-variant">Creating a Hit Circle Prefab Variant</a> for an example.</p>
+<h2 id="make-copies-of-scriptableobjects">Make copies of ScriptableObjects</h2>
+<p>The same workflow doesn't work for <a href="https://docs.unity3d.com/Manual/class-ScriptableObject.html">ScriptableObjects</a> because they don't have any built-in equivalent to the <code>Prefab Variant</code> functionality.</p>
+<p>So if you want to make an edit to any of these ScriptableObject files, it is best to make a copy, and do the edits on your copies instead.</p>
+<p>MouseDance uses five types of ScriptableObjects, all used by HitObjectManager:</p>
+<style>
+.cropHitObjectManager {
+  width: 542px;
+  height: 181px;
+  overflow: hidden;
+}
+.cropHitObjectManager img {
+  width: 542px;
+  height: 476px;
+}
+</style>
+<div class="cropHitObjectManager">
+<img src="../resources/HitObjectManager.png" alt="ScriptableObjects in HitObjectManager">
+</div>
+<ul>
+<li><a href="hit_object_set.html">Hit Object Set</a> - holds all the Hit Object prefabs</li>
+<li><a href="hit_effects_set.html">Hit Effects Set</a> - holds all the hit/miss visual effects prefabs</li>
+<li><a href="sound_effect_set.html">Sound Effect Set</a> - holds all the AudioClips of hit/miss sound effects</li>
+<li><a href="hit_object_colours.html">Hit Object Colours</a> - colours that instantiated Hit Object prefabs will be in</li>
+<li><a href="hit_object_settings.html">Hit Object Settings</a> - miscellaneous tweaks to instantiated prefabs</li>
+</ul>
+</article>
+              
+                </div>
+            </main>
+        </div>
+
+        
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<script type="text/javascript" src="../styles/jquery.twbsPagination.js"></script>
+<script type="text/javascript" src="../styles/url.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>

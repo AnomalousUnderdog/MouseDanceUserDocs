@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Countdown Animation | MouseDance User Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Countdown Animation | MouseDance User Docs ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+
+  <body>
+        <div class="top-navbar">
+
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="24" height="24" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+            
+            <a class="brand" href="../index.html">
+              <img src="../logo.svg" alt="MouseDance" class="logomark">
+              <span class="brand-title">MouseDance</span>
+            </a>
+        </div>
+
+        <div class="body-content">
+
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    <div>
+                      <div class="mobile-hide">
+                        
+                        <a class="brand" href="../index.html">
+                          <img src="../logo.svg" alt="MouseDance" class="logomark">
+                          <span class="brand-title">MouseDance</span>
+                        </a>  </div>
+
+                    
+                      <div id="navbar">
+                      </div>
+                    
+                    </div>
+
+
+                    <div class="sidebar-item-separator"></div>
+
+                        
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+
+                </div>
+
+                <div class="footer">
+                  MouseDance User Docs powered by <a href='https://dotnet.github.io/docfx'>DocFx</a>, <a href='https://github.com/jbltx/DiscordFX'>DiscordFx</a>
+                  
+                </div>
+            </nav>
+
+            <main class="main-panel">
+
+
+                <div role="main" class="main-panel-content hide-when-search">
+
+                        
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                    <article class="content wrap" id="_content" data-uid="">
+<h1 id="countdown-animation">Countdown Animation</h1>
+
+<p>If you want a countdown animation to run at the correct moment, such that it finishes right before the first Hit Object appears, implement <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ISongStartCountdown.html"><code>ISongStartCountdown</code></a> in your class like this:</p>
+<pre><code class="lang-csharp">public class BasicUsage : UnityEngine.MonoBehaviour, MouseDance.Runtime.Callbacks.ISongStartCountdown
+{
+  public MouseDance.Runtime.BeatmapRunner _beatmapRunner;
+  public UnityEngine.TextAsset _osuFile;
+  public UnityEngine.AudioClip _song;
+  public UnityEngine.Animator _countdownAnimator;
+  public UnityEngine.AnimationClip _countdownAnimationClip;
+
+  public void OnStartCountdown()
+  {
+    _countdownAnimator.Play(&quot;Play&quot;, -1, 0);
+  }
+
+  public float CountdownLength =&gt; _countdownAnimationClip.length;
+
+  void Start()
+  {
+    _beatmapRunner.SetSongStartCountdown(this);
+    _beatmapRunner.LoadAndStart(_osuFile, _song);
+  }
+}
+</code></pre>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You will need to have your own countdown animation prepared beforehand. The Demo folder in MouseDance provides a simple countdown animation that you can use.</p>
+</div>
+<p>Note that <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner_SetSongStartCountdown_MouseDance_Runtime_Callbacks_ISongStartCountdown_"><code>BeatmapRunner.SetSongStartCountdown</code></a> is called before starting the beatmap. This will make your <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ISongStartCountdown.html#MouseDance_Runtime_Callbacks_ISongStartCountdown_OnStartCountdown"><code>OnStartCountdown</code></a> be called automatically by the <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html"><code>BeatmapRunner</code></a> at the right moment.</p>
+<p>You can put any code in there that you want. It could be an animation, a sound, etc.</p>
+<p><a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html"><code>BeatmapRunner</code></a> needs to know how long your countdown is (in seconds) so that is what the <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ISongStartCountdown.html#MouseDance_Runtime_Callbacks_ISongStartCountdown_CountdownLength"><code>CountdownLength</code></a> property is for. The reason is because it will take the absolute time for when the first Hit Object will appear, then deduct the <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ISongStartCountdown.html#MouseDance_Runtime_Callbacks_ISongStartCountdown_CountdownLength"><code>CountdownLength</code></a> from that. That’s the moment when the <code>BeatmapRunner</code> will call your <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ISongStartCountdown.html#MouseDance_Runtime_Callbacks_ISongStartCountdown_OnStartCountdown"><code>OnStartCountdown</code></a>.</p>
+<p>Meaning, if you specify <code>0</code> for <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ISongStartCountdown.html#MouseDance_Runtime_Callbacks_ISongStartCountdown_CountdownLength"><code>CountdownLength</code></a>, then <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ISongStartCountdown.html#MouseDance_Runtime_Callbacks_ISongStartCountdown_OnStartCountdown"><code>OnStartCountdown</code></a> will be called <em>exactly</em> when the first Hit Object starts to appear. If you specify <code>2.5f</code> for <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ISongStartCountdown.html#MouseDance_Runtime_Callbacks_ISongStartCountdown_CountdownLength"><code>CountdownLength</code></a>, then <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ISongStartCountdown.html#MouseDance_Runtime_Callbacks_ISongStartCountdown_OnStartCountdown"><code>OnStartCountdown</code></a> will be called 2.5 seconds <em>before</em> the first Hit Object appears.</p>
+<p>Note that the .osu file can optionally specify a three-second period of silence added before the song plays, with the <a href="https://osu.ppy.sh/wiki/en/Beatmapping/Lead-in"><code>Lead-in</code></a> property, so that will be taken into account.</p>
+<p>If in case your countdown animation takes too long and will not fit within the time allotted (even with <a href="https://osu.ppy.sh/wiki/en/Beatmapping/Lead-in"><code>Lead-in</code></a> turned on), then MouseDance will automatically add the needed duration of silence.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>If your <code>OnStartCountdown</code> doesn't seem to be getting called, check if you've properly called <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner_SetSongStartCountdown_MouseDance_Runtime_Callbacks_ISongStartCountdown_"><code>BeatmapRunner.SetSongStartCountdown</code></a>.
+For every BeatmapRunner, there can be at most only one active <code>ISongStartCountdown</code> in use.</p>
+<p><code>BeatmapRunner</code> in the Inspector will show you which callbacks have been registered. The one labeled <code>ISongStartCountdown</code> should be green once the game is running.</p>
+<p>The name of the registered callback's concrete type will be displayed (namespace and class name). If it is a <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html"><code>MonoBehaviour</code></a> type, it'll show the actual file instead. You can click on that to ping it in the Project tab.</p>
+<p><img src="../resources/BeatmapRunnerCountdownEnd.png" alt="Beatmap Runner Diagnostics"></p>
+<p>This GUI is only for debugging. It is not designed or intended to register callbacks from the GUI.</p>
+</div>
+</article>
+              
+                </div>
+            </main>
+        </div>
+
+        
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<script type="text/javascript" src="../styles/jquery.twbsPagination.js"></script>
+<script type="text/javascript" src="../styles/url.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>

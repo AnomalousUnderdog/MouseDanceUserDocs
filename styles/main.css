@@ -1,0 +1,43 @@
+:root
+{
+    --main-bg-color: #2f2554;
+
+    --topbar-bg-color: #231641;
+
+    --separator-color: #3c1f7b;
+    --sidebar-bg-color: #231641;
+    --sidebar-item-color: #b9bbbe;
+
+    --breadcrumb-bg-color: #231641;
+
+    --link-active-bg-color: #3c1f7b;
+
+    --code-keyword-color: rgb(109, 158, 235);
+    --code-field-color: rgb(230, 145, 56);
+}
+
+.brand:hover > .brand-title, .brand:focus > .brand-title
+{
+    color: #ac70ff;
+    text-decoration-color: #ac70ff;
+}
+
+.brand:hover > .logomark, .brand:focus > .logomark
+{
+    opacity: 1.0;
+}
+
+input[type="text"]
+{
+    border-color: #3c1f7b;
+}
+
+input[type="text"]:hover
+{
+    border-color: #ac70ff;
+}
+
+article li > ul
+{
+    display: block;
+}

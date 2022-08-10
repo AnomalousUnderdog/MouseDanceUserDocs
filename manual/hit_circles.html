@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Hit Circles | MouseDance User Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Hit Circles | MouseDance User Docs ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+
+  <body>
+        <div class="top-navbar">
+
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="24" height="24" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+            
+            <a class="brand" href="../index.html">
+              <img src="../logo.svg" alt="MouseDance" class="logomark">
+              <span class="brand-title">MouseDance</span>
+            </a>
+        </div>
+
+        <div class="body-content">
+
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    <div>
+                      <div class="mobile-hide">
+                        
+                        <a class="brand" href="../index.html">
+                          <img src="../logo.svg" alt="MouseDance" class="logomark">
+                          <span class="brand-title">MouseDance</span>
+                        </a>  </div>
+
+                    
+                      <div id="navbar">
+                      </div>
+                    
+                    </div>
+
+
+                    <div class="sidebar-item-separator"></div>
+
+                        
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+
+                </div>
+
+                <div class="footer">
+                  MouseDance User Docs powered by <a href='https://dotnet.github.io/docfx'>DocFx</a>, <a href='https://github.com/jbltx/DiscordFX'>DiscordFx</a>
+                  
+                </div>
+            </nav>
+
+            <main class="main-panel">
+
+
+                <div role="main" class="main-panel-content hide-when-search">
+
+                        
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                    <article class="content wrap" id="_content" data-uid="">
+<h1 id="hit-circles">Hit Circles</h1>
+
+<p>Hit Circle Prefabs are composed of mostly Unity UI <a href="https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Image.html">Images</a>.</p>
+<p><img src="../resources/HitCirclePrefab.png" alt="Hit Circle Prefab"></p>
+<h2 id="creating-a-hit-circle-prefab-variant">Creating a Hit Circle Prefab Variant</h2>
+<p>Since they are Unity UI Images, it's straightforward to swap out the image files used for something custom.</p>
+<p><img src="../resources/HitCirclePrefabVariant.png" alt="Hit Circle Custom"></p>
+<p>An easy way to go about this is to make a <a href="https://docs.unity3d.com/Manual/PrefabVariants.html">Prefab Variant</a> of the Hit Circle Prefab, and override only the properties you need to.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Images used here should be white-coloured. That makes it easy for the game to give it any colour as needed by the Beatmap (the previews shown in the screenshots use yellow only for illustrative purposes).</p>
+</div>
+<p>The prefab has 4 parts:</p>
+<style>
+.word {
+  text-align: right;
+  vertical-align: top;
+  font-weight: bold;
+}
+</style>
+<table>
+<tr>
+<td class="word">1. Border
+</td>
+<td>
+The border is separate from the circle because this can be colored differently from the circle itself.<br><br>
+<img alt="HitCircle Border" src="../resources/HitCircleBorder.png">
+</td>
+</tr>
+<tr>
+<td class="word">2. Circle
+</td>
+<td>
+The inside of the circle. This is separate from the border because this can be colored differently from the border.<br><br>
+<img alt="HitCircle Circle" src="../resources/HitCircleCircle.png">
+</td>
+</tr>
+<tr>
+<td class="word">3. Combo Counter Text
+</td>
+<td>
+The number displayed on the Hit Circle. The important thing to note here is that it uses `Auto Size` so that it can be properly sized when the Hit Circle is resized in-game.<br><br>
+<img alt="HitCircle Combo Counter Text" src="../resources/HitCircleText.png">
+</td>
+</tr>
+<tr>
+<td class="word">4. Approach Circle
+</td>
+<td>
+The large circle that slowly shrinks for indicating the Hit Circle's hit time.<br><br>
+<img alt="HitCircle Approach Circle" src="../resources/HitCircleApproachCircle.png">
+</td>
+</tr>
+</table>
+<p>You can, for example, change the image used for any of the parts (or the font, in the case of the Combo Counter Text) and then save that into the Prefab Variant.</p>
+<p><img src="../resources/HitCirclePrefabOverride.png" alt="Hit Circle Prefab Override"></p>
+<h2 id="previewing-circle-size">Previewing Circle Size</h2>
+<p>If you need to check how your Hit Circle looks like for each <a href="https://osu.ppy.sh/wiki/en/Beatmapping/Circle_size"><code>Circle Size</code></a> value, you can use the preview buttons in the Inspector.</p>
+<p><img src="../resources/HitCirclePreviewSize.gif" alt="Previewing Circle Size"></p>
+<p>Remember that <a href="https://osu.ppy.sh/wiki/en/Beatmapping/Circle_size"><code>Circle Size</code></a> is a difficulty setting, so higher values mean more difficulty. In this case, higher <a href="https://osu.ppy.sh/wiki/en/Beatmapping/Circle_size"><code>Circle Size</code></a> value means <em>smaller</em> Hit Object.</p>
+<h2 id="border-scale-adjust">Border Scale Adjust</h2>
+<p>If the border image doesn't quite fit in certain sizes, you can adjust the border using the <code>Border Scale At Smallest Circle Size</code> property.</p>
+<p>At the default value of 1.0 for <code>Border Scale At Smallest Circle Size</code>:</p>
+<p><img src="../resources/HitCircleBorderScale1.gif" alt="Border Scale at 1.0"></p>
+<p>Notice the large gap between the circle and its border when at Circle Size 7 and beyond.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The problem illustrated here is already fixed and no longer an issue in the demo's prefabs. This section is just to explain the thought process behind how it was fixed in case you are using your own custom images and is facing the same problem.</p>
+</div>
+<p>This happens because if you look at the source image for the border, it has some drop shadow effects outside the circle.</p>
+<p><img src="../resources/HitCircleBorderSourceImage.png" alt="Border Source Image"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots here make the Hit Circles look pixelated because they are highly zoomed-in.</p>
+</div>
+<p>So technically, when the Hit Circle diameter is at 64 pixels (radius of 32 pixels), the border image's diameter has to be sized <strong>more</strong> than 64 pixels, to ensure that the drop shadow effects are <strong>outside</strong> the Hit Circle.</p>
+<p>That's why the RectTransform has -5 on all edges (negative value means it goes beyond its parent container). So it is sized 5 pixels larger than the actual Hit Circle on all sides:</p>
+<p><img src="../resources/HitCircleBorderRectTransform.png" alt="Border RectTransform"></p>
+<p>For reference, here is what it would have looked like without that -5 adjustment (when the border image's diameter is same as the circle image, at exactly 64 pixels):</p>
+<p><img src="../resources/HitCircleBorderRectTransform0.png" alt="Border RectTransform without adjustment"></p>
+<p>So the -5 adjustment is really needed here.</p>
+<p>The problem is that it doesn't work well when the Hit Circle gets smaller. The -5 values in the RectTransform are in pixels. So it's maintaining that 5 pixel distance even at extremely small Hit Circle sizes, where the drop shadow effect no longer needs 5 pixels.</p>
+<p>The solution is to have additional tweaking to the size when the Hit Circle gets smaller. That is what <code>Border Scale At Smallest Circle Size</code> property is for. It adjusts the RectTransform's <a href="https://docs.unity3d.com/ScriptReference/Transform-localScale.html">scale</a>.</p>
+<p>With <code>Border Scale At Smallest Circle Size</code> set to <code>0.65</code>, the problem is fixed:</p>
+<p><img src="../resources/HitCircleBorderScale0.65.gif" alt="Border Scale at 0.65"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can think of the the Border Scale as a percentage, so <code>0.65</code> should be read as 65%, meaning, at Circle Size 10 (which is at about 20 pixels in diameter), we reduce the border image's size even further, down to 65% of its original size.</p>
+</div>
+<p>The scale adjustment is only applied when the <code>Circle Size</code> given is small enough, so it doesn't affect normal sizes. You can adjust exactly when the Border Scale starts being applied using the <code>Start Border Scale After</code> property.</p>
+<p>With the default value of 5 in <code>Start Border Scale After</code>, that means border scale adjustment only happens after Circle Size 5 (i.e. Circle Sizes 6 to 10). This adjustment is applied linearly:</p>
+<table>
+<thead>
+<tr>
+<th>Circle Size</th>
+<th>Scale applied to Border Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0.93</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0.86</td>
+</tr>
+<tr>
+<td>8</td>
+<td>0.79</td>
+</tr>
+<tr>
+<td>9</td>
+<td>0.72</td>
+</tr>
+<tr>
+<td>10</td>
+<td>0.65</td>
+</tr>
+</tbody>
+</table>
+<h2 id="testing-the-prefab-variant">Testing the Prefab Variant</h2>
+<p>To make use of your Prefab Variant, you can modify your <code>HitObjectSet</code> so it uses your Prefab Variant instead of the original.</p>
+<p>The default <code>HitObjectSet</code> used by the demo scenes is in the <code>MouseDance/Prefabs</code> folder.</p>
+<p><img src="../resources/HitCircleReplacedWithSquare.png" alt="Hit Circle Replaced"></p>
+<p><img src="../resources/HitSquaresInGame.png" alt="Hit Squares In Game"></p>
+<h2 id="hit-detection">Hit Detection</h2>
+<p>User-input detection is handled by the <code>BeatmapRunner</code>. All the Hit Circle needs is to have a Collider2D so that raycasts will catch it.</p>
+<p><img src="../resources/HitCircleCollider.png" alt="Hit Circle Collider2D"></p>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>Right now, only <a href="https://docs.unity3d.com/Manual/class-CircleCollider2D.html"><code>CircleCollider2D</code></a> and <a href="https://docs.unity3d.com/Manual/class-BoxCollider2D.html"><code>BoxCollider2D</code></a> is supported.</p>
+</div>
+<p>Since the only job of the Hit Circle's Collider is to be clicked on, it will not interact with the Physics system. This is mostly ensured by setting it as a Trigger.</p>
+<p>Since the Colliders are set up as Triggers, the <code>Queries Hit Triggers</code> setting needs to be turned on in the Physics 2D section of Project Settings.</p>
+<p><img src="../resources/QueriesHitTriggers.png" alt="Queries Hit Triggers"></p>
+<p>The Beatmap Runner Inspector will alert you with an error message if it's turned off.</p>
+<p><img src="../resources/ErrorPhysics2DSettings.png" alt=""></p>
+</article>
+              
+                </div>
+            </main>
+        </div>
+
+        
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<script type="text/javascript" src="../styles/jquery.twbsPagination.js"></script>
+<script type="text/javascript" src="../styles/url.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>

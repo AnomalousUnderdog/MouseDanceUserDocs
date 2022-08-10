@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Folder Layout | MouseDance User Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Folder Layout | MouseDance User Docs ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+
+  <body>
+        <div class="top-navbar">
+
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="24" height="24" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+            
+            <a class="brand" href="../index.html">
+              <img src="../logo.svg" alt="MouseDance" class="logomark">
+              <span class="brand-title">MouseDance</span>
+            </a>
+        </div>
+
+        <div class="body-content">
+
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    <div>
+                      <div class="mobile-hide">
+                        
+                        <a class="brand" href="../index.html">
+                          <img src="../logo.svg" alt="MouseDance" class="logomark">
+                          <span class="brand-title">MouseDance</span>
+                        </a>  </div>
+
+                    
+                      <div id="navbar">
+                      </div>
+                    
+                    </div>
+
+
+                    <div class="sidebar-item-separator"></div>
+
+                        
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+
+                </div>
+
+                <div class="footer">
+                  MouseDance User Docs powered by <a href='https://dotnet.github.io/docfx'>DocFx</a>, <a href='https://github.com/jbltx/DiscordFX'>DiscordFx</a>
+                  
+                </div>
+            </nav>
+
+            <main class="main-panel">
+
+
+                <div role="main" class="main-panel-content hide-when-search">
+
+                        
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                    <article class="content wrap" id="_content" data-uid="">
+
+<style>
+.folder {
+  border-radius: 3px;
+  background-color: rgb(62,62,62);
+  color: rgb(255, 153, 0);
+  display: inline-block;
+  padding: 0 3px;
+  margin: 0 2px;
+  white-space: nowrap;
+}
+.flex-container {
+  display: flex;
+}
+.flex-container > div {
+  padding: 0 0 10px 0;
+}
+</style>
+<h2 id="folder-layout">Folder Layout</h2>
+<div class="flex-container">
+  <div><div class="folder">Demo</div></div>
+  <div>Files that show how MouseDance can be used. These include images, songs, source code, etc. You can delete these and/or keep the files that you want for your own game.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Demo/Animation</div></div>
+  <div>Contains a sample “Ready, Get Set, Go!” kind of UI animation, used in the beginning of the demos. You could swap this out for your own “3, 2, 1” countdown animation, or perhaps even a progress bar kind of animation. You could also just do away with any countdown animation altogether, but that isn’t recommended as it doesn’t give players any warning to prepare themselves.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Demo/Images</div></div>
+  <div>Contains sprites used for a custom-shaped Hit Circle, used in the demos.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Demo/Materials</div></div>
+  <div>Contains material needed for a custom Slider Ball, used in the demos.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Demo/MouseCursor</div></div>
+  <div>Custom Mouse Cursor textures, used in the demos.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Demo/Prefabs</div></div>
+  <div>Prefabs used by the demo scenes. These are examples on how a Beatmap Runner and Beatmap Canvas is set up, as well as custom Hit Object prefabs. You can use them as-is, or change them to your needs.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Demo/Scenes</div></div>
+  <div>All the scenes for the demos. The scenes are numbered, in more or less increasing amounts of complexity in its usage of <i>Osu!</i> mechanics.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Demo/Scripts</div></div>
+  <div>Code used by the demos to show how MouseDance is used. Look through here to see the code needed to load an .osu file, start the game, pause it, get the player’s score in the end in order to display it, etc.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Demo/Songs</div></div>
+  <div>Sample songs and .osu files used by the demos. The songs are courtesy of <a href="https://incompetech.com/music/royalty-free/music.html">Kevin MacLeod</a>, licensed in <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons 4.0.</a></div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Demo/Sounds</div></div>
+  <div>Different kinds of sound effects used for hit/miss. These sound effects are all <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a> licensed. You could swap these out for your own sound effects, if you prefer.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Fonts</div></div>
+  <div>Contains font (and its TextMesh Pro materials) used in the display of numbers inside Hit Objects, as well as the text in the UI of the demos. This is in the <a href="https://en.wikipedia.org/wiki/SIL_Open_Font_License">Open Font License</a>, and so should be fine for use in your own game.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Images</div></div>
+  <div>Images and sprites used in the display of Hit Objects, and the particle effects for hit/miss. You can swap these images with your own, if you prefer.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Materials</div></div>
+  <div>Materials used for the Hit Objects, and hit/miss particle effects.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Models</div></div>
+  <div>Contains a simple sphere 3d model, used by Sliders to show a ball rolling through them.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Prefabs</div></div>
+  <div>Prefabs of the Hit Objects, and hit/miss particle effects.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Scripts</div></div>
+  <div>Code required to make MouseDance work.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Scripts/Editor</div></div>
+  <div>Contains editor scripts to make editing some <a href="https://docs.unity3d.com/Manual/class-ScriptableObject.html">ScriptableObjects</a> easier, an editor script to allow the BeatmapRunner to show diagnostic info in the Inspector, and an editor script to make Unity recognize .osu files in the project as text files.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Scripts/InspectorUtil</div></div>
+  <div>Contains simple <a class="xref" href="https://docs.unity3d.com/ScriptReference/PropertyDrawer.html">PropertyDrawers</a> to make editing of some properties easier.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Scripts/OsuParsers</div></div>
+  <div>The main third-party library needed. This is used to read the data inside .osu files. Slightly modified to make it work easier with Unity (usage of <a href="https://docs.microsoft.com/en-us/dotnet/api/system.numerics.vector2">System.Numerics.Vector2</a> was changed to <a href="https://docs.unity3d.com/ScriptReference/Vector2.html">UnityEngine.Vector2</a>, usage of <a href="https://docs.microsoft.com/en-us/dotnet/api/system.drawing.color">System.Drawing.Color</a> was changed to <a href="https://docs.unity3d.com/ScriptReference/Color32.html">UnityEngine.Color32</a>). These modifications are also available online at <a href="https://github.com/AnomalousUnderdog/OsuParsers">AnomalousUnderdog/OsuParsers</a>.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Scripts/PennerEasing</div></div>
+  <div>A simple tween library. This is a minor dependency, only used to make some animations of Hit Objects smooth and aesthetically-pleasing. This is not strictly needed. You can even remove it if you want, as long as you edit the MouseDance code to use different tweening formulae. This code is found online at <a href="http://robertpenner.com/easing/">Robert Penner's Easing Functions</a>.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Scripts/Runtime</div></div>
+  <div>Actual MouseDance code. This mainly facilitates the spawning and display of Hit Objects, and user-input detection.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Shaders</div></div>
+  <div>Shader files needed to make the SDF curves in MouseDance work. This is used by the Sliders.</div>
+</div>
+</article>
+              
+                </div>
+            </main>
+        </div>
+
+        
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<script type="text/javascript" src="../styles/jquery.twbsPagination.js"></script>
+<script type="text/javascript" src="../styles/url.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>

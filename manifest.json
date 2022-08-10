@@ -1,0 +1,2473 @@
+{
+  "homepages": [],
+  "source_base_path": "A:/Projects/OsuPlugin/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.BasicDemoMain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.BasicDemoMain.html",
+          "hash": "ykiXymVHCQjoC/gh24hDru2a4QMGUd5EY9l5/iJjZYE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.BasicDemoWithAltHitCircleMain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.BasicDemoWithAltHitCircleMain.html",
+          "hash": "kaN+0RImm3f662/z1gaDQoA/4Dq9Cp4gicKkVSaIqm0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.BasicDemoWithEQMain.AudioVisualizerMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.BasicDemoWithEQMain.AudioVisualizerMode.html",
+          "hash": "AjD2A2gxutwe7Ni++yrKUqZ18Bd+YZaiW0AY5PwtDfg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.BasicDemoWithEQMain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.BasicDemoWithEQMain.html",
+          "hash": "6SyUt2gAwWONRGfey1wWVrTJKQthE70cidnNub2C6lg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.BasicDemoWithHardRockMain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.BasicDemoWithHardRockMain.html",
+          "hash": "rKYiw4hekkwsJ96yhbKWapMgQ0yqsgm0VCOdWg3KEfI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.DebugInfoDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.DebugInfoDisplay.html",
+          "hash": "FjjpLugbDA/QWdNfImEUrOzj3xnYdoDMl5hFB7LchxI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.DynamicDifficultyDemoMain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.DynamicDifficultyDemoMain.html",
+          "hash": "Kzvm9+VFvGvicVBcuKQcIRdtdg99RI9RbWrE8+pfnCc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.Editor.SquaresInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.Editor.SquaresInspector.html",
+          "hash": "DCO4AYRzhMJc+PXW5gOE+uJdligVkzJ/Oq0FWid5Ego="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.Editor.html",
+          "hash": "efu4ZrSpyEtaD9hIta+3F3pMJx69cyXeWoeGai6LWBA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.LeftRightClickDemoMain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.LeftRightClickDemoMain.html",
+          "hash": "X13J+atvwW8HHJFvfZ47VaWzVW9P1h0DWmxjSUcZV00="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.LeftRightClickHitObjectSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.LeftRightClickHitObjectSet.html",
+          "hash": "xrA+nyaQLdRXioxmA+TkF2ez7jzCmQLLNNPLStIpL6U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.MyHitObjectSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.MyHitObjectSet.html",
+          "hash": "XcSbrCl0ArQPz5QDH9mxQIjueHfsJiOXpC8iFv3VW1M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.OptionsDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.OptionsDisplay.html",
+          "hash": "tIlw44u59RWzLuxN7N0Ns9tTzNlTCsoKKBlcjCsmIVg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.ResultsDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.ResultsDisplay.html",
+          "hash": "8FEbADw37FHoOsUbj1bCFg1C6mk/fazsTr/IQeA4VDg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.SliderTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.SliderTest.html",
+          "hash": "lON2UvHq4PiwIK46tI2R18S/1XXEaBnrJGxGd7CFD9Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.Squares.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.Squares.html",
+          "hash": "J4A9B0ZtKWIEzzAWC1m6U7NN+7K8YZhbY2nD7gv9nSk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.TestSDF2Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.TestSDF2Line.html",
+          "hash": "GhZA9UCaQGJ0fizTiKHGdglWSbw0HqMxSXsGMI6Y8x4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.TestSDF3Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.TestSDF3Line.html",
+          "hash": "Fhpa8wN7xXixTSS2tux1LWoXedGT9QSiiFHcpvDzkVs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.TestSDFCurve.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.TestSDFCurve.html",
+          "hash": "9NSigcV85b6o3Oo7m8PGjJNpQC+frIPKUiueYVuEnM0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.TestSDFLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.TestSDFLine.html",
+          "hash": "ujyXeueNppl48QZSczigBEsQvf5ZSuJ6UuhgX7nHc6g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.html",
+          "hash": "N/sb818sXJon/7IOyc2Zp+SUNNhcS4WddY1SwetnNp8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Editor.BeatmapRunnerEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Editor.BeatmapRunnerEditor.html",
+          "hash": "wBXCniwlKEtMJ1JQoKzIefyZb+L8c1S3MfhBflvh2KI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Editor.HitCircleEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Editor.HitCircleEditor.html",
+          "hash": "kJyFFtbOqRXCBnAvcxZ8pCNIKk2/s0RP+V3mYCjoORU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Editor.HitObjectColoursEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Editor.HitObjectColoursEditor.html",
+          "hash": "9EBf58bY71RkPN+InUWF95k9EXEd6GDkxKnyYCEa4lQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Editor.HitObjectSetEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Editor.HitObjectSetEditor.html",
+          "hash": "UeKuwGml2g6nOeoaTglKsHGfn8NJiDsMdzIU3vUa28k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Editor.OsuFileImporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Editor.OsuFileImporter.html",
+          "hash": "UCX1XYH2qzlZauLNHoFoypTUfO4c92LpUJxexcdMOx0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Editor.Util.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Editor.Util.html",
+          "hash": "qN0HBynBme6OAMnIUrjfDoNGuQXtLMy9FzN+P/e0/5g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Editor.html",
+          "hash": "hE2DwKavvLU3NwmQVyyMSg6qpmZi0De0k3ET6qD/bJ0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.BeatmapAreaAdjuster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.BeatmapAreaAdjuster.html",
+          "hash": "HZxItj7DgtJSPvjFinx3fCRmrwDNGSxfzxYAin3J3n4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.BeatmapRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.BeatmapRunner.html",
+          "hash": "CpH6WNljZ9xSU4hAoWXaXTtKsDT1IUC3f71tmb07emo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.BeatmapUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.BeatmapUtil.html",
+          "hash": "7NOva42W4Wav0wjsD44JjCGRDd2tJt2SRkRSQ0cVjSA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Callbacks.IBeatmapEnd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Callbacks.IBeatmapEnd.html",
+          "hash": "SrpbHyvrJHTRWuJ7Nw08CCOlxMdT8AtFZ/kHidh1Eo0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Callbacks.IBeatmapInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Callbacks.IBeatmapInput.html",
+          "hash": "YAAj6ui0JB9YQiGpeGCqW5Q0JGXtbuy3yNinM8X44DQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Callbacks.IBeatmapLoaded.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Callbacks.IBeatmapLoaded.html",
+          "hash": "AN/W7WfUyFmpFmBA6SsAOLTw/63mDqYghEGHdjldVB4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Callbacks.IBeatmapMultiInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Callbacks.IBeatmapMultiInput.html",
+          "hash": "50gAzM12F5th2CQRtcZEcVCBpkxrXsyE3lIkvoTG4aU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Callbacks.IBeatmapScoreCalculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Callbacks.IBeatmapScoreCalculator.html",
+          "hash": "uzAC5AFgmv5jDVgBenO5gDTyr0vj8QHA2V/9LFSjXRI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Callbacks.IClickedHitObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Callbacks.IClickedHitObject.html",
+          "hash": "xFdqb00G1gkgXw/qu8d6jjEWVkoYLGnb8myz2bqupFU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Callbacks.ICustomCollectRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Callbacks.ICustomCollectRule.html",
+          "hash": "lPFaCYRF9XcegsG1F7E13Ba7EMrVQ4er/BCpNEH931Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator.html",
+          "hash": "U6WnFp91s64QwN1WWbDAwBkzY0chMudlobxZp1tkd5M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Callbacks.ISongStartCountdown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Callbacks.ISongStartCountdown.html",
+          "hash": "AuX8JCw1SCTbjtfLDB67AAkZ71obKIBSXtjoN7uK5kA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Callbacks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Callbacks.html",
+          "hash": "4x448PmfVBlshPrV0Vpklj3KRed51n+y4M69IP/6ASg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Effects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Effects.html",
+          "hash": "eYVaoR/5OZ5cqbYrFD1MzwNpmk7mw/0p1yKYknPVE/k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Gradient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Gradient.html",
+          "hash": "r0BFL2WTOOyj2RJnxI/8L8pf044XljunyW7Pt+anYZI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.GraphicsUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.GraphicsUtil.html",
+          "hash": "vNEgA+rNitfJWbxjyU92yxLYfsTgJMeX28qOqFdW3YQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.HitCircle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.HitCircle.html",
+          "hash": "YzkEZJ8Rhn09GTI83TokgnYxTl1dAQ2FzblqAygDeTA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.HitEffectsSet.CustomVisualEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.HitEffectsSet.CustomVisualEffect.html",
+          "hash": "winOuk3HKtiDNFP7UECCIMaz3b4PdUE6LOigLypfgOU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.HitEffectsSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.HitEffectsSet.html",
+          "hash": "5tGQikljKA26/XD2vkRppsZCZpBCnekgyKa+YK3OIDk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.HitObjectColours.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.HitObjectColours.html",
+          "hash": "NzdqceoQwMn7s7KbXkzpk2h+ihN/lUnOOVPJu802E6g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.HitObjectManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.HitObjectManager.html",
+          "hash": "0D9uAG2DFEjhnk2By7l8DSUJXDysswosID1pDkAslno="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.HitObjectManagerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.HitObjectManagerSettings.html",
+          "hash": "ReCVakKqrtukZjcGelraMKMA+Vybnmk8MM1R4SanMmQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.HitObjectReaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.HitObjectReaction.html",
+          "hash": "S8y3k4XMJxg/WdwtrD4p1PNOG3x/KVWh9KFoe1YYZDw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.HitObjectSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.HitObjectSet.html",
+          "hash": "UbpTSp+zhkuKOjI+odn3jhcwVe73D3ko0i5FPx3L9QM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.IBeatmapResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.IBeatmapResults.html",
+          "hash": "FcO9/g9fw7DUqqzU3JUPwIXU34zoaQa6WQ/2L7cH9ZQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.IBeatmapRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.IBeatmapRunner.html",
+          "hash": "hrfbXoA/+FjjQF2ZmdiMoerXt7vmwkYA7luLXhlYDpU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.IHitObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.IHitObject.html",
+          "hash": "sdSL2LdAGVLD9ar+H3bk5lCBCJTwIq7q5MT9yVV+sG0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.IHitObjectWithEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.IHitObjectWithEvents.html",
+          "hash": "CPkQZtWApolecTCpSKohloBaD+V1gj2356NnOdhzCvY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.ISlider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.ISlider.html",
+          "hash": "+Q2yof/xkB7RG5wBo7S5eGvzgUgf/2+o9SUGx9x0PMY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.ISliderBall.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.ISliderBall.html",
+          "hash": "HAoAYBaK/aQoFdHqtn9Hf7VfBgOsUUlR4gof9SvJBHY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.LayerSpawnType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.LayerSpawnType.html",
+          "hash": "0+uIUkJPpzOKODS+KZO2Nyj5qqj/6OydlQlclArkwD4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.ReactType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.ReactType.html",
+          "hash": "JzxfyS+UbIHQ9B4Fhusu7AqsOQI+uXU85MVHyv+ELaw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.SDF2Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.SDF2Line.html",
+          "hash": "iK/g2kbOj6+VxcFhNfFsESETa77jicYLzVN/sVcYQuc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.SDF3Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.SDF3Line.html",
+          "hash": "aEkW24KBtcFsjOOcuhM09zHrg+8cCstVBK0nphoE/f8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.SDFCurve.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.SDFCurve.html",
+          "hash": "k46/HuKTNqOD69KRmmh8XpC81tKaQ5adx4ETlxRo1dc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.SDFLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.SDFLine.html",
+          "hash": "NHq8S96YiglS58BdPi2NkhOQ0dyDNdcs1h+BxR2guEo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Slider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Slider.html",
+          "hash": "klmZmBvkm1/TU/wXovZ7ufeyAJYwWOsxtWW8zokHPLc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.SliderBall.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.SliderBall.html",
+          "hash": "2SE5UGNFhN+hRnvMeMySqtJjicKU9B2o768396Z1By0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.SliderReachType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.SliderReachType.html",
+          "hash": "U11htGFoFUKyzfFCEgkJ4ATqzvRfoElIanIaOdvqGxA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.SliderTick.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.SliderTick.html",
+          "hash": "Iv9e91sj399hVztgY0XF8TcattNjgVOCywnjVdiJvwc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.SoundEffectSet.CustomSoundEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.SoundEffectSet.CustomSoundEffect.html",
+          "hash": "PQ08PSQJcrlghmWm3dcqYNls5nan3JAEaH0O8VUDDzU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.SoundEffectSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.SoundEffectSet.html",
+          "hash": "gQuurmeqIWYPrvuCE1zfbYOClcXcjcBCq73sWKKVz0I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Util.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Util.html",
+          "hash": "qWFmGazUx12R2swIi1t6ZgYQLAB1DE6yaLOlKxWvppE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.html",
+          "hash": "cgNIhs8n3yofciRxyo3GIJC3hBTNWEhHjN+6OE3YTsE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "IBLLERROHOXPikNhci3UK4jmWsyvReXT3yXjtwkKs5A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "1D8STtKMvhSx25msf/GZwL7dtg5dGQ3r8cGH5H3RF0E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/beatmap_canvas.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/beatmap_canvas.html",
+          "hash": "HUk0cHYA21vzhvRvSXel21VakCxBLrncV4g4U4u3FlY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/beatmap_runner.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/beatmap_runner.html",
+          "hash": "ou6sC5hoG3wLlxfrTchBuesIDb/nKm9DbdNxB3sllkU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/code_usage.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/code_usage.html",
+          "hash": "KUdagNcGvK0iY8rYsWak1N65JKLU9ZlwybBeiiZAT4s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/custom_beatmap.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/custom_beatmap.html",
+          "hash": "D81wAAVCiSkWx3H10d78OXFITBUHFMHVP2sL/k2iH1U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/custom_circle_size.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/custom_circle_size.html",
+          "hash": "jStBI0881HuQ4g3UQLrQnl94/67kAuRLSOjcFrruF6I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/custom_countdown.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/custom_countdown.html",
+          "hash": "YbXo8/gykXK7DvQwQIB5K15+yBM2naJVtIK0OZhrV0o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/custom_hit_objects.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/custom_hit_objects.html",
+          "hash": "SG6c8OY9Qe8yvIZscm26SvMrjSAhrCmbGB6xkT4PrWE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/custom_hit_rules.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/custom_hit_rules.html",
+          "hash": "ZpuFFjB4Ei4XwRiWZJuD6KGk7rFv1szUyta4Ya0RQv0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/custom_input.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/custom_input.html",
+          "hash": "uDLFTOGFqHUhOgaqvzuSFKHiAU9P1VatYLMLvan2VhU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/custom_scoring.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/custom_scoring.html",
+          "hash": "+SEkgOaE4NFoGculximm8AIobkXmepM1NEN44WHQo5c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/dependencies.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/dependencies.html",
+          "hash": "LeizUwpil6gewZCcLWmnT58z/0hoB1ImOtLtkt43gB4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/folder_layout.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/folder_layout.html",
+          "hash": "HBN4lG8DVwS71JcAR6x1H7PN2GUGFJPjl+5wvAJm6ws="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/getting_results.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/getting_results.html",
+          "hash": "zlGP91ToWvpwClGxU+yV1X5sE6M8mCRvFigFb4ei2GU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/hit_circles.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/hit_circles.html",
+          "hash": "kf8bv2mSro8Pox9e6HwYYC718fWoo6kqCUuOP0n3b/g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/hit_effects_set.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/hit_effects_set.html",
+          "hash": "8wZ+IkHscZ4hpoTzfCfaPGvbm5BhE70IR6lGuCPq6Oo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/hit_object_colours.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/hit_object_colours.html",
+          "hash": "gX7ApbQy6AolS+dfUE07OJCaZbTbGB0kGSd0VjbgRcM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/hit_object_container.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/hit_object_container.html",
+          "hash": "9ba/PPPolVSG2dyeHYYW73vFpAhmw0aoN9tpXXK4N2k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/hit_object_manager.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/hit_object_manager.html",
+          "hash": "7VJFv5iUWyuEi78fX91dZayPWsmn9cHhvmjlFbzuSi4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/hit_object_manager_audio_source.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/hit_object_manager_audio_source.html",
+          "hash": "6vg+obnlElGuH5EVpGBzpX6GnXdeAfB/ZJ1xkkuA7v0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/hit_object_manager_canvas_scaler.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/hit_object_manager_canvas_scaler.html",
+          "hash": "d6t05ywjryxSTOv26YKldxV0ZcLL8YRGU+u7M9faqKw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/hit_object_manager_view_cam_for_ball.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/hit_object_manager_view_cam_for_ball.html",
+          "hash": "Ys8pfkKSd9LoRlzftwUoVL+MbsM/GBfCtBUX7y1a+nU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/hit_object_set.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/hit_object_set.html",
+          "hash": "1gtjRXPCMfD0f6V7/DcPZ9jJOi/Vz3H+p8Dl8Im+plM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/hit_object_settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/hit_object_settings.html",
+          "hash": "JSLPntcWSWZDn07CB6zHMFV0CbvKjs8NGrwDk5yPWC0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/hit_objects.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/hit_objects.html",
+          "hash": "QmZ7rLVKNaDMqB1nwqXQoO0T+d2mHsJDPVyS6TZ1bws="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/osu.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/osu.html",
+          "hash": "AiLbn+toJkw4RUbivhFV6pN+N43bvsGW4lDaZncW4CA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/project_settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/project_settings.html",
+          "hash": "EUqHq4w28oUHs6HzC47U0ET2AsOEqKLMDwGcK1z/5ps="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/release_notes.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/release_notes.html",
+          "hash": "2m6Vxs+F2DWY96VG3eH8Fgu2HrASqKnj3XCKSuvlVys="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/roadmap.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/roadmap.html",
+          "hash": "Li5bCRjizNpARLRqkCXyvkMlrYEuhhEH7tBEGnp65hg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/scene_setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/scene_setup.html",
+          "hash": "iRlrS1EhmaI8vi1TpKwgMjn/wu+BB1cqjzD9FV30GSU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/sdf_curve_properties.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/sdf_curve_properties.html",
+          "hash": "Svw6+Cu1ErBLk1nSRNsZOdHHenF3RgCmS81MHvSVHzY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/slider_ball.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/slider_ball.html",
+          "hash": "ESF1R0FVkF/mipG7A7Xl6FsKbMvHkVDFNwDLW+UntE4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/sliders.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/sliders.html",
+          "hash": "smh1G8zzaID7HIVIYfOVqOJCeVD2eBCK47eJSlKJHdA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/sound_effect_set.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/sound_effect_set.html",
+          "hash": "EmcoIB6kVTC1+qB71KlXArDJ3sLkLejvQfaBTf4eeYM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/terminologies.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/terminologies.html",
+          "hash": "SeY3Oau6rOPcjySLos2Kn91ybCLI1JNw7wufuKdPACM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "Y8k4wS9bjdxXFrrnAOS+fSs9SfYnFrvVLvKt3DbUe0A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/upgrading.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/upgrading.html",
+          "hash": "xb7yGA2PkeVnDxWR38exDt9tmQUmRxrExfGj1OHM5RE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/10percent.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/10percent.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/AddingMyHitObjectSet.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/AddingMyHitObjectSet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/AssigningSpecialHitCircle.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/AssigningSpecialHitCircle.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/AudioMixer.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/AudioMixer.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/BeatmapArea10by16.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/BeatmapArea10by16.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/BeatmapArea16by10.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/BeatmapArea16by10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/BeatmapArea16by9.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/BeatmapArea16by9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/BeatmapArea21by9.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/BeatmapArea21by9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/BeatmapArea2by3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/BeatmapArea2by3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/BeatmapArea9by16.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/BeatmapArea9by16.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/BeatmapRunnerCountdownEnd.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/BeatmapRunnerCountdownEnd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/BeatmapRunnerInput.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/BeatmapRunnerInput.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/BeatmapRunnerLoaded.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/BeatmapRunnerLoaded.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/BeatmapSizeCalculator.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/BeatmapSizeCalculator.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/BottomAnchored.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/BottomAnchored.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/CanvasScaler.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/CanvasScaler.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/CopyPasteHitObjectSet.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/CopyPasteHitObjectSet.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/CreatingHitObjectSet.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/CreatingHitObjectSet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/DuplicatingHitObjectSet.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/DuplicatingHitObjectSet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ErrorPhysics2D.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ErrorPhysics2D.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ErrorPhysics2DSettings.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ErrorPhysics2DSettings.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircleApproachCircle.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircleApproachCircle.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircleAt00.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircleAt00.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircleAt511383.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircleAt511383.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircleBorder.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircleBorder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircleBorderRectTransform.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircleBorderRectTransform.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircleBorderRectTransform0.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircleBorderRectTransform0.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircleBorderScale0.65.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircleBorderScale0.65.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircleBorderScale1.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircleBorderScale1.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircleBorderSourceImage.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircleBorderSourceImage.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircleCircle.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircleCircle.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircleCollider.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircleCollider.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCirclePrefab.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCirclePrefab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCirclePrefabOverride.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCirclePrefabOverride.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCirclePrefabVariant.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCirclePrefabVariant.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCirclePreviewSize.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCirclePreviewSize.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircleReplacedWithSquare.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircleReplacedWithSquare.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircleText.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircleText.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitCircles.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitCircles.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitEffectsSet.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitEffectsSet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitObjectArea.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitObjectArea.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitObjectColours.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitObjectColours.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitObjectContainerTooltip.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitObjectContainerTooltip.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitObjectManager.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitObjectManager.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitObjectManagerAudioSource.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitObjectManagerAudioSource.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitObjectManagerCanvasScaler.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitObjectManagerCanvasScaler.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitObjectManagerOverridingHitObjectSet.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitObjectManagerOverridingHitObjectSet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitObjectManagerScriptableObjects.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitObjectManagerScriptableObjects.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitObjectSet.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitObjectSet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitObjectSettings.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitObjectSettings.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitSquare.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitSquare.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HitSquaresInGame.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HitSquaresInGame.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/MainCameraStack.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/MainCameraStack.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/MouseDanceLogo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/MouseDanceLogo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/MyBeatmapRunnerInspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/MyBeatmapRunnerInspector.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/MyHitObjectSet.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/MyHitObjectSet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/MyHitObjectSetAssigned.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/MyHitObjectSetAssigned.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/MyHitObjectSetInGame.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/MyHitObjectSetInGame.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/MyHitObjectSetInGame2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/MyHitObjectSetInGame2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Ouendan.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Ouendan.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Physics2DLayerCollisions.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Physics2DLayerCollisions.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Physics2DSettings.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Physics2DSettings.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/QueriesHitTriggers.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/QueriesHitTriggers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SDF/AntiAliasing.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SDF/AntiAliasing.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SDF/BorderEnd.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SDF/BorderEnd.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SDF/BorderStart.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SDF/BorderStart.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SDF/CenterLine.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SDF/CenterLine.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SDF/GradientEnd.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SDF/GradientEnd.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SDF/GradientStart.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SDF/GradientStart.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SDF/Thickness.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SDF/Thickness.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SDFCam.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SDFCam.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SDFCanvas.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SDFCanvas.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SDFContainer.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SDFContainer.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SDFScreenAdjust.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SDFScreenAdjust.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Screenshots01/01.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Screenshots01/01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Screenshots01/02.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Screenshots01/02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Screenshots01/03.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Screenshots01/03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Screenshots01/04.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Screenshots01/04.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Screenshots01/05.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Screenshots01/05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SliderBall.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SliderBall.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SliderBall3dModel.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SliderBall3dModel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SliderBallCollider2d.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SliderBallCollider2d.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SliderBallRollAxis.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SliderBallRollAxis.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SliderBody.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SliderBody.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SliderCap.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SliderCap.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Sliders.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Sliders.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SoundEffectSet.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SoundEffectSet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/TooltipOnHitObjectSet.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/TooltipOnHitObjectSet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/TooltipOnSoundEffectSet.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/TooltipOnSoundEffectSet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/UICamera.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/UICamera.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/UICameraCullingMask.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/UICameraCullingMask.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/UPMPhysics2D.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/UPMPhysics2D.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/UnityPackageImport.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/UnityPackageImport.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/UnityUICanvasCamera.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/UnityUICanvasCamera.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ViewCamForBall.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ViewCamForBall.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/arrow-right.svg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/arrow-right.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "L4k+U4xn2UNkYHKyQyHlEwsFibn6LrLbBWVSm5aHRWA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 36,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 75,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sliders | MouseDance User Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Sliders | MouseDance User Docs ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+
+  <body>
+        <div class="top-navbar">
+
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="24" height="24" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+            
+            <a class="brand" href="../index.html">
+              <img src="../logo.svg" alt="MouseDance" class="logomark">
+              <span class="brand-title">MouseDance</span>
+            </a>
+        </div>
+
+        <div class="body-content">
+
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    <div>
+                      <div class="mobile-hide">
+                        
+                        <a class="brand" href="../index.html">
+                          <img src="../logo.svg" alt="MouseDance" class="logomark">
+                          <span class="brand-title">MouseDance</span>
+                        </a>  </div>
+
+                    
+                      <div id="navbar">
+                      </div>
+                    
+                    </div>
+
+
+                    <div class="sidebar-item-separator"></div>
+
+                        
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+
+                </div>
+
+                <div class="footer">
+                  MouseDance User Docs powered by <a href='https://dotnet.github.io/docfx'>DocFx</a>, <a href='https://github.com/jbltx/DiscordFX'>DiscordFx</a>
+                  
+                </div>
+            </nav>
+
+            <main class="main-panel">
+
+
+                <div role="main" class="main-panel-content hide-when-search">
+
+                        
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                    <article class="content wrap" id="_content" data-uid="">
+<h1 id="sliders">Sliders</h1>
+
+<p>Slider Start and End Caps are displayed using the same technique as explained for <a href="hit_circles.html">Hit Circles</a>.</p>
+<style>
+.SliderContainer {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.SliderCap {
+  position: relative;
+  top: 0;
+  left: 0;
+  animation: HideShow 2s infinite steps(2, end);
+}
+.SliderBody {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+@keyframes HideShow {
+  from { visibility: hidden; }
+  to { visibility: visible; }
+}
+@keyframes ShowHide {
+  from { visibility: visible; }
+  to { visibility: hidden; }
+}
+.SliderBodyText {
+  position: relative;
+  top: 0;
+  left: 0;
+  animation: ShowHide 2s infinite steps(2, start);
+}
+.SliderCapText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: HideShow 2s infinite steps(2, end);
+}
+</style>
+<div class="SliderContainer">
+<div class="SliderBodyText">Slider Without Caps</div>
+<div class="SliderCapText">Slider With Caps</div>
+</div>
+<div class="SliderContainer">
+  <div class="SliderBody">
+    <img alt="Slider" src="../resources/SliderBody.png">
+  </div>
+  <div class="SliderCap">
+    <img alt="Slider" src="../resources/SliderCap.png">
+  </div>
+</div>
+<p>But the curve body of a Slider is rendered using a technique called Signed Distance Field. This produces accurate shapes even when the lines are thickened.</p>
+<p>While most of its visual properties can't be manually edited (e.g. curve thickness is controlled by the .osu file's Circle Size property, colours are controlled by the <a href="hit_object_colours.html">Hit Object Colours</a>, there are some visual properties you can edit.</p>
+<p>In the <code>MouseDance/Materials</code> folder, you can edit the <code>SDF Curve.mat</code>. This is the material that the SDF Curve Prefab uses.</p>
+<h2 id="border-start-and-end">Border Start and End</h2>
+<p><img src="../resources/SDF/BorderStart.gif" alt="SDF Curve Border Start"></p>
+<p><img src="../resources/SDF/BorderEnd.gif" alt="SDF Curve Border End"></p>
+<p>Slider curves have a border surrounding it. You can change the thickness, move it closer to the center, or set the values to <code>0</code> if you don’t want any border.</p>
+<h2 id="center-line">Center Line</h2>
+<p><img src="../resources/SDF/CenterLine.gif" alt="SDF Curve Center Line"></p>
+<p>Slider curves can optionally have a line at its center. Set this to <code>-1.0</code> if you don’t want it.</p>
+<h2 id="gradient-start-and-end-adjust">Gradient Start and End Adjust</h2>
+<p><img src="../resources/SDF/GradientStart.gif" alt="SDF Curve Gradient Start"></p>
+<p><img src="../resources/SDF/GradientEnd.gif" alt="SDF Curve Gradient End"></p>
+<p>Slider curves feature a gradient starting from the center of the line, going outward. You can adjust where the gradient starts and ends. These values are normalized. Start Adjust defaults at <code>1.0</code>. End Adjust defaults at <code>0.0</code>.</p>
+<h2 id="anti-aliasing-smoothness">Anti-aliasing Smoothness</h2>
+<p><img src="../resources/SDF/AntiAliasing.gif" alt="SDF Curve Anti-alias"></p>
+<p>Slider curves come with their own built-in anti-aliasing. This is independent of your post-processing anti-alias. A value of <code>0.1</code> is more than enough. Too high and the curve will end up blurry, too low and it will have no effect.</p>
+</article>
+              
+                </div>
+            </main>
+        </div>
+
+        
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<script type="text/javascript" src="../styles/jquery.twbsPagination.js"></script>
+<script type="text/javascript" src="../styles/url.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>

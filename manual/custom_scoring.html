@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Customizing Scoring | MouseDance User Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Customizing Scoring | MouseDance User Docs ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+
+  <body>
+        <div class="top-navbar">
+
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="24" height="24" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+            
+            <a class="brand" href="../index.html">
+              <img src="../logo.svg" alt="MouseDance" class="logomark">
+              <span class="brand-title">MouseDance</span>
+            </a>
+        </div>
+
+        <div class="body-content">
+
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    <div>
+                      <div class="mobile-hide">
+                        
+                        <a class="brand" href="../index.html">
+                          <img src="../logo.svg" alt="MouseDance" class="logomark">
+                          <span class="brand-title">MouseDance</span>
+                        </a>  </div>
+
+                    
+                      <div id="navbar">
+                      </div>
+                    
+                    </div>
+
+
+                    <div class="sidebar-item-separator"></div>
+
+                        
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+
+                </div>
+
+                <div class="footer">
+                  MouseDance User Docs powered by <a href='https://dotnet.github.io/docfx'>DocFx</a>, <a href='https://github.com/jbltx/DiscordFX'>DiscordFx</a>
+                  
+                </div>
+            </nav>
+
+            <main class="main-panel">
+
+
+                <div role="main" class="main-panel-content hide-when-search">
+
+                        
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                    <article class="content wrap" id="_content" data-uid="">
+<h1 id="customizing-scoring">Customizing Scoring</h1>
+
+<p>By default, MouseDance is doing only a simple <code>score * combo counter * difficulty</code> formula for scoring. If you want to change it, the proper way to do this is to implement <a class="xref" href="../api/MouseDance.Runtime.Callbacks.IBeatmapScoreCalculator.html">IBeatmapScoreCalculator</a>:</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>MouseDance has no HP Drain functionality yet, so it can't take that into account in the scoring formula for now (check the <a href="roadmap.html">Roadmap</a> and <a href="release_notes.html">Release Notes</a> for updates to this). It also has no Game modifiers yet, so that is also not included in the score formula. As it is, it can't exactly do the same <a href="https://osu.ppy.sh/wiki/en/Gameplay/Score/ScoreV1/osu%21">scoring formulae</a> in <em>Osu!</em>.</p>
+</div>
+<pre><code class="lang-csharp">public class BasicUsage : UnityEngine.MonoBehaviour, MouseDance.Runtime.Callbacks.IBeatmapScoreCalculator
+{
+  public MouseDance.Runtime.BeatmapRunner _beatmapRunner;
+  public UnityEngine.TextAsset _osuFile;
+  public UnityEngine.AudioClip _song;
+  
+  void Start()
+  {
+    _beatmapRunner.SetScoreCalculator(this);
+    _beatmapRunner.LoadAndStart(_osuFile, _song);
+  }
+  
+  public int CalculateScore(MouseDance.Runtime.IHitObject hitCircle, int gotHitCircleValue, OsuParsers.Beatmaps.Beatmap beatmap)
+  {
+    int difficultyModifier = Mathf.RoundToInt((beatmap.DifficultySection.CircleSize + beatmap.DifficultySection.OverallDifficulty) / 38 * 5); // This is just following the wiki as close as I can, I honestly don't know where the 38 * 5 came from
+    return gotHitCircleValue * (1 + ((hitCircle.ComboCounter-1) * difficultyModifier));
+  }
+
+  public int CalculateScore(MouseDance.Runtime.IHitObject slider, int gotSliderHeadScore, int collectedSliderParts, int totalSliderParts, bool pressWasEverReleased, OsuParsers.Beatmaps.Beatmap beatmap)
+  {
+    // Out of the percent of collected vs total, this will return either 0, 50, 100, or 300:
+    // 66% to 100%: 300
+    // 33% to 66% : 100
+    // &gt;0 to 33%  : 50
+    // 0%         : 0
+    int sliderCompletionScore = BeatmapUtil.GetSliderBaseScore(collectedSliderParts, totalSliderParts);
+
+    int sliderValue = 0;
+    
+    // Allow a 300 score only if the player got 300 when hitting the Slider's head, and never releasing their hold on the mouse button
+    if (!pressWasEverReleased &amp;&amp; sliderCompletionScore == 300 &amp;&amp; gotSliderHeadScore == 300)
+    {
+      sliderValue = 300;
+    }
+    // Allow a 100 score only if the player also got at least 100 when hitting the Slider's head
+    else if (sliderCompletionScore &gt;= 100 &amp;&amp; gotSliderHeadScore &gt;= 100)
+    {
+      sliderValue = 100;
+    }
+    else if (sliderCompletionScore == 50)
+    {
+      sliderValue = 50;
+    }
+
+    int difficultyModifier = Mathf.RoundToInt((beatmap.DifficultySection.CircleSize + beatmap.DifficultySection.OverallDifficulty) / 38 * 5); // This is just following the wiki as close as I can, I honestly don't know where the 38 * 5 came from
+    return sliderValue * (1 + ((slider.ComboCounter-1) * difficultyModifier));
+  }
+}
+</code></pre>
+<p>Note that <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner_SetScoreCalculator_MouseDance_Runtime_Callbacks_IBeatmapScoreCalculator_"><code>BeatmapRunner.SetScoreCalculator</code></a> is called before starting the beatmap.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>If your <code>CalculateScore</code> methods don't seem to be getting called, check if you've properly called <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner_SetScoreCalculator_MouseDance_Runtime_Callbacks_IBeatmapScoreCalculator_"><code>SetScoreCalculator</code></a>.
+For every BeatmapRunner, there can be at most only one active <code>IBeatmapScoreCalculator</code> in use.</p>
+<p><code>BeatmapRunner</code> in the Inspector will show you which callbacks have been registered. The one labeled <code>IBeatmapScoreCalculator</code> should be green once the game is running.</p>
+<p>The name of the registered callback's concrete type will be displayed (namespace and class name). If it is a <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html"><code>MonoBehaviour</code></a> type, it'll show the actual file instead. You can click on that to ping it in the Project tab.</p>
+<p><img src="../resources/BeatmapSizeCalculator.png" alt="Beatmap Runner Diagnostics"></p>
+<p>This GUI is only for debugging. It is not designed or intended to register callbacks from the GUI.</p>
+</div>
+</article>
+              
+                </div>
+            </main>
+        </div>
+
+        
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<script type="text/javascript" src="../styles/jquery.twbsPagination.js"></script>
+<script type="text/javascript" src="../styles/url.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Custom Circle Size | MouseDance User Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Custom Circle Size | MouseDance User Docs ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+
+  <body>
+        <div class="top-navbar">
+
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="24" height="24" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+            
+            <a class="brand" href="../index.html">
+              <img src="../logo.svg" alt="MouseDance" class="logomark">
+              <span class="brand-title">MouseDance</span>
+            </a>
+        </div>
+
+        <div class="body-content">
+
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    <div>
+                      <div class="mobile-hide">
+                        
+                        <a class="brand" href="../index.html">
+                          <img src="../logo.svg" alt="MouseDance" class="logomark">
+                          <span class="brand-title">MouseDance</span>
+                        </a>  </div>
+
+                    
+                      <div id="navbar">
+                      </div>
+                    
+                    </div>
+
+
+                    <div class="sidebar-item-separator"></div>
+
+                        
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+
+                </div>
+
+                <div class="footer">
+                  MouseDance User Docs powered by <a href='https://dotnet.github.io/docfx'>DocFx</a>, <a href='https://github.com/jbltx/DiscordFX'>DiscordFx</a>
+                  
+                </div>
+            </nav>
+
+            <main class="main-panel">
+
+
+                <div role="main" class="main-panel-content hide-when-search">
+
+                        
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                    <article class="content wrap" id="_content" data-uid="">
+<h1 id="custom-circle-size">Custom Circle Size</h1>
+
+<p>Circle Size is normally a constant value throughout the Beatmap, but with some simple tweaks, you can change it however you want.</p>
+<p>The proper way to do this is to implement <a class="xref" href="../api/MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator.html">IHitObjectSizeCalculator</a>:</p>
+<pre><code class="lang-csharp">public class BasicUsage : UnityEngine.MonoBehaviour, MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator
+{
+  public MouseDance.Runtime.BeatmapRunner _beatmapRunner;
+  public UnityEngine.TextAsset _osuFile;
+  public UnityEngine.AudioClip _song;
+
+  void Start()
+  {
+    _beatmapRunner.SetHitObjectSizeCalculator(this);
+    _beatmapRunner.LoadAndStart(_osuFile, _song);
+  }
+  
+  public float GetHitCircleRadius(int idx, int comboCounter, int comboColourIdx, OsuParsers.Beatmaps.Objects.HitCircle hitCircle, OsuParsers.Beatmaps.Beatmap beatmap)
+  {
+    return GetDiminishingRadius(idx, comboCounter, beatmap);
+  }
+  
+  public float GetSliderCircleRadius(int idx, int comboCounter, int comboColourIdx, OsuParsers.Beatmaps.Objects.Slider slider, OsuParsers.Beatmaps.Beatmap beatmap)
+  {
+    return GetDiminishingRadius(idx, comboCounter, beatmap);
+  }
+  
+  static float GetDiminishingRadius(int idx, int comboCounter, OsuParsers.Beatmaps.Beatmap beatmap)
+  {
+    // get the last combo counter for this Hit Object
+    int lastComboCounter = comboCounter;
+    int lastComboIdx = idx;
+    while (lastComboIdx+1 &lt; beatmap.HitObjects.Count &amp;&amp; !beatmap.HitObjects[lastComboIdx+1].IsNewCombo)
+    {
+      ++lastComboCounter;
+      ++lastComboIdx;
+    }
+    
+    float percentToCombo = (float)comboCounter / lastComboCounter;
+    
+    // We will return higher Circle Size (i.e. smaller radius) the closer we are to completing the combo.
+    
+    // We'll lerp between the radius values, instead of the Circle Size. This will give a smoother transition.
+    float largest = MouseDance.Runtime.BeatmapUtil.GetCircleRadius(0);
+    float smallest = MouseDance.Runtime.BeatmapUtil.GetCircleRadius(10);
+    return UnityEngine.Mathf.Lerp(largest, smallest, percentToCombo);
+  }
+}
+</code></pre>
+<p>Note that <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner_SetHitObjectSizeCalculator_MouseDance_Runtime_Callbacks_IHitObjectSizeCalculator_"><code>BeatmapRunner.SetHitObjectSizeCalculator</code></a> is called before starting the beatmap.</p>
+<p>The <a class="xref" href="../api/MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator.html#MouseDance_Runtime_Callbacks_IHitObjectSizeCalculator_GetHitCircleRadius_System_Int32_System_Int32_System_Int32_OsuParsers_Beatmaps_Objects_HitCircle_OsuParsers_Beatmaps_Beatmap_"><code>GetHitCircleRadius</code></a> and <a class="xref" href="../api/MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator.html#MouseDance_Runtime_Callbacks_IHitObjectSizeCalculator_GetSliderCircleRadius_System_Int32_System_Int32_System_Int32_OsuParsers_Beatmaps_Objects_Slider_OsuParsers_Beatmaps_Beatmap_"><code>GetSliderCircleRadius</code></a> methods are called for every Hit Circle and Slider displayed on-screen.</p>
+<p>The return values there should be the circle radius in <a href="https://osu.ppy.sh/wiki/en/Client/Beatmap_editor/osu%21_pixel">Osu!pixels</a>, not the 0 to 10 <a href="https://osu.ppy.sh/wiki/en/Beatmap/Circle_size">Circle Size</a> Difficulty value. If you want to convert a Circle Size value to the radius it represents, use <a class="xref" href="../api/MouseDance.Runtime.BeatmapUtil.html#MouseDance_Runtime_BeatmapUtil_GetCircleRadius_System_Single_"><code>BeatmapUtil.GetCircleRadius</code></a>.</p>
+<p>Despite all that, MouseDance will only do minimal safety checks on the return value. You can return <code>1000</code> if you really want. But if you return <code>0</code> or negative, MouseDance will change back to using the radius as determined by the .osu file's Circle Size setting.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If you were trying to hide/remove a Hit Object by setting its size to 0, it's better if you instead remove that Hit Object altogether by directly editing the list of Hit Objects in the Beatmap data using <a class="xref" href="../api/MouseDance.Runtime.Callbacks.IBeatmapLoaded.html#MouseDance_Runtime_Callbacks_IBeatmapLoaded_OnBeatmapLoaded_OsuParsers_Beatmaps_Beatmap_"><code>OnBeatmapLoaded</code></a>. See <a href="custom_beatmap.html">Customizing the Beatmap</a> for an example.</p>
+</div>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>If your custom code don't seem to be getting used, check if you've properly called <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner_SetHitObjectSizeCalculator_MouseDance_Runtime_Callbacks_IHitObjectSizeCalculator_"><code>BeatmapRunner.SetHitObjectSizeCalculator</code></a>.
+For every BeatmapRunner, there can be at most only one active <code>IHitObjectSizeCalculator</code> in use.</p>
+<p><code>BeatmapRunner</code> in the Inspector will show you which callbacks have been registered. The one labeled <code>IBeatmapInput</code> should be green once the game is running.</p>
+<p>The name of the registered callback's concrete type will be displayed (namespace and class name). If it is a <code>MonoBehaviour</code> type, it'll show the actual file instead. You can click on it to ping it in the Project tab.</p>
+<p><img src="../resources/BeatmapSizeCalculator.png" alt="IHitObjectSizeCalculator Callback Registered"></p>
+<p>This GUI is only for debugging. It is not designed or intended to register callbacks from the GUI.</p>
+</div>
+</article>
+              
+                </div>
+            </main>
+        </div>
+
+        
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<script type="text/javascript" src="../styles/jquery.twbsPagination.js"></script>
+<script type="text/javascript" src="../styles/url.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>

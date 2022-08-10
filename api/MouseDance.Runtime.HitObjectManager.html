@@ -1,0 +1,1121 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HitObjectManager
+   | MouseDance User Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HitObjectManager
+   | MouseDance User Docs ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+
+  <body>
+        <div class="top-navbar">
+
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="24" height="24" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+            
+            <a class="brand" href="../index.html">
+              <img src="../logo.svg" alt="MouseDance" class="logomark">
+              <span class="brand-title">MouseDance</span>
+            </a>
+        </div>
+
+        <div class="body-content">
+
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    <div>
+                      <div class="mobile-hide">
+                        
+                        <a class="brand" href="../index.html">
+                          <img src="../logo.svg" alt="MouseDance" class="logomark">
+                          <span class="brand-title">MouseDance</span>
+                        </a>  </div>
+
+                    
+                      <div id="navbar">
+                      </div>
+                    
+                    </div>
+
+
+                    <div class="sidebar-item-separator"></div>
+
+                        
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+
+                </div>
+
+                <div class="footer">
+                  MouseDance User Docs powered by <a href='https://dotnet.github.io/docfx'>DocFx</a>, <a href='https://github.com/jbltx/DiscordFX'>DiscordFx</a>
+                  
+                </div>
+            </nav>
+
+            <main class="main-panel">
+
+
+                <div role="main" class="main-panel-content hide-when-search">
+
+                        
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                    <article class="content wrap" id="_content" data-uid="MouseDance.Runtime.HitObjectManager">
+  
+  
+  <h1 id="MouseDance_Runtime_HitObjectManager" data-uid="MouseDance.Runtime.HitObjectManager" class="text-break">Class HitObjectManager
+  </h1>
+  <div class="markdown level0 summary"><p>Responsible for spawning and pooling Hit Objects and visual effects, plus playing any sound effects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.html">Component</a></div>
+    <div class="level3"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour.html">Behaviour</a></div>
+    <div class="level4"><a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+    <div class="level5"><span class="xref">HitObjectManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MouseDance.Runtime.html">MouseDance.Runtime</a></h6>
+  <h6><strong>Assembly</strong>: MouseDance.Runtime.dll</h6>
+  <h5 id="MouseDance_Runtime_HitObjectManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HitObjectManager : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_GetHitObjectSizeCalculatorType_" data-uid="MouseDance.Runtime.HitObjectManager.GetHitObjectSizeCalculatorType*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_GetHitObjectSizeCalculatorType" data-uid="MouseDance.Runtime.HitObjectManager.GetHitObjectSizeCalculatorType">GetHitObjectSizeCalculatorType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type GetHitObjectSizeCalculatorType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_HasHitObjectSizeCalculator_" data-uid="MouseDance.Runtime.HitObjectManager.HasHitObjectSizeCalculator*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_HasHitObjectSizeCalculator" data-uid="MouseDance.Runtime.HitObjectManager.HasHitObjectSizeCalculator">HasHitObjectSizeCalculator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasHitObjectSizeCalculator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_CleanUp_" data-uid="MouseDance.Runtime.HitObjectManager.CleanUp*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_CleanUp" data-uid="MouseDance.Runtime.HitObjectManager.CleanUp">CleanUp()</h4>
+  <div class="markdown level1 summary"><p>Despawn all currently used instances.
+Used when player chooses to restart the beatmap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CleanUp()</code></pre>
+  </div>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_Despawn_" data-uid="MouseDance.Runtime.HitObjectManager.Despawn*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_Despawn_MouseDance_Runtime_HitCircle_" data-uid="MouseDance.Runtime.HitObjectManager.Despawn(MouseDance.Runtime.HitCircle)">Despawn(HitCircle)</h4>
+  <div class="markdown level1 summary"><p>Mark a Hit Circle as now completely used up,
+so that it is ready to be re-used later on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Despawn(HitCircle hitCircle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.HitCircle.html">HitCircle</a></td>
+        <td><span class="parametername">hitCircle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_Despawn_" data-uid="MouseDance.Runtime.HitObjectManager.Despawn*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_Despawn_MouseDance_Runtime_Slider_" data-uid="MouseDance.Runtime.HitObjectManager.Despawn(MouseDance.Runtime.Slider)">Despawn(Slider)</h4>
+  <div class="markdown level1 summary"><p>Mark a Slider as now completely used up,
+so that it is ready to be re-used later on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Despawn(Slider slider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.Slider.html">Slider</a></td>
+        <td><span class="parametername">slider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_DespawnSliderTick_" data-uid="MouseDance.Runtime.HitObjectManager.DespawnSliderTick*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_DespawnSliderTick_MouseDance_Runtime_SliderTick_" data-uid="MouseDance.Runtime.HitObjectManager.DespawnSliderTick(MouseDance.Runtime.SliderTick)">DespawnSliderTick(SliderTick)</h4>
+  <div class="markdown level1 summary"><p>Mark a Slider Tick as now completely used up,
+so that it is ready to be re-used later on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DespawnSliderTick(SliderTick sliderTick)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.SliderTick.html">SliderTick</a></td>
+        <td><span class="parametername">sliderTick</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_GetHitObjectByName_" data-uid="MouseDance.Runtime.HitObjectManager.GetHitObjectByName*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_GetHitObjectByName_System_String_" data-uid="MouseDance.Runtime.HitObjectManager.GetHitObjectByName(System.String)">GetHitObjectByName(String)</h4>
+  <div class="markdown level1 summary"><p>Get a reference to a currently used Hit Object based on the GameObject name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IHitObjectWithEvents GetHitObjectByName(string gameObjectName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">gameObjectName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObjectWithEvents.html">IHitObjectWithEvents</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_GetSliderByIndex_" data-uid="MouseDance.Runtime.HitObjectManager.GetSliderByIndex*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_GetSliderByIndex_System_Int32_" data-uid="MouseDance.Runtime.HitObjectManager.GetSliderByIndex(System.Int32)">GetSliderByIndex(Int32)</h4>
+  <div class="markdown level1 summary"><p>Get a reference to a Slider based on its index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISlider GetSliderByIndex(int idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.ISlider.html">ISlider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_OnHit_" data-uid="MouseDance.Runtime.HitObjectManager.OnHit*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_OnHit_MouseDance_Runtime_IHitObject_System_Single_System_Int32_" data-uid="MouseDance.Runtime.HitObjectManager.OnHit(MouseDance.Runtime.IHitObject,System.Single,System.Int32)">OnHit(IHitObject, Single, Int32)</h4>
+  <div class="markdown level1 summary"><p>Spawns effects and/or plays hit sound for when user successfully hit a Hit Circle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHit(IHitObject hitObject, float result, int score)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObject.html">IHitObject</a></td>
+        <td><span class="parametername">hitObject</span></td>
+        <td><p>The Hit Circle that was hit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>Normalized value indicating if user pressed within correct time window.
+-1 to +1 is a hit.
+Any value outside that (lesser than -1 or greater than +1) means miss
+(negative for too early, positive for too late).
+0 means user pressed exactly at hit circle's time.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">score</span></td>
+        <td><p>score given for this particular pressed hit circle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_OnHitOutOfSequence_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitOutOfSequence*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_OnHitOutOfSequence_MouseDance_Runtime_IHitObject_System_String_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitOutOfSequence(MouseDance.Runtime.IHitObject,System.String)">OnHitOutOfSequence(IHitObject, String)</h4>
+  <div class="markdown level1 summary"><p>Spawns effects and/or plays error sound meant for when user
+tries to hit a hit object that isn't supposed to be hit yet
+(e.g. trying to hit 2 when 1 hasn't been hit yet).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHitOutOfSequence(IHitObject hitObject, string effectsId = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObject.html">IHitObject</a></td>
+        <td><span class="parametername">hitObject</span></td>
+        <td><p>Used for figuring out where to position the visual effects and what colour to give it, if any.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">effectsId</span></td>
+        <td><p>Optional. Identifier for the visual/sound effect you want to be played. Leave at null to use defaults.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_OnHitSliderEnd_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitSliderEnd*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_OnHitSliderEnd_MouseDance_Runtime_IHitObject_MouseDance_Runtime_SliderReachType_System_Boolean_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitSliderEnd(MouseDance.Runtime.IHitObject,MouseDance.Runtime.SliderReachType,System.Boolean,System.Int32,System.Int32,System.Int32,System.Boolean)">OnHitSliderEnd(IHitObject, SliderReachType, Boolean, Int32, Int32, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Spawns effects and/or plays hit sound for when user
+successfully keeps holding mouse down on the slider ball
+once it has finished going through a slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHitSliderEnd(IHitObject slider, SliderReachType reachType, bool reachedEnd, int headScore = -1, int partsPressed = -1, int partsTotal = -1, bool wasReleased = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObject.html">IHitObject</a></td>
+        <td><span class="parametername">slider</span></td>
+        <td><p>The slider whose tail was hit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.SliderReachType.html">SliderReachType</a></td>
+        <td><span class="parametername">reachType</span></td>
+        <td><p>Whether the ball has reached the Slider's tail or head.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">reachedEnd</span></td>
+        <td><p>True: ball has reached the end of movement for this Slider, there are no more repeats.
+False: Ball will repeat movement on this slider.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">headScore</span></td>
+        <td><p>Determines whether player did a perfect press on the Slider head (start cap) or not.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">partsPressed</span></td>
+        <td><p>Number of Slider parts that the player successfully hit (head, ticks, tail).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">partsTotal</span></td>
+        <td><p>Number of parts that the Slider has (head, ticks, tail).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">wasReleased</span></td>
+        <td><p>Did user ever release the mouse button when the slider was pressed?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_OnHitSliderStart_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitSliderStart*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_OnHitSliderStart_MouseDance_Runtime_IHitObject_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitSliderStart(MouseDance.Runtime.IHitObject)">OnHitSliderStart(IHitObject)</h4>
+  <div class="markdown level1 summary"><p>Spawns effects and/or plays hit sound for when user
+successfully hits Slider Head at the start of the Slider time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHitSliderStart(IHitObject slider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObject.html">IHitObject</a></td>
+        <td><span class="parametername">slider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_OnHitSliderTick_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitSliderTick*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_OnHitSliderTick_MouseDance_Runtime_SliderTick_System_Boolean_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitSliderTick(MouseDance.Runtime.SliderTick,System.Boolean)">OnHitSliderTick(SliderTick, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Called when Slider Ball reached a Slider Tick so that it can be removed
+and play the corresponding hit sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHitSliderTick(SliderTick sliderTick, bool didUserHitTick)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.SliderTick.html">SliderTick</a></td>
+        <td><span class="parametername">sliderTick</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">didUserHitTick</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_OnHitTooEarly_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitTooEarly*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_OnHitTooEarly_MouseDance_Runtime_IHitObject_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitTooEarly(MouseDance.Runtime.IHitObject)">OnHitTooEarly(IHitObject)</h4>
+  <div class="markdown level1 summary"><p>Spawns effects and/or plays error sound meant for when user
+tries to hit a hit object that was supposed to be hit,
+but it's not yet time to hit it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHitTooEarly(IHitObject hitObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObject.html">IHitObject</a></td>
+        <td><span class="parametername">hitObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_OnHitTooLate_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitTooLate*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_OnHitTooLate_MouseDance_Runtime_IHitObject_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitTooLate(MouseDance.Runtime.IHitObject)">OnHitTooLate(IHitObject)</h4>
+  <div class="markdown level1 summary"><p>Spawns effects and/or plays error sound meant for when user
+tries to hit a hit object that was supposed to be hit,
+but whose time is already up.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHitTooLate(IHitObject hitObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObject.html">IHitObject</a></td>
+        <td><span class="parametername">hitObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_OnHitWrong_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitWrong*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_OnHitWrong_MouseDance_Runtime_IHitObject_System_String_" data-uid="MouseDance.Runtime.HitObjectManager.OnHitWrong(MouseDance.Runtime.IHitObject,System.String)">OnHitWrong(IHitObject, String)</h4>
+  <div class="markdown level1 summary"><p>Spawns effects and/or plays error sound meant for when user
+tries to hit a hit object but is somehow not allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHitWrong(IHitObject hitObject, string effectsId = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObject.html">IHitObject</a></td>
+        <td><span class="parametername">hitObject</span></td>
+        <td><p>Used for figuring out where to position the visual effects and what colour to give it, if any.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">effectsId</span></td>
+        <td><p>Optional. Identifier for the visual/sound effect you want to be played. Leave at null to use defaults.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_OnMiss_" data-uid="MouseDance.Runtime.HitObjectManager.OnMiss*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_OnMiss_MouseDance_Runtime_IHitObject_" data-uid="MouseDance.Runtime.HitObjectManager.OnMiss(MouseDance.Runtime.IHitObject)">OnMiss(IHitObject)</h4>
+  <div class="markdown level1 summary"><p>Spawns effects and/or plays sound for when user missed a Hit Object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMiss(IHitObject hitObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObject.html">IHitObject</a></td>
+        <td><span class="parametername">hitObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_RecalculateDisplayedHitObjectSize_" data-uid="MouseDance.Runtime.HitObjectManager.RecalculateDisplayedHitObjectSize*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_RecalculateDisplayedHitObjectSize" data-uid="MouseDance.Runtime.HitObjectManager.RecalculateDisplayedHitObjectSize">RecalculateDisplayedHitObjectSize()</h4>
+  <div class="markdown level1 summary"><p>Recalculate the size of currently displayed Hit Objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RecalculateDisplayedHitObjectSize()</code></pre>
+  </div>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_SetBeatmap_" data-uid="MouseDance.Runtime.HitObjectManager.SetBeatmap*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_SetBeatmap_OsuParsers_Beatmaps_Beatmap_" data-uid="MouseDance.Runtime.HitObjectManager.SetBeatmap(OsuParsers.Beatmaps.Beatmap)">SetBeatmap(Beatmap)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBeatmap(Beatmap newBeatmap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OsuParsers.Beatmaps.Beatmap</span></td>
+        <td><span class="parametername">newBeatmap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_SetColours_" data-uid="MouseDance.Runtime.HitObjectManager.SetColours*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_SetColours_OsuParsers_Beatmaps_Sections_BeatmapColoursSection_" data-uid="MouseDance.Runtime.HitObjectManager.SetColours(OsuParsers.Beatmaps.Sections.BeatmapColoursSection)">SetColours(BeatmapColoursSection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColours(BeatmapColoursSection newColours)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OsuParsers.Beatmaps.Sections.BeatmapColoursSection</span></td>
+        <td><span class="parametername">newColours</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_SetHitObjectSizeCalculator_" data-uid="MouseDance.Runtime.HitObjectManager.SetHitObjectSizeCalculator*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_SetHitObjectSizeCalculator_MouseDance_Runtime_Callbacks_IHitObjectSizeCalculator_" data-uid="MouseDance.Runtime.HitObjectManager.SetHitObjectSizeCalculator(MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator)">SetHitObjectSizeCalculator(IHitObjectSizeCalculator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHitObjectSizeCalculator(IHitObjectSizeCalculator newHitObjectSizeCalculator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator.html">IHitObjectSizeCalculator</a></td>
+        <td><span class="parametername">newHitObjectSizeCalculator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_SetInput_" data-uid="MouseDance.Runtime.HitObjectManager.SetInput*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_SetInput_MouseDance_Runtime_Callbacks_IBeatmapInput_" data-uid="MouseDance.Runtime.HitObjectManager.SetInput(MouseDance.Runtime.Callbacks.IBeatmapInput)">SetInput(IBeatmapInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInput(IBeatmapInput newBeatmapInput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapInput.html">IBeatmapInput</a></td>
+        <td><span class="parametername">newBeatmapInput</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_Spawn_" data-uid="MouseDance.Runtime.HitObjectManager.Spawn*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_Spawn_MouseDance_Runtime_BeatmapRunner_System_Double_System_Int32_System_Int32_OsuParsers_Beatmaps_Objects_HitCircle_System_Single_System_Single_System_Single_OsuParsers_Beatmaps_Beatmap_" data-uid="MouseDance.Runtime.HitObjectManager.Spawn(MouseDance.Runtime.BeatmapRunner,System.Double,System.Int32,System.Int32,OsuParsers.Beatmaps.Objects.HitCircle,System.Single,System.Single,System.Single,OsuParsers.Beatmaps.Beatmap)">Spawn(BeatmapRunner, Double, Int32, Int32, HitCircle, Single, Single, Single, Beatmap)</h4>
+  <div class="markdown level1 summary"><p>Spawn a Hit Circle with the specified position, colour, etc.
+This will re-use existing instances when possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Spawn(BeatmapRunner beatmapRunner, double beatLength, int offsetToComboIdx, int idx, HitCircle hitCircle, float positionScale, float approachStartDelay, float approachRateDuration, Beatmap beatmap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.BeatmapRunner.html">BeatmapRunner</a></td>
+        <td><span class="parametername">beatmapRunner</span></td>
+        <td><p>Needed by the Hit Circle so it can report to the game when
+player pressed that Hit Circle. This also lets the Hit Circle know if the player pressed
+too early or not, and how much score the player got.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">beatLength</span></td>
+        <td><p>Duration of a beat, in milliseconds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offsetToComboIdx</span></td>
+        <td><p>Skip combo index so this Hit Circle can be at a specific colour.
+Hit Circles already have a ComboOffset from their data in osu, but this can be used to add even more offset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>Numerical position of the Hit Circle in the entire Beatmap.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">OsuParsers.Beatmaps.Objects.HitCircle</span></td>
+        <td><span class="parametername">hitCircle</span></td>
+        <td><p>More data on this Hit Circle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">positionScale</span></td>
+        <td><p>How far from the center of the screen this Hit Circle should be placed.
+This is a multiplier so 2.0 will place this twice as far from the center of the screen.
+Set to 1.0 if you do not want any scaling.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">approachStartDelay</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">approachRateDuration</span></td>
+        <td><p>How long it will take for the Approach Circle to do its shrinking animation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">OsuParsers.Beatmaps.Beatmap</span></td>
+        <td><span class="parametername">beatmap</span></td>
+        <td><p>Data on the entire Beatmap.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_Spawn_" data-uid="MouseDance.Runtime.HitObjectManager.Spawn*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_Spawn_MouseDance_Runtime_IBeatmapRunner_System_Double_System_Int32_System_Int32_OsuParsers_Beatmaps_Objects_Slider_System_Single_System_Single_OsuParsers_Beatmaps_Beatmap_" data-uid="MouseDance.Runtime.HitObjectManager.Spawn(MouseDance.Runtime.IBeatmapRunner,System.Double,System.Int32,System.Int32,OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,OsuParsers.Beatmaps.Beatmap)">Spawn(IBeatmapRunner, Double, Int32, Int32, Slider, Single, Single, Beatmap)</h4>
+  <div class="markdown level1 summary"><p>Spawn a Slider with the specified position, colour, etc.
+This will re-use existing instances when possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Spawn(IBeatmapRunner beatmapRunner, double beatLength, int offsetToComboIdx, int idx, Slider slider, float positionScale, float approachRateDuration, Beatmap beatmap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IBeatmapRunner.html">IBeatmapRunner</a></td>
+        <td><span class="parametername">beatmapRunner</span></td>
+        <td><p>Needed by the Slider so it can report to the game when
+player pressed that Slider's head. This also lets the Slider know if the player pressed too early or not.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">beatLength</span></td>
+        <td><p>Duration of a beat, in milliseconds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offsetToComboIdx</span></td>
+        <td><p>Skip combo index so this Slider can be at a specific colour.
+Sliders already have a ComboOffset from their data in osu, but this can be used to add even more offset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>Numerical position of the Slider in the entire Beatmap.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">OsuParsers.Beatmaps.Objects.Slider</span></td>
+        <td><span class="parametername">slider</span></td>
+        <td><p>More data on this Slider.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">positionScale</span></td>
+        <td><p>How far from the center of the screen this Slider should be placed.
+This is a multiplier so 2.0 will place this twice as far from the center of the screen.
+Set to 1.0 if you do not want any scaling.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">approachRateDuration</span></td>
+        <td><p>How long it will take for the Approach Circle to do its shrinking animation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">OsuParsers.Beatmaps.Beatmap</span></td>
+        <td><span class="parametername">beatmap</span></td>
+        <td><p>Data on the entire Beatmap.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_SpawnSDFCurve_" data-uid="MouseDance.Runtime.HitObjectManager.SpawnSDFCurve*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_SpawnSDFCurve_OsuParsers_Beatmaps_Objects_Slider_System_Single_System_Single_MouseDance_Runtime_Gradient_UnityEngine_Color_" data-uid="MouseDance.Runtime.HitObjectManager.SpawnSDFCurve(OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,MouseDance.Runtime.Gradient,UnityEngine.Color)">SpawnSDFCurve(Slider, Single, Single, Gradient, Color)</h4>
+  <div class="markdown level1 summary"><p>Used by Sliders to spawn the SDF Curve for it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SDFCurve SpawnSDFCurve(Slider slider, float radius, float sliderSizeMultiplier, Gradient colour, Color borderColour)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OsuParsers.Beatmaps.Objects.Slider</span></td>
+        <td><span class="parametername">slider</span></td>
+        <td><p>Slider that this SDF Curve will be for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">radius</span></td>
+        <td><p>The radius that the Slider has, based on
+<span class="xref">OsuParsers.Beatmaps.Sections.BeatmapDifficultySection.CircleSize</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">sliderSizeMultiplier</span></td>
+        <td><p>Multiplier to the size provided by the Slider.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.Gradient.html">Gradient</a></td>
+        <td><span class="parametername">colour</span></td>
+        <td><p>Gradient colour for the curve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></td>
+        <td><span class="parametername">borderColour</span></td>
+        <td><p>Colour for the curve's border</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.SDFCurve.html">SDFCurve</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_HitObjectManager_SpawnSliderTick_" data-uid="MouseDance.Runtime.HitObjectManager.SpawnSliderTick*"></a>
+  <h4 id="MouseDance_Runtime_HitObjectManager_SpawnSliderTick_UnityEngine_Vector2_UnityEngine_Color32_" data-uid="MouseDance.Runtime.HitObjectManager.SpawnSliderTick(UnityEngine.Vector2,UnityEngine.Color32)">SpawnSliderTick(Vector2, Color32)</h4>
+  <div class="markdown level1 summary"><p>Spawn a Slider Tick at the specified position.
+This will re-use existing instances when possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SliderTick SpawnSliderTick(Vector2 pos, Color32 colour)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>Position that the Slider Tick will be in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Color32.html">Color32</a></td>
+        <td><span class="parametername">colour</span></td>
+        <td><p>Colour that the Slider Tick will be in.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.SliderTick.html">SliderTick</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MouseDance.Runtime.Util.html#MouseDance_Runtime_Util_SetLayerDeep_UnityEngine_Component_UnityEngine_LayerMask_">Util.SetLayerDeep(Component, LayerMask)</a>
+  </div>
+  <div>
+      <a class="xref" href="MouseDance.Runtime.Util.html#MouseDance_Runtime_Util_SetLayerDeep_UnityEngine_Component_System_Int32_">Util.SetLayerDeep(Component, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="MouseDance.Runtime.Util.html#MouseDance_Runtime_Util_SetLayerDeep_UnityEngine_Component_UnityEngine_LayerMask_System_Collections_Generic_Stack_UnityEngine_Transform__">Util.SetLayerDeep(Component, LayerMask, Stack&lt;Transform&gt;)</a>
+  </div>
+</article>
+              
+                </div>
+            </main>
+        </div>
+
+        
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<script type="text/javascript" src="../styles/jquery.twbsPagination.js"></script>
+<script type="text/javascript" src="../styles/url.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>
