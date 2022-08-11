@@ -41,3 +41,9 @@ article li > ul
 {
     display: block;
 }
+
+nav
+{
+    overflow-y: auto;
+    scrollbar-color: #3c1f7b #231641;
+}
