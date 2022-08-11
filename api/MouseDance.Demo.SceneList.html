@@ -6,9 +6,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Code Usage | MouseDance User Docs </title>
+    <title>Class SceneList
+   | MouseDance User Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Code Usage | MouseDance User Docs ">
+    <meta name="title" content="Class SceneList
+   | MouseDance User Docs ">
     <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -104,49 +106,27 @@
                           </div>
                         </div>
 
-                    <article class="content wrap" id="_content" data-uid="">
-<h1 id="code-usage">Code Usage</h1>
-
-<div class="TIP">
-<h5>Tip</h5>
-<p>This section is meant for experienced developers who are comfortable with programming in Unity. If you are unfamiliar with programming, or you don't understand the source code examples here, please refer to Unity's <a href="https://learn.unity.com/">Learn platform</a> first.</p>
-</div>
-<p>The simplest way you can get a beatmap to run from code looks like this:</p>
-<pre><code class="lang-csharp">public class BasicUsage : UnityEngine.MonoBehaviour
-{
-  public MouseDance.Runtime.BeatmapRunner _beatmapRunner;
-  public UnityEngine.TextAsset _osuFile;
-  public UnityEngine.AudioClip _song;
-
-  void Start()
-  {
-    _beatmapRunner.LoadAndStart(_osuFile, _song);
-  }
-}
-</code></pre>
-<div class="CAUTION">
-<h5>Caution</h5>
-<p>Take note that the <code>BeatmapRunner</code> needs to have been set up properly for this to work. To make this easier, a <code>Basic Setup</code> prefab is available for you to use in the <code>MouseDance/Demo/Prefabs</code> folder. You can also look at the demo scenes to see how it all works.</p>
-</div>
-<p>After your code calls <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner_LoadAndStart_UnityEngine_TextAsset_UnityEngine_AudioClip_"><code>LoadAndStart</code></a>, the <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html"><code>BeatmapRunner</code></a> will handle everything.</p>
-<p>Refer to the other sections on how to customize particular aspects of the game:</p>
-<ul>
-<li><a href="custom_countdown.html">Countdown Animation</a></li>
-<li><a href="custom_beatmap.html">Customizing the Beatmap</a></li>
-<li><a href="getting_results.html">Getting Game Over Event and Results</a></li>
-<li><a href="custom_input.html">Custom User-Input Detection</a></li>
-<li><a href="custom_scoring.html">Custom Scoring</a></li>
-<li><a href="custom_hit_objects.html">Custom Hit Objects</a></li>
-<li><a href="custom_hit_rules.html">Custom Hit Rules</a></li>
-<li><a href="custom_circle_size.html">Custom Circle Size</a></li>
-</ul>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>A note to developers: If you find yourself needing to change the source code inside MouseDance to fit your needs, please contact me first (contact details are in the asset package).</p>
-<p>The problem is if you edit MouseDance internal code, and then need to update it to a newer version, you would have to manually resolve the differences between your edits and the newer version of MouseDance.</p>
-<p>The proper way to customize MouseDance is using the API: implementing interface callbacks and/or sub-classing and overriding virtual methods. All the sample code shown do it this way. This is more desirable so that your code is separate from the MouseDance internal code.</p>
-<p>So if you need to, contact me and I can perhaps create a new virtual method that you can override, a new callback or event that you can subscribe to, or whatever works best for you.</p>
-</div>
+                    <article class="content wrap" id="_content" data-uid="MouseDance.Demo.SceneList">
+  
+  
+  <h1 id="MouseDance_Demo_SceneList" data-uid="MouseDance.Demo.SceneList" class="text-break">Class SceneList
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></div>
+    <div class="level3"><span class="xref">SceneList</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MouseDance.Demo.html">MouseDance.Demo</a></h6>
+  <h6><strong>Assembly</strong>: MouseDance.Demo.dll</h6>
+  <h5 id="MouseDance_Demo_SceneList_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CreateAssetMenu(fileName = &quot;HitObjectColours&quot;, menuName = &quot;MouseDance/HitObjectColours&quot;)]
+public class SceneList : ScriptableObject</code></pre>
+  </div>
 </article>
               
                 </div>

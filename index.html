@@ -20,7 +20,7 @@
     <meta property="docfx:navrel" content="toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    
+    <meta property="docfx:rel" content="">
     
   </head>
 
@@ -55,6 +55,12 @@
                           <span class="brand-title">MouseDance</span>
                         </a>  </div>
 
+                          <div class="sidesearch">
+                              <form id="search" role="search" class="search">
+                                  <svg width="20" height="20" class="search-icon" viewbox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                  <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                              </form>
+                          </div>
                     
                       <div id="navbar">
                       </div>
@@ -75,7 +81,14 @@
 
             <main class="main-panel">
 
-
+                    
+                    <div id="search-results" class="main-panel-content" style="display: none;">
+                      <h1 class="search-list">Search Results for <span></span></h1>
+                      <div class="sr-items">
+                        <p><svg class="index-loading" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></p>
+                      </div>
+                      <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+                    </div>
                 <div role="main" class="main-panel-content hide-when-search">
 
                         
@@ -94,7 +107,7 @@
 <p>MouseDance is a Unity plugin that loads .osu files and allows you to play <em>Osu!</em> style rhythm games inside Unity. This allows you to use the <em>Osu!</em> Beatmap Editor to create and playtest your own .osu files, then import them into Unity to be used in your actual game.</p>
 <div style='clear:left'></div>
 <style>
-.container {
+.screenshot-container {
   max-width: 1280px;
   width: 90%;
   position: relative;
@@ -108,24 +121,24 @@
   margin-top: 38px;
   margin-bottom: 31px;
 }
-.wrapper {
+.screenshot-wrapper {
   width: 100%;
   display: flex;
 }
-.wrapper > * {
+.screenshot-wrapper > * {
   width: 100%;
   max-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0.0;
-  animation: 20s Crossfade5Slides infinite linear;
+  animation: 20s crossfade-5-slides infinite linear;
 }
-.wrapper > *:nth-child(1) {animation-delay: 0s}
-.wrapper > *:nth-child(2) {animation-delay: 4s}
-.wrapper > *:nth-child(3) {animation-delay: 8s}
-.wrapper > *:nth-child(4) {animation-delay: 12s}
-.wrapper > *:nth-child(5) {animation-delay: 16s;position: relative;}
+.screenshot-wrapper > *:nth-child(1) {animation-delay: 0s}
+.screenshot-wrapper > *:nth-child(2) {animation-delay: 4s}
+.screenshot-wrapper > *:nth-child(3) {animation-delay: 8s}
+.screenshot-wrapper > *:nth-child(4) {animation-delay: 12s}
+.screenshot-wrapper > *:nth-child(5) {animation-delay: 16s;position: relative;}
 
 /*
 The animation changes the opacity from 0 to 1 in half a second, and, 3½ seconds later, changes it back to 0, again in half a second (between 33.33% and 37.33%).
@@ -144,7 +157,7 @@ Each slide starts its animation 4 seconds after the preceding slide. That means 
 
 */
 
-@keyframes Crossfade3Slides {
+@keyframes crossfade-3-slides {
   0% {opacity: 0.0}
   4% {opacity: 1.0}
   33.33% {opacity: 1.0}
@@ -152,7 +165,7 @@ Each slide starts its animation 4 seconds after the preceding slide. That means 
   100% {opacity: 0.0}
 }
 
-@keyframes Crossfade4Slides {
+@keyframes crossfade-4-slides {
   0% {opacity: 0.0}
   3.125% {opacity: 1.0}
   25% {opacity: 1.0}
@@ -160,7 +173,7 @@ Each slide starts its animation 4 seconds after the preceding slide. That means 
   100% {opacity: 0.0}
 }
 
-@keyframes Crossfade5Slides {
+@keyframes crossfade-5-slides {
   0% {opacity: 0.0}
   4% {opacity: 1.0}
   20% {opacity: 1.0}
@@ -168,7 +181,7 @@ Each slide starts its animation 4 seconds after the preceding slide. That means 
   100% {opacity: 0.0}
 }
 
-@keyframes Crossfade6Slides {
+@keyframes crossfade-6-slides {
   0% {opacity: 0.0}
   4% {opacity: 1.0}
   16.66% {opacity: 1.0}
@@ -176,7 +189,7 @@ Each slide starts its animation 4 seconds after the preceding slide. That means 
   100% {opacity: 0.0}
 }
 
-@keyframes Crossfade7Slides {
+@keyframes crossfade-7-slides {
   0% {opacity: 0.0}
   4% {opacity: 1.0}
   14.29% {opacity: 1.0}
@@ -184,8 +197,8 @@ Each slide starts its animation 4 seconds after the preceding slide. That means 
   100% {opacity: 0.0}
 }
 </style>
-<div class="container">
-  <div class="wrapper">
+<div class="screenshot-container">
+  <div class="screenshot-wrapper">
     <img alt="Screenshot 1" src="resources/Screenshots01/01.png">
     <img alt="Screenshot 2" src="resources/Screenshots01/02.png">
     <img alt="Screenshot 3" src="resources/Screenshots01/03.png">

@@ -727,6 +727,12 @@ references:
   isSpec: "True"
   fullName: MouseDance.Demo.ResultsDisplay.Show
   nameWithType: ResultsDisplay.Show
+- uid: MouseDance.Demo.SceneList
+  name: SceneList
+  href: api/MouseDance.Demo.SceneList.html
+  commentId: T:MouseDance.Demo.SceneList
+  fullName: MouseDance.Demo.SceneList
+  nameWithType: SceneList
 - uid: MouseDance.Demo.SliderTest
   name: SliderTest
   href: api/MouseDance.Demo.SliderTest.html

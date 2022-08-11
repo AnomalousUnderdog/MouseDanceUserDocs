@@ -4,6 +4,8 @@
 
     --topbar-bg-color: #231641;
 
+    --button-color: rgb(230, 145, 56);
+
     --separator-color: #3c1f7b;
     --sidebar-bg-color: #231641;
     --sidebar-item-color: #b9bbbe;
@@ -22,6 +24,7 @@
     text-decoration-color: #ac70ff;
 }
 
+/* don't make logo transparent when hovered */
 .brand:hover > .logomark, .brand:focus > .logomark
 {
     opacity: 1.0;
@@ -37,13 +40,26 @@ input[type="text"]:hover
     border-color: #ac70ff;
 }
 
-article li > ul
-{
-    display: block;
-}
-
+/*
+ fix for scrollbar of sidebar not showing in Firefox
+ (overflow-y:overlay not supported in FireFox)
+ */
 nav
 {
     overflow-y: auto;
     scrollbar-color: #3c1f7b #231641;
+}
+
+/* search result link */
+.item-href
+{
+    color: #a1a1a1;
+    font-size: smaller;
+}
+
+/* search result text */
+.item-brief
+{
+    padding-left: 20px;
+    margin-bottom: 10px;
 }

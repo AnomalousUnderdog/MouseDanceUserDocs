@@ -22,7 +22,7 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    
+    <meta property="docfx:rel" content="../">
     
   </head>
 
@@ -57,6 +57,12 @@
                           <span class="brand-title">MouseDance</span>
                         </a>  </div>
 
+                          <div class="sidesearch">
+                              <form id="search" role="search" class="search">
+                                  <svg width="20" height="20" class="search-icon" viewbox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                  <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                              </form>
+                          </div>
                     
                       <div id="navbar">
                       </div>
@@ -81,7 +87,14 @@
 
             <main class="main-panel">
 
-
+                    
+                    <div id="search-results" class="main-panel-content" style="display: none;">
+                      <h1 class="search-list">Search Results for <span></span></h1>
+                      <div class="sr-items">
+                        <p><svg class="index-loading" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></p>
+                      </div>
+                      <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+                    </div>
                 <div role="main" class="main-panel-content hide-when-search">
 
                         
@@ -152,6 +165,8 @@ So we can easily figure it out based on the Combo Colour Index: 0 for red, 1 for
       <h4><a class="xref" href="MouseDance.Demo.ResultsDisplay.html">ResultsDisplay</a></h4>
       <section><p>Handles showing a screen that displays player score at the end of the game.</p>
 </section>
+      <h4><a class="xref" href="MouseDance.Demo.SceneList.html">SceneList</a></h4>
+      <section></section>
       <h4><a class="xref" href="MouseDance.Demo.SliderTest.html">SliderTest</a></h4>
       <section><p>Hardcoded tests to show some SDF curves</p>
 </section>
