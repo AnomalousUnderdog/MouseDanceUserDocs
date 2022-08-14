@@ -640,7 +640,7 @@ while it's already in-the-process of moving through this Slider.</p>
   
   
   <a id="MouseDance_Runtime_Slider_Show_" data-uid="MouseDance.Runtime.Slider.Show*"></a>
-  <h4 id="MouseDance_Runtime_Slider_Show_MouseDance_Runtime_HitObjectManager_MouseDance_Runtime_IBeatmapRunner_MouseDance_Runtime_ISliderBall_System_String_System_Int32_System_Int32_System_Int32_MouseDance_Runtime_Gradient_UnityEngine_Color32_UnityEngine_Color32_System_Boolean_System_Boolean_System_Double_OsuParsers_Beatmaps_Objects_Slider_System_Single_System_Single_System_Single_System_Single_System_Double_System_Double_" data-uid="MouseDance.Runtime.Slider.Show(MouseDance.Runtime.HitObjectManager,MouseDance.Runtime.IBeatmapRunner,MouseDance.Runtime.ISliderBall,System.String,System.Int32,System.Int32,System.Int32,MouseDance.Runtime.Gradient,UnityEngine.Color32,UnityEngine.Color32,System.Boolean,System.Boolean,System.Double,OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double)">Show(HitObjectManager, IBeatmapRunner, ISliderBall, String, Int32, Int32, Int32, Gradient, Color32, Color32, Boolean, Boolean, Double, Slider, Single, Single, Single, Single, Double, Double)</h4>
+  <h4 id="MouseDance_Runtime_Slider_Show_MouseDance_Runtime_HitObjectManager_MouseDance_Runtime_IBeatmapRunner_MouseDance_Runtime_ISliderBall_System_String_System_Int32_System_Int32_System_Int32_MouseDance_Runtime_Gradient_UnityEngine_Color32_UnityEngine_Color32_UnityEngine_Color32_System_Boolean_System_Boolean_System_Double_OsuParsers_Beatmaps_Objects_Slider_System_Single_System_Single_System_Single_System_Single_System_Double_System_Double_" data-uid="MouseDance.Runtime.Slider.Show(MouseDance.Runtime.HitObjectManager,MouseDance.Runtime.IBeatmapRunner,MouseDance.Runtime.ISliderBall,System.String,System.Int32,System.Int32,System.Int32,MouseDance.Runtime.Gradient,UnityEngine.Color32,UnityEngine.Color32,UnityEngine.Color32,System.Boolean,System.Boolean,System.Double,OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double)">Show(HitObjectManager, IBeatmapRunner, ISliderBall, String, Int32, Int32, Int32, Gradient, Color32, Color32, Color32, Boolean, Boolean, Double, Slider, Single, Single, Single, Single, Double, Double)</h4>
   <div class="markdown level1 summary"><p>Show this Slider with the specified position, colour, etc.
 This overload also initializes the Slider's reference to the <a class="xref" href="MouseDance.Runtime.HitObjectManager.html">HitObjectManager</a> and <a class="xref" href="MouseDance.Runtime.BeatmapRunner.html">BeatmapRunner</a>,
 and is called for newly instantiated Sliders.</p>
@@ -648,7 +648,7 @@ and is called for newly instantiated Sliders.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Show(HitObjectManager manager, IBeatmapRunner beatmapRunner, ISliderBall ball, string poolId, int idx, int comboCounter, int comboColourIdx, Gradient colour, Color32 borderColour, Color32 ballColour, bool applyColourToApproachCircles, bool showNumber, double beatLength, Slider slider, float positionScale, float radius, float radiusMultiplier, float approachRateDuration, double sliderMultiplier, double sliderTickRate)</code></pre>
+    <pre><code class="lang-csharp hljs">public int Show(HitObjectManager manager, IBeatmapRunner beatmapRunner, ISliderBall ball, string poolId, int idx, int comboCounter, int comboColourIdx, Gradient colour, Color32 borderColour, Color32 repeatArrowColour, Color32 ballColour, bool applyColourToApproachCircles, bool showNumber, double beatLength, Slider slider, float positionScale, float radius, float radiusMultiplier, float approachRateDuration, double sliderMultiplier, double sliderTickRate)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -714,6 +714,12 @@ This can be used to identify or differentiate this Hit Object from others using 
         <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Color32.html">Color32</a></td>
         <td><span class="parametername">borderColour</span></td>
         <td><p>Colour that this Slider's borders should be in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Color32.html">Color32</a></td>
+        <td><span class="parametername">repeatArrowColour</span></td>
+        <td><p>Colour that this Slider's repeat arrow should be in.</p>
 </td>
       </tr>
       <tr>
@@ -806,14 +812,14 @@ Default is 1 (1 Slider Tick per 1 beat).
   
   
   <a id="MouseDance_Runtime_Slider_Show_" data-uid="MouseDance.Runtime.Slider.Show*"></a>
-  <h4 id="MouseDance_Runtime_Slider_Show_System_String_System_Int32_System_Int32_System_Int32_MouseDance_Runtime_Gradient_UnityEngine_Color32_UnityEngine_Color32_System_Boolean_System_Boolean_System_Double_OsuParsers_Beatmaps_Objects_Slider_System_Single_System_Single_System_Single_System_Single_System_Double_System_Double_" data-uid="MouseDance.Runtime.Slider.Show(System.String,System.Int32,System.Int32,System.Int32,MouseDance.Runtime.Gradient,UnityEngine.Color32,UnityEngine.Color32,System.Boolean,System.Boolean,System.Double,OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double)">Show(String, Int32, Int32, Int32, Gradient, Color32, Color32, Boolean, Boolean, Double, Slider, Single, Single, Single, Single, Double, Double)</h4>
+  <h4 id="MouseDance_Runtime_Slider_Show_System_String_System_Int32_System_Int32_System_Int32_MouseDance_Runtime_Gradient_UnityEngine_Color32_UnityEngine_Color32_UnityEngine_Color32_System_Boolean_System_Boolean_System_Double_OsuParsers_Beatmaps_Objects_Slider_System_Single_System_Single_System_Single_System_Single_System_Double_System_Double_" data-uid="MouseDance.Runtime.Slider.Show(System.String,System.Int32,System.Int32,System.Int32,MouseDance.Runtime.Gradient,UnityEngine.Color32,UnityEngine.Color32,UnityEngine.Color32,System.Boolean,System.Boolean,System.Double,OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double)">Show(String, Int32, Int32, Int32, Gradient, Color32, Color32, Color32, Boolean, Boolean, Double, Slider, Single, Single, Single, Single, Double, Double)</h4>
   <div class="markdown level1 summary"><p>Show this Slider with the specified position, colour, etc.
 This is called on reused Sliders.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Show(string poolId, int idx, int comboCounter, int comboColourIdx, Gradient colour, Color32 borderColour, Color32 ballColour, bool applyColourToApproachCircles, bool showNumber, double beatLength, Slider slider, float positionScale, float radius, float radiusMultiplier, float approachRateDuration, double sliderMultiplier, double sliderTickRate)</code></pre>
+    <pre><code class="lang-csharp hljs">public int Show(string poolId, int idx, int comboCounter, int comboColourIdx, Gradient colour, Color32 borderColour, Color32 repeatArrowColour, Color32 ballColour, bool applyColourToApproachCircles, bool showNumber, double beatLength, Slider slider, float positionScale, float radius, float radiusMultiplier, float approachRateDuration, double sliderMultiplier, double sliderTickRate)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -860,6 +866,12 @@ This can be used to identify or differentiate this Hit Object from others using 
         <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Color32.html">Color32</a></td>
         <td><span class="parametername">borderColour</span></td>
         <td><p>Colour that this Slider's borders should be in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Color32.html">Color32</a></td>
+        <td><span class="parametername">repeatArrowColour</span></td>
+        <td><p>Colour that this Slider's repeat arrow should be in.</p>
 </td>
       </tr>
       <tr>

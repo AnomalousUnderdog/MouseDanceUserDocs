@@ -6,10 +6,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace MouseDance.Demo
+    <title>Class MainMenu
    | MouseDance User Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace MouseDance.Demo
+    <meta name="title" content="Class MainMenu
    | MouseDance User Docs ">
     <meta name="generator" content="docfx 2.59.3.0">
     
@@ -106,89 +106,77 @@
                           </div>
                         </div>
 
-                    <article class="content wrap" id="_content" data-uid="MouseDance.Demo">
+                    <article class="content wrap" id="_content" data-uid="MouseDance.Demo.MainMenu">
   
-  <h1 id="MouseDance_Demo" data-uid="MouseDance.Demo" class="text-break">Namespace MouseDance.Demo
+  
+  <h1 id="MouseDance_Demo_MainMenu" data-uid="MouseDance.Demo.MainMenu" class="text-break">Class MainMenu
   </h1>
-  <div class="markdown level0 summary">
-<p>Code meant to illustrate how MouseDance is used. You can delete this and/or keep the code you find useful for your own project.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.html">Component</a></div>
+    <div class="level3"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour.html">Behaviour</a></div>
+    <div class="level4"><a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+    <div class="level5"><span class="xref">MainMenu</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MouseDance.Demo.html">MouseDance.Demo</a></h6>
+  <h6><strong>Assembly</strong>: MouseDance.Demo.dll</h6>
+  <h5 id="MouseDance_Demo_MainMenu_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MainMenu : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="methods">Methods
   </h3>
-      <h4><a class="xref" href="MouseDance.Demo.BasicDemoMain.html">BasicDemoMain</a></h4>
-      <section><p>Simple code usage of MouseDance to run a Beatmap.
-This plays a countdown animation and then shows a simple Results screen afterwards.</p>
-</section>
-      <h4><a class="xref" href="MouseDance.Demo.BasicDemoWithAltHitCircleMain.html">BasicDemoWithAltHitCircleMain</a></h4>
-      <section><p>This example shows how to use <a class="xref" href="MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator.html">IHitObjectSizeCalculator</a>
-to make the Hit Objects get increasingly smaller as we go further along the combo counter.
-On a new combo, it resets to the largest size.</p>
-</section>
-      <h4><a class="xref" href="MouseDance.Demo.BasicDemoWithEQMain.html">BasicDemoWithEQMain</a></h4>
-      <section><p>Simple code usage of MouseDance to run a Beatmap, but also updates an equalizer display while the song plays.</p>
-</section>
-      <h4><a class="xref" href="MouseDance.Demo.BasicDemoWithHardRockMain.html">BasicDemoWithHardRockMain</a></h4>
-      <section><p>Simple code usage of <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapLoaded.html">IBeatmapLoaded</a>
-to modify a Beatmap that mimics the effects of the
-<a href="https://osu.ppy.sh/wiki/en/Gameplay/Game_modifier/Hard_Rock">Hard Rock modifier</a>
-before playing the Beatmap (check <a class="xref" href="MouseDance.Demo.BasicDemoWithHardRockMain.html#MouseDance_Demo_BasicDemoWithHardRockMain_OnBeatmapLoaded_OsuParsers_Beatmaps_Beatmap_">OnBeatmapLoaded(Beatmap)</a>).</p>
-</section>
-      <h4><a class="xref" href="MouseDance.Demo.DynamicDifficultyDemoMain.html">DynamicDifficultyDemoMain</a></h4>
-      <section><p>Example of custom rules in the game. This one shrinks Hit Object size on every successful hit
-(you can change the frequency of it with <span class="xref">MouseDance.Demo.DynamicDifficultyDemoMain._shrinkFrequency</span>).</p>
-</section>
-      <h4><a class="xref" href="MouseDance.Demo.LeftRightClickDemoMain.html">LeftRightClickDemoMain</a></h4>
-      <section><p>Example of how to add custom rules to the game. Used in the Left Right Click Demo.
-It uses <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapInput.html">IBeatmapInput</a> to change how input is detected, and
-<a class="xref" href="MouseDance.Runtime.Callbacks.ICustomCollectRule.html">ICustomCollectRule</a> to change the rules on how Hit Objects
-are collected.</p>
-</section>
-      <h4><a class="xref" href="MouseDance.Demo.LeftRightClickHitObjectSet.html">LeftRightClickHitObjectSet</a></h4>
-      <section><p>Example of how to make the game instantiate a differently shaped Hit Object based on the rules.
-Used in the Left Right Click Demo.
-When the Hit Object is coloured red, we'll instantiate the regular Hit Objects.
-When the Hit Object is coloured blue, we'll instantiate a different shape of Hit Objects.
-Just like in <a class="xref" href="MouseDance.Demo.LeftRightClickDemoMain.html">LeftRightClickDemoMain</a>, we're assuming the colours are assigned properly,
-wherein there are only two combo colours, red and blue.
-So we can easily figure it out based on the Combo Colour Index: 0 for red, 1 for blue.</p>
-</section>
-      <h4><a class="xref" href="MouseDance.Demo.MainMenu.html">MainMenu</a></h4>
-      <section></section>
-      <h4><a class="xref" href="MouseDance.Demo.MyHitObjectSet.html">MyHitObjectSet</a></h4>
-      <section><p>Sample sub-class of <a class="xref" href="MouseDance.Runtime.HitObjectSet.html">HitObjectSet</a> to show how you can change prefab instantiation rules.</p>
-</section>
-      <h4><a class="xref" href="MouseDance.Demo.OptionsDisplay.html">OptionsDisplay</a></h4>
-      <section><p>Handles showing/hiding an Options window, also handles user-input on the buttons of the Options window.</p>
-</section>
-      <h4><a class="xref" href="MouseDance.Demo.ResultsDisplay.html">ResultsDisplay</a></h4>
-      <section><p>Handles showing a screen that displays player score at the end of the game.</p>
-</section>
-      <h4><a class="xref" href="MouseDance.Demo.SceneButton.html">SceneButton</a></h4>
-      <section></section>
-      <h4><a class="xref" href="MouseDance.Demo.SceneList.html">SceneList</a></h4>
-      <section></section>
-      <h4><a class="xref" href="MouseDance.Demo.SceneList.Entry.html">SceneList.Entry</a></h4>
-      <section></section>
-      <h4><a class="xref" href="MouseDance.Demo.SliderTest.html">SliderTest</a></h4>
-      <section><p>Hardcoded tests to show some SDF curves</p>
-</section>
-      <h4><a class="xref" href="MouseDance.Demo.Squares.html">Squares</a></h4>
-      <section><p>Renders many squares on-screen meant for EQ display, using Unity UI.</p>
-</section>
-      <h4><a class="xref" href="MouseDance.Demo.TestSDF2Line.html">TestSDF2Line</a></h4>
-      <section></section>
-      <h4><a class="xref" href="MouseDance.Demo.TestSDF3Line.html">TestSDF3Line</a></h4>
-      <section></section>
-      <h4><a class="xref" href="MouseDance.Demo.TestSDFCurve.html">TestSDFCurve</a></h4>
-      <section></section>
-      <h4><a class="xref" href="MouseDance.Demo.TestSDFLine.html">TestSDFLine</a></h4>
-      <section></section>
-    <h3 id="enums">Enums
-  </h3>
-      <h4><a class="xref" href="MouseDance.Demo.BasicDemoWithEQMain.AudioVisualizerMode.html">BasicDemoWithEQMain.AudioVisualizerMode</a></h4>
-      <section></section>
+  
+  
+  <a id="MouseDance_Demo_MainMenu_OnPressedStart_" data-uid="MouseDance.Demo.MainMenu.OnPressedStart*"></a>
+  <h4 id="MouseDance_Demo_MainMenu_OnPressedStart" data-uid="MouseDance.Demo.MainMenu.OnPressedStart">OnPressedStart()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPressedStart()</code></pre>
+  </div>
+  
+  
+  <a id="MouseDance_Demo_MainMenu_ShowSceneInfo_" data-uid="MouseDance.Demo.MainMenu.ShowSceneInfo*"></a>
+  <h4 id="MouseDance_Demo_MainMenu_ShowSceneInfo_System_Int32_" data-uid="MouseDance.Demo.MainMenu.ShowSceneInfo(System.Int32)">ShowSceneInfo(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowSceneInfo(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MouseDance.Runtime.Util.html#MouseDance_Runtime_Util_SetLayerDeep_UnityEngine_Component_UnityEngine_LayerMask_">Util.SetLayerDeep(Component, LayerMask)</a>
+  </div>
+  <div>
+      <a class="xref" href="MouseDance.Runtime.Util.html#MouseDance_Runtime_Util_SetLayerDeep_UnityEngine_Component_System_Int32_">Util.SetLayerDeep(Component, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="MouseDance.Runtime.Util.html#MouseDance_Runtime_Util_SetLayerDeep_UnityEngine_Component_UnityEngine_LayerMask_System_Collections_Generic_Stack_UnityEngine_Transform__">Util.SetLayerDeep(Component, LayerMask, Stack&lt;Transform&gt;)</a>
+  </div>
 </article>
               
                 </div>

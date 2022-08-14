@@ -288,7 +288,7 @@ Used in SDF shaders.</p>
   
   <h4 id="MouseDance_Runtime_GraphicsUtil_CurvePositionCount" data-uid="MouseDance.Runtime.GraphicsUtil.CurvePositionCount">CurvePositionCount</h4>
   <div class="markdown level1 summary"><p>Id of shader property CurvePositionCount (when shader displays a list of points as a curve).
-Used in SDF shaders.</p>
+Used in SDF Curve to know how many points there are.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -314,7 +314,8 @@ Used in SDF shaders.</p>
   
   <h4 id="MouseDance_Runtime_GraphicsUtil_CurvePositions" data-uid="MouseDance.Runtime.GraphicsUtil.CurvePositions">CurvePositions</h4>
   <div class="markdown level1 summary"><p>Id of shader property CurvePositions (when shader displays a list of points as a curve).
-Used in SDF shaders.</p>
+Used in SDF Curve when structured buffers are supported.
+This is for passing a list of <a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a> to the shader.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -338,9 +339,63 @@ Used in SDF shaders.</p>
   </table>
   
   
+  <h4 id="MouseDance_Runtime_GraphicsUtil_CurvePositionsX" data-uid="MouseDance.Runtime.GraphicsUtil.CurvePositionsX">CurvePositionsX</h4>
+  <div class="markdown level1 summary"><p>Id of shader property CurvePositionsX (when shader displays a list of points as a curve).
+Used in SDF Curve when structured buffers are not available.
+This is for passing a float array of a <a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a>'s x-coordinate to the shader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int CurvePositionsX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_GraphicsUtil_CurvePositionsY" data-uid="MouseDance.Runtime.GraphicsUtil.CurvePositionsY">CurvePositionsY</h4>
+  <div class="markdown level1 summary"><p>Id of shader property CurvePositionsY (when shader displays a list of points as a curve).
+Used in SDF Curve when structured buffers are not available.
+This is for passing a float array of a <a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a>'s y-coordinate to the shader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int CurvePositionsY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="MouseDance_Runtime_GraphicsUtil_CurveShowPercent" data-uid="MouseDance.Runtime.GraphicsUtil.CurveShowPercent">CurveShowPercent</h4>
   <div class="markdown level1 summary"><p>Id of shader property Curve Show Percent (when shader displays a list of points as a curve).
-Used in SDF shaders.</p>
+Used in SDF Curve.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -417,7 +472,9 @@ Used in SDF shaders.</p>
   
   
   <h4 id="MouseDance_Runtime_GraphicsUtil_LineMid1PositionX" data-uid="MouseDance.Runtime.GraphicsUtil.LineMid1PositionX">LineMid1PositionX</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Id of shader property LineMid1PositionX.
+Used in SDF Lines.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -441,7 +498,9 @@ Used in SDF shaders.</p>
   
   
   <h4 id="MouseDance_Runtime_GraphicsUtil_LineMid1PositionY" data-uid="MouseDance.Runtime.GraphicsUtil.LineMid1PositionY">LineMid1PositionY</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Id of shader property LineMid1PositionY.
+Used in SDF Lines.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -465,7 +524,9 @@ Used in SDF shaders.</p>
   
   
   <h4 id="MouseDance_Runtime_GraphicsUtil_LineMid2PositionX" data-uid="MouseDance.Runtime.GraphicsUtil.LineMid2PositionX">LineMid2PositionX</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Id of shader property LineMid2PositionX.
+Used in SDF Lines.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -489,7 +550,9 @@ Used in SDF shaders.</p>
   
   
   <h4 id="MouseDance_Runtime_GraphicsUtil_LineMid2PositionY" data-uid="MouseDance.Runtime.GraphicsUtil.LineMid2PositionY">LineMid2PositionY</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Id of shader property LineMid2PositionY.
+Used in SDF Lines.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

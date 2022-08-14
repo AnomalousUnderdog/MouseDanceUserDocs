@@ -74,18 +74,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MouseDance.Demo.DebugInfoDisplay.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MouseDance.Demo.DebugInfoDisplay.html",
-          "hash": "cMKuEChxvskn1IW3UpTvbluyi+eC7Cq7bgYTKYea75Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MouseDance.Demo.DynamicDifficultyDemoMain.yml",
       "output": {
         ".html": {
@@ -146,6 +134,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.MainMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.MainMenu.html",
+          "hash": "72B/5iTAL1NCzJSYJgVZd2IED7WaUzsZWt1K44Kue80="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MouseDance.Demo.MyHitObjectSet.yml",
       "output": {
         ".html": {
@@ -182,11 +182,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.SceneButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.SceneButton.html",
+          "hash": "jmmRo0M9LsirWGMpisHpzVydG9IuQlDVByO8ni5U1JY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Demo.SceneList.Entry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Demo.SceneList.Entry.html",
+          "hash": "IyILryTviLioyhULKa1JXduO1EXfqGNVzkbo87Kb49Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MouseDance.Demo.SceneList.yml",
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Demo.SceneList.html",
-          "hash": "57UgQCJkPZmuGQORaScSiI1uxIn+vA2b6KNTVuYV69g="
+          "hash": "aH65Ny1vuqy2xp5BhaxTKXiL1n/TVLNrkj+MiTACRGk="
         }
       },
       "is_incremental": false,
@@ -270,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Demo.html",
-          "hash": "DHrK9PopgkubNa448T9IXIRdnZaEOOvvbLvi6KEaJQk="
+          "hash": "sKQvjOKfJ83XICiaH8RzUEAULFn5VV1Ez4CvIXaUEJs="
         }
       },
       "is_incremental": false,
@@ -546,7 +570,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.GraphicsUtil.html",
-          "hash": "s7mc4d7tUNqZmFEsPHQN7GbyVr3rfl4lzfvSrvO4v/8="
+          "hash": "f7v91AuaPzxOONmmKs8q3llGT6WENNkb5XaE1l1VoQs="
         }
       },
       "is_incremental": false,
@@ -594,7 +618,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.HitObjectColours.html",
-          "hash": "avfP9hLIDrhZ686bK8TA9bCqRvgCtMkhH9A2y9Mvt00="
+          "hash": "e4QVC8Onb6S6S587+XPr6L00wzjxi89ZffEZewVXTOc="
         }
       },
       "is_incremental": false,
@@ -606,7 +630,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.HitObjectManager.html",
-          "hash": "6Tz4mGh0Xr2hINwp4uhpaX9kv72Kgzt5pOBR1C0UuHc="
+          "hash": "qwfHvXMhfz0PidYULX7b+A8UvKjdgjjE/aSVTeMbLl0="
         }
       },
       "is_incremental": false,
@@ -798,7 +822,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.Slider.html",
-          "hash": "LTq2UoHY44wgMNSGYfJgBLL2GqyN7gH2SVEKdxfwU9M="
+          "hash": "6v9/9YGrKdhsHLfJ/3Kb2GMwSraQV/j8bt30ZxW99M8="
         }
       },
       "is_incremental": false,
@@ -894,7 +918,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "VQNwJo4eqEZ8wUoThNF4Tta93xcsc/DV/4atfz6BEwo="
+          "hash": "+g1GOo/+lT5kw0Ogh1Uab77VbYzgFZbJO0Y9WRndrLw="
         }
       },
       "is_incremental": false,
@@ -1072,7 +1096,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/folder_layout.html",
-          "hash": "I7wiyGLhRQkix8k4E83mdJiLzVMGj8M7bjozJCestqo="
+          "hash": "3WwLiEqmKK3dE1mwK+9d3EY/2UTZtDrmkYllPQV5PGg="
         }
       },
       "is_incremental": false,
@@ -2455,7 +2479,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 76,
+          "total_file_count": 78,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -230,25 +230,6 @@ references:
   isSpec: "True"
   fullName: MouseDance.Demo.BasicDemoWithHardRockMain.OnBeatmapLoaded
   nameWithType: BasicDemoWithHardRockMain.OnBeatmapLoaded
-- uid: MouseDance.Demo.DebugInfoDisplay
-  name: DebugInfoDisplay
-  href: api/MouseDance.Demo.DebugInfoDisplay.html
-  commentId: T:MouseDance.Demo.DebugInfoDisplay
-  fullName: MouseDance.Demo.DebugInfoDisplay
-  nameWithType: DebugInfoDisplay
-- uid: MouseDance.Demo.DebugInfoDisplay.Update
-  name: Update()
-  href: api/MouseDance.Demo.DebugInfoDisplay.html#MouseDance_Demo_DebugInfoDisplay_Update
-  commentId: M:MouseDance.Demo.DebugInfoDisplay.Update
-  fullName: MouseDance.Demo.DebugInfoDisplay.Update()
-  nameWithType: DebugInfoDisplay.Update()
-- uid: MouseDance.Demo.DebugInfoDisplay.Update*
-  name: Update
-  href: api/MouseDance.Demo.DebugInfoDisplay.html#MouseDance_Demo_DebugInfoDisplay_Update_
-  commentId: Overload:MouseDance.Demo.DebugInfoDisplay.Update
-  isSpec: "True"
-  fullName: MouseDance.Demo.DebugInfoDisplay.Update
-  nameWithType: DebugInfoDisplay.Update
 - uid: MouseDance.Demo.DynamicDifficultyDemoMain
   name: DynamicDifficultyDemoMain
   href: api/MouseDance.Demo.DynamicDifficultyDemoMain.html
@@ -547,6 +528,38 @@ references:
   commentId: F:MouseDance.Demo.LeftRightClickHitObjectSet.SliderPrefabForRightClick
   fullName: MouseDance.Demo.LeftRightClickHitObjectSet.SliderPrefabForRightClick
   nameWithType: LeftRightClickHitObjectSet.SliderPrefabForRightClick
+- uid: MouseDance.Demo.MainMenu
+  name: MainMenu
+  href: api/MouseDance.Demo.MainMenu.html
+  commentId: T:MouseDance.Demo.MainMenu
+  fullName: MouseDance.Demo.MainMenu
+  nameWithType: MainMenu
+- uid: MouseDance.Demo.MainMenu.OnPressedStart
+  name: OnPressedStart()
+  href: api/MouseDance.Demo.MainMenu.html#MouseDance_Demo_MainMenu_OnPressedStart
+  commentId: M:MouseDance.Demo.MainMenu.OnPressedStart
+  fullName: MouseDance.Demo.MainMenu.OnPressedStart()
+  nameWithType: MainMenu.OnPressedStart()
+- uid: MouseDance.Demo.MainMenu.OnPressedStart*
+  name: OnPressedStart
+  href: api/MouseDance.Demo.MainMenu.html#MouseDance_Demo_MainMenu_OnPressedStart_
+  commentId: Overload:MouseDance.Demo.MainMenu.OnPressedStart
+  isSpec: "True"
+  fullName: MouseDance.Demo.MainMenu.OnPressedStart
+  nameWithType: MainMenu.OnPressedStart
+- uid: MouseDance.Demo.MainMenu.ShowSceneInfo(System.Int32)
+  name: ShowSceneInfo(Int32)
+  href: api/MouseDance.Demo.MainMenu.html#MouseDance_Demo_MainMenu_ShowSceneInfo_System_Int32_
+  commentId: M:MouseDance.Demo.MainMenu.ShowSceneInfo(System.Int32)
+  fullName: MouseDance.Demo.MainMenu.ShowSceneInfo(System.Int32)
+  nameWithType: MainMenu.ShowSceneInfo(Int32)
+- uid: MouseDance.Demo.MainMenu.ShowSceneInfo*
+  name: ShowSceneInfo
+  href: api/MouseDance.Demo.MainMenu.html#MouseDance_Demo_MainMenu_ShowSceneInfo_
+  commentId: Overload:MouseDance.Demo.MainMenu.ShowSceneInfo
+  isSpec: "True"
+  fullName: MouseDance.Demo.MainMenu.ShowSceneInfo
+  nameWithType: MainMenu.ShowSceneInfo
 - uid: MouseDance.Demo.MyHitObjectSet
   name: MyHitObjectSet
   href: api/MouseDance.Demo.MyHitObjectSet.html
@@ -727,12 +740,110 @@ references:
   isSpec: "True"
   fullName: MouseDance.Demo.ResultsDisplay.Show
   nameWithType: ResultsDisplay.Show
+- uid: MouseDance.Demo.SceneButton
+  name: SceneButton
+  href: api/MouseDance.Demo.SceneButton.html
+  commentId: T:MouseDance.Demo.SceneButton
+  fullName: MouseDance.Demo.SceneButton
+  nameWithType: SceneButton
+- uid: MouseDance.Demo.SceneButton.OnPressed
+  name: OnPressed()
+  href: api/MouseDance.Demo.SceneButton.html#MouseDance_Demo_SceneButton_OnPressed
+  commentId: M:MouseDance.Demo.SceneButton.OnPressed
+  fullName: MouseDance.Demo.SceneButton.OnPressed()
+  nameWithType: SceneButton.OnPressed()
+- uid: MouseDance.Demo.SceneButton.OnPressed*
+  name: OnPressed
+  href: api/MouseDance.Demo.SceneButton.html#MouseDance_Demo_SceneButton_OnPressed_
+  commentId: Overload:MouseDance.Demo.SceneButton.OnPressed
+  isSpec: "True"
+  fullName: MouseDance.Demo.SceneButton.OnPressed
+  nameWithType: SceneButton.OnPressed
+- uid: MouseDance.Demo.SceneButton.Set(System.Int32,MouseDance.Demo.SceneList.Entry,MouseDance.Demo.MainMenu)
+  name: Set(Int32, SceneList.Entry, MainMenu)
+  href: api/MouseDance.Demo.SceneButton.html#MouseDance_Demo_SceneButton_Set_System_Int32_MouseDance_Demo_SceneList_Entry_MouseDance_Demo_MainMenu_
+  commentId: M:MouseDance.Demo.SceneButton.Set(System.Int32,MouseDance.Demo.SceneList.Entry,MouseDance.Demo.MainMenu)
+  fullName: MouseDance.Demo.SceneButton.Set(System.Int32, MouseDance.Demo.SceneList.Entry, MouseDance.Demo.MainMenu)
+  nameWithType: SceneButton.Set(Int32, SceneList.Entry, MainMenu)
+- uid: MouseDance.Demo.SceneButton.Set*
+  name: Set
+  href: api/MouseDance.Demo.SceneButton.html#MouseDance_Demo_SceneButton_Set_
+  commentId: Overload:MouseDance.Demo.SceneButton.Set
+  isSpec: "True"
+  fullName: MouseDance.Demo.SceneButton.Set
+  nameWithType: SceneButton.Set
 - uid: MouseDance.Demo.SceneList
   name: SceneList
   href: api/MouseDance.Demo.SceneList.html
   commentId: T:MouseDance.Demo.SceneList
   fullName: MouseDance.Demo.SceneList
   nameWithType: SceneList
+- uid: MouseDance.Demo.SceneList.DEMO_SCENE_PATH
+  name: DEMO_SCENE_PATH
+  href: api/MouseDance.Demo.SceneList.html#MouseDance_Demo_SceneList_DEMO_SCENE_PATH
+  commentId: F:MouseDance.Demo.SceneList.DEMO_SCENE_PATH
+  fullName: MouseDance.Demo.SceneList.DEMO_SCENE_PATH
+  nameWithType: SceneList.DEMO_SCENE_PATH
+- uid: MouseDance.Demo.SceneList.Entries
+  name: Entries
+  href: api/MouseDance.Demo.SceneList.html#MouseDance_Demo_SceneList_Entries
+  commentId: F:MouseDance.Demo.SceneList.Entries
+  fullName: MouseDance.Demo.SceneList.Entries
+  nameWithType: SceneList.Entries
+- uid: MouseDance.Demo.SceneList.Entry
+  name: SceneList.Entry
+  href: api/MouseDance.Demo.SceneList.Entry.html
+  commentId: T:MouseDance.Demo.SceneList.Entry
+  fullName: MouseDance.Demo.SceneList.Entry
+  nameWithType: SceneList.Entry
+- uid: MouseDance.Demo.SceneList.Entry.Description
+  name: Description
+  href: api/MouseDance.Demo.SceneList.Entry.html#MouseDance_Demo_SceneList_Entry_Description
+  commentId: F:MouseDance.Demo.SceneList.Entry.Description
+  fullName: MouseDance.Demo.SceneList.Entry.Description
+  nameWithType: SceneList.Entry.Description
+- uid: MouseDance.Demo.SceneList.Entry.Enable
+  name: Enable
+  href: api/MouseDance.Demo.SceneList.Entry.html#MouseDance_Demo_SceneList_Entry_Enable
+  commentId: F:MouseDance.Demo.SceneList.Entry.Enable
+  fullName: MouseDance.Demo.SceneList.Entry.Enable
+  nameWithType: SceneList.Entry.Enable
+- uid: MouseDance.Demo.SceneList.Entry.IndentLevel
+  name: IndentLevel
+  href: api/MouseDance.Demo.SceneList.Entry.html#MouseDance_Demo_SceneList_Entry_IndentLevel
+  commentId: F:MouseDance.Demo.SceneList.Entry.IndentLevel
+  fullName: MouseDance.Demo.SceneList.Entry.IndentLevel
+  nameWithType: SceneList.Entry.IndentLevel
+- uid: MouseDance.Demo.SceneList.Entry.Label
+  name: Label
+  href: api/MouseDance.Demo.SceneList.Entry.html#MouseDance_Demo_SceneList_Entry_Label
+  commentId: F:MouseDance.Demo.SceneList.Entry.Label
+  fullName: MouseDance.Demo.SceneList.Entry.Label
+  nameWithType: SceneList.Entry.Label
+- uid: MouseDance.Demo.SceneList.Entry.SceneName
+  name: SceneName
+  href: api/MouseDance.Demo.SceneList.Entry.html#MouseDance_Demo_SceneList_Entry_SceneName
+  commentId: F:MouseDance.Demo.SceneList.Entry.SceneName
+  fullName: MouseDance.Demo.SceneList.Entry.SceneName
+  nameWithType: SceneList.Entry.SceneName
+- uid: MouseDance.Demo.SceneList.Entry.Screenshot
+  name: Screenshot
+  href: api/MouseDance.Demo.SceneList.Entry.html#MouseDance_Demo_SceneList_Entry_Screenshot
+  commentId: F:MouseDance.Demo.SceneList.Entry.Screenshot
+  fullName: MouseDance.Demo.SceneList.Entry.Screenshot
+  nameWithType: SceneList.Entry.Screenshot
+- uid: MouseDance.Demo.SceneList.ExcludeScenes
+  name: ExcludeScenes
+  href: api/MouseDance.Demo.SceneList.html#MouseDance_Demo_SceneList_ExcludeScenes
+  commentId: F:MouseDance.Demo.SceneList.ExcludeScenes
+  fullName: MouseDance.Demo.SceneList.ExcludeScenes
+  nameWithType: SceneList.ExcludeScenes
+- uid: MouseDance.Demo.SceneList.MAIN_MENU_SCENE_NAME
+  name: MAIN_MENU_SCENE_NAME
+  href: api/MouseDance.Demo.SceneList.html#MouseDance_Demo_SceneList_MAIN_MENU_SCENE_NAME
+  commentId: F:MouseDance.Demo.SceneList.MAIN_MENU_SCENE_NAME
+  fullName: MouseDance.Demo.SceneList.MAIN_MENU_SCENE_NAME
+  nameWithType: SceneList.MAIN_MENU_SCENE_NAME
 - uid: MouseDance.Demo.SliderTest
   name: SliderTest
   href: api/MouseDance.Demo.SliderTest.html
@@ -2198,6 +2309,18 @@ references:
   commentId: F:MouseDance.Runtime.GraphicsUtil.CurvePositions
   fullName: MouseDance.Runtime.GraphicsUtil.CurvePositions
   nameWithType: GraphicsUtil.CurvePositions
+- uid: MouseDance.Runtime.GraphicsUtil.CurvePositionsX
+  name: CurvePositionsX
+  href: api/MouseDance.Runtime.GraphicsUtil.html#MouseDance_Runtime_GraphicsUtil_CurvePositionsX
+  commentId: F:MouseDance.Runtime.GraphicsUtil.CurvePositionsX
+  fullName: MouseDance.Runtime.GraphicsUtil.CurvePositionsX
+  nameWithType: GraphicsUtil.CurvePositionsX
+- uid: MouseDance.Runtime.GraphicsUtil.CurvePositionsY
+  name: CurvePositionsY
+  href: api/MouseDance.Runtime.GraphicsUtil.html#MouseDance_Runtime_GraphicsUtil_CurvePositionsY
+  commentId: F:MouseDance.Runtime.GraphicsUtil.CurvePositionsY
+  fullName: MouseDance.Runtime.GraphicsUtil.CurvePositionsY
+  nameWithType: GraphicsUtil.CurvePositionsY
 - uid: MouseDance.Runtime.GraphicsUtil.CurveShowPercent
   name: CurveShowPercent
   href: api/MouseDance.Runtime.GraphicsUtil.html#MouseDance_Runtime_GraphicsUtil_CurveShowPercent
@@ -2819,6 +2942,12 @@ references:
   commentId: F:MouseDance.Runtime.HitObjectColours.ApplyBorderColourToHitCircles
   fullName: MouseDance.Runtime.HitObjectColours.ApplyBorderColourToHitCircles
   nameWithType: HitObjectColours.ApplyBorderColourToHitCircles
+- uid: MouseDance.Runtime.HitObjectColours.ApplyBorderColourToSliderRepeatArrow
+  name: ApplyBorderColourToSliderRepeatArrow
+  href: api/MouseDance.Runtime.HitObjectColours.html#MouseDance_Runtime_HitObjectColours_ApplyBorderColourToSliderRepeatArrow
+  commentId: F:MouseDance.Runtime.HitObjectColours.ApplyBorderColourToSliderRepeatArrow
+  fullName: MouseDance.Runtime.HitObjectColours.ApplyBorderColourToSliderRepeatArrow
+  nameWithType: HitObjectColours.ApplyBorderColourToSliderRepeatArrow
 - uid: MouseDance.Runtime.HitObjectColours.ApplyBorderColourToSliders
   name: ApplyBorderColourToSliders
   href: api/MouseDance.Runtime.HitObjectColours.html#MouseDance_Runtime_HitObjectColours_ApplyBorderColourToSliders
@@ -2984,12 +3113,12 @@ references:
   isSpec: "True"
   fullName: MouseDance.Runtime.HitObjectManager.OnHitOutOfSequence
   nameWithType: HitObjectManager.OnHitOutOfSequence
-- uid: MouseDance.Runtime.HitObjectManager.OnHitSliderEnd(MouseDance.Runtime.IHitObject,MouseDance.Runtime.SliderReachType,System.Boolean,System.Int32,System.Int32,System.Int32,System.Boolean)
-  name: OnHitSliderEnd(IHitObject, SliderReachType, Boolean, Int32, Int32, Int32, Boolean)
-  href: api/MouseDance.Runtime.HitObjectManager.html#MouseDance_Runtime_HitObjectManager_OnHitSliderEnd_MouseDance_Runtime_IHitObject_MouseDance_Runtime_SliderReachType_System_Boolean_System_Int32_System_Int32_System_Int32_System_Boolean_
-  commentId: M:MouseDance.Runtime.HitObjectManager.OnHitSliderEnd(MouseDance.Runtime.IHitObject,MouseDance.Runtime.SliderReachType,System.Boolean,System.Int32,System.Int32,System.Int32,System.Boolean)
-  fullName: MouseDance.Runtime.HitObjectManager.OnHitSliderEnd(MouseDance.Runtime.IHitObject, MouseDance.Runtime.SliderReachType, System.Boolean, System.Int32, System.Int32, System.Int32, System.Boolean)
-  nameWithType: HitObjectManager.OnHitSliderEnd(IHitObject, SliderReachType, Boolean, Int32, Int32, Int32, Boolean)
+- uid: MouseDance.Runtime.HitObjectManager.OnHitSliderEnd(MouseDance.Runtime.IHitObject,MouseDance.Runtime.SliderReachType,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32,System.Boolean)
+  name: OnHitSliderEnd(IHitObject, SliderReachType, Boolean, Boolean, Int32, Int32, Int32, Boolean)
+  href: api/MouseDance.Runtime.HitObjectManager.html#MouseDance_Runtime_HitObjectManager_OnHitSliderEnd_MouseDance_Runtime_IHitObject_MouseDance_Runtime_SliderReachType_System_Boolean_System_Boolean_System_Int32_System_Int32_System_Int32_System_Boolean_
+  commentId: M:MouseDance.Runtime.HitObjectManager.OnHitSliderEnd(MouseDance.Runtime.IHitObject,MouseDance.Runtime.SliderReachType,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32,System.Boolean)
+  fullName: MouseDance.Runtime.HitObjectManager.OnHitSliderEnd(MouseDance.Runtime.IHitObject, MouseDance.Runtime.SliderReachType, System.Boolean, System.Boolean, System.Int32, System.Int32, System.Int32, System.Boolean)
+  nameWithType: HitObjectManager.OnHitSliderEnd(IHitObject, SliderReachType, Boolean, Boolean, Int32, Int32, Int32, Boolean)
 - uid: MouseDance.Runtime.HitObjectManager.OnHitSliderEnd*
   name: OnHitSliderEnd
   href: api/MouseDance.Runtime.HitObjectManager.html#MouseDance_Runtime_HitObjectManager_OnHitSliderEnd_
@@ -4390,18 +4519,18 @@ references:
   isSpec: "True"
   fullName: MouseDance.Runtime.Slider.Resize
   nameWithType: Slider.Resize
-- uid: MouseDance.Runtime.Slider.Show(MouseDance.Runtime.HitObjectManager,MouseDance.Runtime.IBeatmapRunner,MouseDance.Runtime.ISliderBall,System.String,System.Int32,System.Int32,System.Int32,MouseDance.Runtime.Gradient,UnityEngine.Color32,UnityEngine.Color32,System.Boolean,System.Boolean,System.Double,OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double)
-  name: Show(HitObjectManager, IBeatmapRunner, ISliderBall, String, Int32, Int32, Int32, Gradient, Color32, Color32, Boolean, Boolean, Double, Slider, Single, Single, Single, Single, Double, Double)
-  href: api/MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider_Show_MouseDance_Runtime_HitObjectManager_MouseDance_Runtime_IBeatmapRunner_MouseDance_Runtime_ISliderBall_System_String_System_Int32_System_Int32_System_Int32_MouseDance_Runtime_Gradient_UnityEngine_Color32_UnityEngine_Color32_System_Boolean_System_Boolean_System_Double_OsuParsers_Beatmaps_Objects_Slider_System_Single_System_Single_System_Single_System_Single_System_Double_System_Double_
-  commentId: M:MouseDance.Runtime.Slider.Show(MouseDance.Runtime.HitObjectManager,MouseDance.Runtime.IBeatmapRunner,MouseDance.Runtime.ISliderBall,System.String,System.Int32,System.Int32,System.Int32,MouseDance.Runtime.Gradient,UnityEngine.Color32,UnityEngine.Color32,System.Boolean,System.Boolean,System.Double,OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double)
-  fullName: MouseDance.Runtime.Slider.Show(MouseDance.Runtime.HitObjectManager, MouseDance.Runtime.IBeatmapRunner, MouseDance.Runtime.ISliderBall, System.String, System.Int32, System.Int32, System.Int32, MouseDance.Runtime.Gradient, UnityEngine.Color32, UnityEngine.Color32, System.Boolean, System.Boolean, System.Double, OsuParsers.Beatmaps.Objects.Slider, System.Single, System.Single, System.Single, System.Single, System.Double, System.Double)
-  nameWithType: Slider.Show(HitObjectManager, IBeatmapRunner, ISliderBall, String, Int32, Int32, Int32, Gradient, Color32, Color32, Boolean, Boolean, Double, Slider, Single, Single, Single, Single, Double, Double)
-- uid: MouseDance.Runtime.Slider.Show(System.String,System.Int32,System.Int32,System.Int32,MouseDance.Runtime.Gradient,UnityEngine.Color32,UnityEngine.Color32,System.Boolean,System.Boolean,System.Double,OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double)
-  name: Show(String, Int32, Int32, Int32, Gradient, Color32, Color32, Boolean, Boolean, Double, Slider, Single, Single, Single, Single, Double, Double)
-  href: api/MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider_Show_System_String_System_Int32_System_Int32_System_Int32_MouseDance_Runtime_Gradient_UnityEngine_Color32_UnityEngine_Color32_System_Boolean_System_Boolean_System_Double_OsuParsers_Beatmaps_Objects_Slider_System_Single_System_Single_System_Single_System_Single_System_Double_System_Double_
-  commentId: M:MouseDance.Runtime.Slider.Show(System.String,System.Int32,System.Int32,System.Int32,MouseDance.Runtime.Gradient,UnityEngine.Color32,UnityEngine.Color32,System.Boolean,System.Boolean,System.Double,OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double)
-  fullName: MouseDance.Runtime.Slider.Show(System.String, System.Int32, System.Int32, System.Int32, MouseDance.Runtime.Gradient, UnityEngine.Color32, UnityEngine.Color32, System.Boolean, System.Boolean, System.Double, OsuParsers.Beatmaps.Objects.Slider, System.Single, System.Single, System.Single, System.Single, System.Double, System.Double)
-  nameWithType: Slider.Show(String, Int32, Int32, Int32, Gradient, Color32, Color32, Boolean, Boolean, Double, Slider, Single, Single, Single, Single, Double, Double)
+- uid: MouseDance.Runtime.Slider.Show(MouseDance.Runtime.HitObjectManager,MouseDance.Runtime.IBeatmapRunner,MouseDance.Runtime.ISliderBall,System.String,System.Int32,System.Int32,System.Int32,MouseDance.Runtime.Gradient,UnityEngine.Color32,UnityEngine.Color32,UnityEngine.Color32,System.Boolean,System.Boolean,System.Double,OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double)
+  name: Show(HitObjectManager, IBeatmapRunner, ISliderBall, String, Int32, Int32, Int32, Gradient, Color32, Color32, Color32, Boolean, Boolean, Double, Slider, Single, Single, Single, Single, Double, Double)
+  href: api/MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider_Show_MouseDance_Runtime_HitObjectManager_MouseDance_Runtime_IBeatmapRunner_MouseDance_Runtime_ISliderBall_System_String_System_Int32_System_Int32_System_Int32_MouseDance_Runtime_Gradient_UnityEngine_Color32_UnityEngine_Color32_UnityEngine_Color32_System_Boolean_System_Boolean_System_Double_OsuParsers_Beatmaps_Objects_Slider_System_Single_System_Single_System_Single_System_Single_System_Double_System_Double_
+  commentId: M:MouseDance.Runtime.Slider.Show(MouseDance.Runtime.HitObjectManager,MouseDance.Runtime.IBeatmapRunner,MouseDance.Runtime.ISliderBall,System.String,System.Int32,System.Int32,System.Int32,MouseDance.Runtime.Gradient,UnityEngine.Color32,UnityEngine.Color32,UnityEngine.Color32,System.Boolean,System.Boolean,System.Double,OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double)
+  fullName: MouseDance.Runtime.Slider.Show(MouseDance.Runtime.HitObjectManager, MouseDance.Runtime.IBeatmapRunner, MouseDance.Runtime.ISliderBall, System.String, System.Int32, System.Int32, System.Int32, MouseDance.Runtime.Gradient, UnityEngine.Color32, UnityEngine.Color32, UnityEngine.Color32, System.Boolean, System.Boolean, System.Double, OsuParsers.Beatmaps.Objects.Slider, System.Single, System.Single, System.Single, System.Single, System.Double, System.Double)
+  nameWithType: Slider.Show(HitObjectManager, IBeatmapRunner, ISliderBall, String, Int32, Int32, Int32, Gradient, Color32, Color32, Color32, Boolean, Boolean, Double, Slider, Single, Single, Single, Single, Double, Double)
+- uid: MouseDance.Runtime.Slider.Show(System.String,System.Int32,System.Int32,System.Int32,MouseDance.Runtime.Gradient,UnityEngine.Color32,UnityEngine.Color32,UnityEngine.Color32,System.Boolean,System.Boolean,System.Double,OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double)
+  name: Show(String, Int32, Int32, Int32, Gradient, Color32, Color32, Color32, Boolean, Boolean, Double, Slider, Single, Single, Single, Single, Double, Double)
+  href: api/MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider_Show_System_String_System_Int32_System_Int32_System_Int32_MouseDance_Runtime_Gradient_UnityEngine_Color32_UnityEngine_Color32_UnityEngine_Color32_System_Boolean_System_Boolean_System_Double_OsuParsers_Beatmaps_Objects_Slider_System_Single_System_Single_System_Single_System_Single_System_Double_System_Double_
+  commentId: M:MouseDance.Runtime.Slider.Show(System.String,System.Int32,System.Int32,System.Int32,MouseDance.Runtime.Gradient,UnityEngine.Color32,UnityEngine.Color32,UnityEngine.Color32,System.Boolean,System.Boolean,System.Double,OsuParsers.Beatmaps.Objects.Slider,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double)
+  fullName: MouseDance.Runtime.Slider.Show(System.String, System.Int32, System.Int32, System.Int32, MouseDance.Runtime.Gradient, UnityEngine.Color32, UnityEngine.Color32, UnityEngine.Color32, System.Boolean, System.Boolean, System.Double, OsuParsers.Beatmaps.Objects.Slider, System.Single, System.Single, System.Single, System.Single, System.Double, System.Double)
+  nameWithType: Slider.Show(String, Int32, Int32, Int32, Gradient, Color32, Color32, Color32, Boolean, Boolean, Double, Slider, Single, Single, Single, Single, Double, Double)
 - uid: MouseDance.Runtime.Slider.Show*
   name: Show
   href: api/MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider_Show_
