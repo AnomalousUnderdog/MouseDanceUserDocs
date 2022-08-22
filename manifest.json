@@ -941,7 +941,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "ErQFDoBQVl0PVdn3qmkPT96Aa47OaPmboQiPcxboQUA="
+          "hash": "I4MtVzLb29orlcm007J4TqSygu0nqZ5D5zxihT6xryo="
         }
       },
       "is_incremental": false,
@@ -988,7 +988,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/code_usage.html",
-          "hash": "x0T9hHnoEmXOWko7Dl7xin3CaQRXbPkp7dgsnnaQAGw="
+          "hash": "fP4L0QLwodxGXxc8FKHZzZRy+F5oNF2zTKOgxkkSG/8="
         }
       },
       "is_incremental": false,
@@ -1048,7 +1048,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/custom_hit_rules.html",
-          "hash": "YMDMrcmmP3XWULO6C9Yzm6XsMQKxlcksOfyXPee/huE="
+          "hash": "ZIQLWPYIah/zyVW11RZCA+OJ8N+ZLFkddN3l9FSfOJc="
         }
       },
       "is_incremental": false,
@@ -1372,7 +1372,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "Y8k4wS9bjdxXFrrnAOS+fSs9SfYnFrvVLvKt3DbUe0A="
+          "hash": "Z/veU4dtHV4FWvDWSj5GsL5uunvsK+phbY7n7t9zRI8="
         }
       },
       "is_incremental": false,
@@ -1385,6 +1385,90 @@
         ".html": {
           "relative_path": "manual/upgrading.html",
           "hash": "xeXAUa19iRqwwa5ej4LDFfw9H3t/Br3L9DZwUwBMe+0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/workflow.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/workflow.html",
+          "hash": "9roz2HlG/lFpPzWuHHwnC6/3vQcUtjTVcruy8tYTo7Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/workflow_compose.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/workflow_compose.html",
+          "hash": "ShC8IJVIr+kmu+tYDiXk+L4kYslsBFRy+16YAjkeU+E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/workflow_create_osu_file.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/workflow_create_osu_file.html",
+          "hash": "bvMV2s6uUI/DfKuRlkwf8w/c/7ZhMlt1y/VMnE7SVqs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/workflow_import_unity.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/workflow_import_unity.html",
+          "hash": "FyH8TKnORgVk0/m8DEU29zp6BMQaY4IKxDm9+XT0+a4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/workflow_playtest_osu.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/workflow_playtest_osu.html",
+          "hash": "cpGVBcjHQwK2/DSJfQjLL2WSxNqFZdXXRl+H4T79vno="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/workflow_playtest_unity.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/workflow_playtest_unity.html",
+          "hash": "v5uqT6P/Lh7ysGdW0HZel5ZVa5V/xOMEwivbtZxLoUA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/workflow_setting_bpm.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/workflow_setting_bpm.html",
+          "hash": "5jIIH7fmymEADqpbWMaGx6Or8/lOSzQORSwonmgQf2M="
         }
       },
       "is_incremental": false,
@@ -1429,6 +1513,17 @@
       "output": {
         "resource": {
           "relative_path": "resources/AudioMixer.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/BasicUsageInspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/BasicUsageInspector.png"
         }
       },
       "is_incremental": false,
@@ -1975,6 +2070,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/MouseDanceAssemblyDefinitionReference.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/MouseDanceAssemblyDefinitionReference.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/MouseDanceLogo.png",
       "output": {
         "resource": {
@@ -2034,6 +2140,193 @@
       "output": {
         "resource": {
           "relative_path": "resources/MyHitObjectSetInGame2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuCompose.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuCompose.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuDragMp3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuDragMp3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuEditButton.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuEditButton.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuFileImporter.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuFileImporter.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuFileInNotepad.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuFileInNotepad.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuImportToUnity.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuImportToUnity.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuMetronome.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuMetronome.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuPlayPause.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuPlayPause.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuSongFolder.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuSongFolder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuSongSetup.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuSongSetup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuTapHere.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuTapHere.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuTest.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuTest.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuTestButton.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuTestButton.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuTestInUnity.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuTestInUnity.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuTimingControlPointsOk.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuTimingControlPointsOk.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuTimingPanel.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuTimingPanel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/OsuTimingSection.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/OsuTimingSection.png"
         }
       },
       "is_incremental": false,
@@ -2404,6 +2697,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/U_Logo_MadeWith.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/U_Logo_MadeWith.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/UnityPackageImport.png",
       "output": {
         "resource": {
@@ -2473,7 +2777,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 36,
+          "total_file_count": 43,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

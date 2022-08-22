@@ -121,7 +121,7 @@ public class BasicUsage : UnityEngine.MonoBehaviour, Callbacks.IBeatmapInput, Ca
   void Start()
   {
     _beatmapRunner.SetInput(this);
-    _beatmapRunner.SetHitObjectPress(this);
+    _beatmapRunner.SetCustomCollectRule(this);
     _beatmapRunner.LoadAndStart(_osuFile, _song);
   }
   
@@ -212,7 +212,11 @@ public class BasicUsage : UnityEngine.MonoBehaviour, Callbacks.IBeatmapInput, Ca
 }
 </code></pre>
 <p>This example will require even-numbered Hit Objects to be right-clicked, and odd-numbered Hit Objects to be left-clicked.</p>
+<div class="CAUTION">
+<h5>Caution</h5>
 <p>Note that to make this work properly, we implement two interfaces: <a class="xref" href="../api/MouseDance.Runtime.Callbacks.IBeatmapInput.html"><code>IBeatmapInput</code></a> (to allow both left and right click in the controls) and <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ICustomCollectRule.html"><code>ICustomCollectRule</code></a> (to change how Hit Objects are collected, based on the input).</p>
+<p>We also correspondingly need to call <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner_SetInput_MouseDance_Runtime_Callbacks_IBeatmapInput_"><code>SetInput</code></a> and <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner_SetCustomCollectRule_MouseDance_Runtime_Callbacks_ICustomCollectRule_"><code>SetCustomCollectRule</code></a> from the BeatmapRunner, so our methods will be called.</p>
+</div>
 <p>The <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ICustomCollectRule.html#MouseDance_Runtime_Callbacks_ICustomCollectRule_AllowCollect_MouseDance_Runtime_IHitObject_System_Collections_Generic_IReadOnlyList_MouseDance_Runtime_IHitObject__"><code>AllowCollect</code></a> method is used for adding custom rules on whether the player is allowed to collect the Hit Object they've clicked on.</p>
 <p>The <a class="xref" href="../api/MouseDance.Runtime.HitObjectReaction.html#MouseDance_Runtime_HitObjectReaction_ReactType">HitObjectReaction.ReactType</a> in the return value changes how the game reacts to the clicked Hit Object:</p>
 <style>
@@ -251,8 +255,10 @@ td.word {
 </table>
 <p>If you don't need to add custom rules, just return <a class="xref" href="../api/MouseDance.Runtime.HitObjectReaction.html#MouseDance_Runtime_HitObjectReaction_Default"><code>HitObjectReaction.Default</code></a>.</p>
 <p>The <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ICustomCollectRule.html#MouseDance_Runtime_Callbacks_ICustomCollectRule_AllowCollect_MouseDance_Runtime_IHitObject_System_Collections_Generic_IReadOnlyList_MouseDance_Runtime_IHitObject__"><code>AllowCollect</code></a> method works on top of the usual rules that are already being followed (should be pressing Hit Objects in correct order, should press within the time window, etc.) so there is no need to repeat those basic rules in your <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ICustomCollectRule.html#MouseDance_Runtime_Callbacks_ICustomCollectRule_AllowCollect_MouseDance_Runtime_IHitObject_System_Collections_Generic_IReadOnlyList_MouseDance_Runtime_IHitObject__"><code>AllowCollect</code></a> method.</p>
-<p><a class="xref" href="../api/MouseDance.Runtime.Callbacks.ICustomCollectRule.html#MouseDance_Runtime_Callbacks_ICustomCollectRule_AllowCollect_MouseDance_Runtime_IHitObject_System_Collections_Generic_IReadOnlyList_MouseDance_Runtime_IHitObject__"><code>AllowCollect</code></a> is called during the same frame that <a class="xref" href="../api/MouseDance.Runtime.Callbacks.IBeatmapInput.html#MouseDance_Runtime_Callbacks_IBeatmapInput_IsPlayerInputDown"><code>IsPlayerInputDown</code></a> returns true, provided that the code did find Hit Objects under the mouse cursor upon clicking.</p>
-<p>Furthermore, <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ICustomCollectRule.html#MouseDance_Runtime_Callbacks_ICustomCollectRule_AllowCollect_MouseDance_Runtime_IHitObject_System_Collections_Generic_IReadOnlyList_MouseDance_Runtime_IHitObject__"><code>AllowCollect</code></a> is called for each Hit Object under the mouse, in case the player clicked on overlapping Hit Objects. You can check the <code>allPressed</code> argument for the list of all Hit Objects pressed. This list is sorted by z-order, with the topmost Hit Object coming in first. That means you can check if the currently</p>
+<p><a class="xref" href="../api/MouseDance.Runtime.Callbacks.ICustomCollectRule.html#MouseDance_Runtime_Callbacks_ICustomCollectRule_AllowCollect_MouseDance_Runtime_IHitObject_System_Collections_Generic_IReadOnlyList_MouseDance_Runtime_IHitObject__"><code>AllowCollect</code></a> is called during the same frame that <a class="xref" href="../api/MouseDance.Runtime.Callbacks.IBeatmapInput.html#MouseDance_Runtime_Callbacks_IBeatmapInput_IsPlayerInputDown"><code>IsPlayerInputDown</code></a> returns true, provided that the code <em>did</em> find Hit Objects under the mouse cursor upon clicking.</p>
+<h2 id="the-allpressed-list">The allPressed List</h2>
+<p>Furthermore, <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ICustomCollectRule.html#MouseDance_Runtime_Callbacks_ICustomCollectRule_AllowCollect_MouseDance_Runtime_IHitObject_System_Collections_Generic_IReadOnlyList_MouseDance_Runtime_IHitObject__"><code>AllowCollect</code></a> is called for each Hit Object under the mouse, in case the player clicked on overlapping Hit Objects. You can check the <code>allPressed</code> argument for the list of all Hit Objects pressed. This list is sorted by z-order, with the topmost Hit Object coming in first. That means you can check if the Hit Object currently being checked is the topmost, by doing <code>hitObject == allPressed[0]</code>. That also means if the player didn't click on overlapping Hit Objects, then the <code>allPressed</code> list will really have just one Hit Object inside it.</p>
+<h2 id="collecting-slider-parts">Collecting Slider Parts</h2>
 <p>The <a class="xref" href="../api/MouseDance.Runtime.Callbacks.ICustomCollectRule.html#MouseDance_Runtime_Callbacks_ICustomCollectRule_AllowCollectSliderPart_MouseDance_Runtime_IHitObject_"><code>AllowCollectSliderPart</code></a> method is used when the player has their input down on a Slider and is about to collect a Slider Tick or Tail/Head. You can return false to prevent it from happening.</p>
 <h2 id="custom-effect">Custom Hit/Miss Visual and Sound Effect</h2>
 <p>The <a class="xref" href="../api/MouseDance.Runtime.HitObjectReaction.html#MouseDance_Runtime_HitObjectReaction_EffectsId"><code>EffectsId</code></a> in the return value can be used to make the game use a custom visual and sound effect.</p>

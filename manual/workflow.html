@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Code Usage | MouseDance User Docs </title>
+    <title>Workflow | MouseDance User Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Code Usage | MouseDance User Docs ">
+    <meta name="title" content="Workflow | MouseDance User Docs ">
     <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -105,60 +105,23 @@
                         </div>
 
                     <article class="content wrap" id="_content" data-uid="">
-<h1 id="code-usage">Code Usage</h1>
+<h1 id="workflow">Workflow</h1>
 
-<div class="TIP">
-<h5>Tip</h5>
-<p>This section is meant for experienced developers who are comfortable with programming in Unity. If you are unfamiliar with programming, or you don't understand the source code examples here, please refer to Unity's <a href="https://learn.unity.com/">Learn platform</a> first.</p>
-</div>
-<p>The simplest way you can get a beatmap to run from code looks like this:</p>
-<pre><code class="lang-csharp">public class BasicUsage : UnityEngine.MonoBehaviour
-{
-  public MouseDance.Runtime.BeatmapRunner _beatmapRunner;
-  public UnityEngine.TextAsset _osuFile;
-  public UnityEngine.AudioClip _song;
-
-  void Start()
-  {
-    _beatmapRunner.LoadAndStart(_osuFile, _song);
-  }
-}
-</code></pre>
-<p><img src="../resources/BasicUsageInspector.png" alt="BasicUsage component in Inspector"></p>
-<div class="CAUTION">
-<h5>Caution</h5>
-<p>Take note that the <code>BeatmapRunner</code> needs to have been set up properly for this to work. To make this easier, a <code>MouseDance</code> prefab is available for you to use in the <code>MouseDance/Demo/Prefabs</code> folder. There are also some variations of this prefab for use with either a 2d or 3d camera, and with or without post-processing effects. You can also look at the demo scenes to see how it all works.</p>
-</div>
-<p>After your code calls <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner_LoadAndStart_UnityEngine_TextAsset_UnityEngine_AudioClip_"><code>LoadAndStart</code></a>, the <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html"><code>BeatmapRunner</code></a> will handle everything.</p>
-<p>The <a href="https://osu.ppy.sh/wiki/en/Client/File_formats/Osu_%28file_format%29">.osu file</a> is actually a text file, so we use <a href="https://docs.unity3d.com/Manual/class-TextAsset.html"><code>TextAsset</code></a> as a straightforward way to get the text data.</p>
+<p>The basic premise here is to use the <em>Osu!</em> Beatmap Editor since it has a robust set of tools for authoring and playtesting beatmaps, then to bring the resulting .osu file(s) into Unity.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If you open an .osu file in Notepad, you'll see all the data inside since it's really just a text file:</p>
-<p><img src="../resources/OsuFileInNotepad.png" alt="Osu file in Notepad"></p>
+<p>This only explains the basics on setting up your osu files. The art of placing coherent Hit Objects and making them harmonious with the song is beyond the scope of this manual.</p>
+<p>There are many Youtube tutorials regarding basic controls, techniques, and the thought processes behind how a beatmap should be designed.</p>
+<p>Youtube channel <a href="https://www.youtube.com/c/pishifat">pishifat</a> is a good example. Also, here is the documentation on the <a href="https://osu.ppy.sh/wiki/en/Client/Beatmap_editor">Beatmap Editor</a>.</p>
 </div>
-<p>The .osu file can already specify the relative path to the song to use, but due to how Unity organizes assets, we can't rely on that path during runtime (unless you use <a href="https://docs.unity3d.com/Manual/StreamingAssets.html">StreamingAssets</a>). So BeatmapRunner allows specifying the <a href="https://docs.unity3d.com/Manual/class-AudioClip.html"><code>AudioClip</code></a> directly.</p>
-<h2 id="assembly-definition">Assembly Definition</h2>
-<p>If your code is using an <a href="https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html">Assembly Definition</a>, you need to add <code>MouseDance.Runtime</code> and <code>OsuParsers</code> in your <a href="https://docs.unity3d.com/Manual/class-AssemblyDefinitionReferenceImporter.html">Assembly Definition References</a>.</p>
-<p><img src="../resources/MouseDanceAssemblyDefinitionReference.png" alt="Assembly Definition References"></p>
-<h2 id="further-examples">Further Examples</h2>
-<p>Refer to the other sections on how to customize particular aspects of the game:</p>
-<ul>
-<li><a href="custom_countdown.html">Countdown Animation</a></li>
-<li><a href="custom_beatmap.html">Customizing the Beatmap</a></li>
-<li><a href="getting_results.html">Getting Game Over Event and Results</a></li>
-<li><a href="custom_input.html">Custom User-Input Detection</a></li>
-<li><a href="custom_scoring.html">Custom Scoring</a></li>
-<li><a href="custom_hit_objects.html">Custom Hit Objects</a></li>
-<li><a href="custom_hit_rules.html">Custom Hit Rules</a></li>
-<li><a href="custom_circle_size.html">Custom Circle Size</a></li>
-</ul>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>A note to developers: If you find yourself needing to change the source code inside MouseDance to fit your needs, please contact me first (contact details are in the asset package).</p>
-<p>The problem is if you edit MouseDance internal code, and then need to update it to a newer version, you would have to manually resolve the differences between your edits and the newer version of MouseDance.</p>
-<p>The proper way to customize MouseDance is using the API: implementing interface callbacks and/or sub-classing and overriding virtual methods. All the sample code shown do it this way. This is more desirable so that your code is separate from the MouseDance internal code.</p>
-<p>So if you need to, contact me and I can perhaps create a new virtual method that you can override, a new callback or event that you can subscribe to, or whatever works best for you.</p>
-</div>
+<ol>
+<li><a href="workflow_create_osu_file.html">Creating an .osu file</a></li>
+<li><a href="workflow_setting_bpm.html">Setting the BPM</a></li>
+<li><a href="workflow_compose.html">Adding Hit Objects</a></li>
+<li><a href="workflow_playtest_osu.html">Playtesting in <em>Osu!</em></a></li>
+<li><a href="workflow_import_unity.html">Importing to Unity</a></li>
+<li><a href="workflow_playtest_unity.html">Playtesting in Unity</a></li>
+</ol>
 </article>
               
                 </div>
