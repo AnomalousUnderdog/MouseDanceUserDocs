@@ -127,7 +127,9 @@
 <p><img src="../resources/BasicUsageInspector.png" alt="BasicUsage component in Inspector"></p>
 <div class="CAUTION">
 <h5>Caution</h5>
-<p>Take note that the <code>BeatmapRunner</code> needs to have been set up properly for this to work. To make this easier, a <code>MouseDance</code> prefab is available for you to use in the <code>MouseDance/Demo/Prefabs</code> folder. There are also some variations of this prefab for use with either a 2d or 3d camera, and with or without post-processing effects. You can also look at the demo scenes to see how it all works.</p>
+<p>Take note that the <a href="beatmap_runner.html"><code>BeatmapRunner</code></a> (and <a href="hit_object_manager.html"><code>HitObjectManager</code></a>) needs to have been set up properly for this to work. To make this easier, some ready-to-use prefabs are available for you to use in the <code>Demo URP Assets.unitypackage</code>. Once extracted, they will be in the <code>MouseDanceDemo URP Assets/Prefabs</code> folder.</p>
+<p><img src="../resources/MouseDancePrefabs.png" alt="Prefabs"></p>
+<p>There are some variations for use with either a 2d or 3d camera, and with or without post-processing effects. You can also look at the demo scenes to see how it all works.</p>
 </div>
 <p>After your code calls <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner_LoadAndStart_UnityEngine_TextAsset_UnityEngine_AudioClip_"><code>LoadAndStart</code></a>, the <a class="xref" href="../api/MouseDance.Runtime.BeatmapRunner.html"><code>BeatmapRunner</code></a> will handle everything.</p>
 <p>The <a href="https://osu.ppy.sh/wiki/en/Client/File_formats/Osu_%28file_format%29">.osu file</a> is actually a text file, so we use <a href="https://docs.unity3d.com/Manual/class-TextAsset.html"><code>TextAsset</code></a> as a straightforward way to get the text data.</p>

@@ -133,17 +133,763 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class SliderBall : MonoBehaviour, ISliderBall</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__ballOrientation" data-uid="MouseDance.Runtime.SliderBall._ballOrientation">_ballOrientation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Which transform we'll do the orienting animation on.&quot;)]
+protected Transform _ballOrientation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Transform.html">Transform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__ballOrientationSpeed" data-uid="MouseDance.Runtime.SliderBall._ballOrientationSpeed">_ballOrientationSpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;How fast the ball orients itself to the direction it's moving to.&quot;)]
+protected float _ballOrientationSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__ballPosition" data-uid="MouseDance.Runtime.SliderBall._ballPosition">_ballPosition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;The transform we'll be moving around.&quot;)]
+protected Transform _ballPosition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Transform.html">Transform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__ballRenderer" data-uid="MouseDance.Runtime.SliderBall._ballRenderer">_ballRenderer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Renderer _ballRenderer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Renderer.html">Renderer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__ballRoll" data-uid="MouseDance.Runtime.SliderBall._ballRoll">_ballRoll</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Which transform we'll do the rolling animation on.&quot;)]
+protected Transform _ballRoll</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Transform.html">Transform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__ballRotationSpeed" data-uid="MouseDance.Runtime.SliderBall._ballRotationSpeed">_ballRotationSpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;How fast the ball rolls.&quot;)]
+protected float _ballRotationSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__ballScale" data-uid="MouseDance.Runtime.SliderBall._ballScale">_ballScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Which transform we'll use for changing the ball size.&quot;)]
+protected Transform _ballScale</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Transform.html">Transform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__ballScaleMultiplier" data-uid="MouseDance.Runtime.SliderBall._ballScaleMultiplier">_ballScaleMultiplier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Scale multiplier for the ball 3d model. This is for converting the size value from the UI to the 3d model. Since Unity UI scale works in pixel units (which gives you rather large values) and a 3d model's scale is often a small value, where (1, 1, 1) is often the correct value, this multiplier needs to be small (less than 1.0) to make the ball 3d model be in the correct scale.&quot;)]
+protected float _ballScaleMultiplier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__ballSpeed" data-uid="MouseDance.Runtime.SliderBall._ballSpeed">_ballSpeed</h4>
+  <div class="markdown level1 summary"><p>Movement applied to ball every frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _ballSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__beatmapInput" data-uid="MouseDance.Runtime.SliderBall._beatmapInput">_beatmapInput</h4>
+  <div class="markdown level1 summary"><p>Optional. Used to figure out where the mouse cursor is.
+If set to null, then we just use Input.mousePosition (when using old Input System)
+or Mouse.current.position.ReadValue() (when using new Input System).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IBeatmapInput _beatmapInput</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapInput.html">IBeatmapInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__colour" data-uid="MouseDance.Runtime.SliderBall._colour">_colour</h4>
+  <div class="markdown level1 summary"><p>Current colour applied to the <a class="xref" href="MouseDance.Runtime.SliderBall.html#MouseDance_Runtime_SliderBall__materialPropertyBlock">_materialPropertyBlock</a>.
+Used for showing/hiding/fading-out the ball.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Color _colour</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__fadeOut" data-uid="MouseDance.Runtime.SliderBall._fadeOut">_fadeOut</h4>
+  <div class="markdown level1 summary"><p>Once ball has finished movement, this is set to true so fading starts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _fadeOut</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__materialPropertyBlock" data-uid="MouseDance.Runtime.SliderBall._materialPropertyBlock">_materialPropertyBlock</h4>
+  <div class="markdown level1 summary"><p>Used to apply color change to the Ball material.
+Used for showing/hiding/fading-out the ball.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MaterialPropertyBlock _materialPropertyBlock</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html">MaterialPropertyBlock</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__moveInReverse" data-uid="MouseDance.Runtime.SliderBall._moveInReverse">_moveInReverse</h4>
+  <div class="markdown level1 summary"><p>Whether we are moving towards the tail or the head of the Slider.<br>
+True: Ball is moving from tail to head.<br>
+False: Ball is moving from head to tail.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _moveInReverse</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__movingRight" data-uid="MouseDance.Runtime.SliderBall._movingRight">_movingRight</h4>
+  <div class="markdown level1 summary"><p>
+Flag indicating whether ball is currently moving to the right (in terms of screen-space).
+</p>
+<p>
+Once the ball is no longer moving in the same direction
+then we know the ball has &quot;overshot&quot; its movement towards its current destination.
+This lets us know the destination has been reached.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _movingRight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__movingUp" data-uid="MouseDance.Runtime.SliderBall._movingUp">_movingUp</h4>
+  <div class="markdown level1 summary"><p>
+Flag indicating whether ball is currently moving up (in terms of screen-space).
+</p>
+<p>
+Once the ball is no longer moving in the same direction
+then we know the ball has &quot;overshot&quot; its movement towards its current destination.
+This lets us know the destination has been reached.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _movingUp</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__nextPathIdx" data-uid="MouseDance.Runtime.SliderBall._nextPathIdx">_nextPathIdx</h4>
+  <div class="markdown level1 summary"><p>Index in the <a class="xref" href="MouseDance.Runtime.SliderBall.html#MouseDance_Runtime_SliderBall__path">_path</a> list that points to the
+current destination that the ball is going towards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _nextPathIdx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__numberOfTimes" data-uid="MouseDance.Runtime.SliderBall._numberOfTimes">_numberOfTimes</h4>
+  <div class="markdown level1 summary"><p>
+Current number of times the ball has to move through the Slider it&apos;s on.
+</p>
+<p>
+This decrements each time an end of the Slider is reached (either tail-end or head-end),
+and once value becomes 0, then we know the ball has finally finished moving.
+</p>
+<p>
+Normally this just starts with value of 1, to indicate the ball just moves
+from head of Slider to tail, and then finishes, no repeats.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _numberOfTimes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__path" data-uid="MouseDance.Runtime.SliderBall._path">_path</h4>
+  <div class="markdown level1 summary"><p>Local-space positions of each point in the Slider's path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;Vector3&gt; _path</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__rectTransform" data-uid="MouseDance.Runtime.SliderBall._rectTransform">_rectTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;The parent RectTransform of the ball.&quot;)]
+protected RectTransform _rectTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectTransform.html">RectTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__rollAxis" data-uid="MouseDance.Runtime.SliderBall._rollAxis">_rollAxis</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;What direction to use when doing the rolling animation for the ball 3d model.&quot;)]
+protected Axis _rollAxis</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Animations.Axis.html">Axis</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__rollDir" data-uid="MouseDance.Runtime.SliderBall._rollDir">_rollDir</h4>
+  <div class="markdown level1 summary"><p>Direction of rolling animation, relative to the <a class="xref" href="MouseDance.Runtime.SliderBall.html#MouseDance_Runtime_SliderBall__ballRoll">_ballRoll</a> transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector3 _rollDir</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__slider" data-uid="MouseDance.Runtime.SliderBall._slider">_slider</h4>
+  <div class="markdown level1 summary"><p>The slider this ball is moving through.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ISlider _slider</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.ISlider.html">ISlider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__smoothenOrientation" data-uid="MouseDance.Runtime.SliderBall._smoothenOrientation">_smoothenOrientation</h4>
+  <div class="markdown level1 summary"><p>Change how ball changes facing towards direction of movement:<br>
+True: Ease the change of direction so ball slowly rotates.<br>
+False: Ball turns to face direction of movement immediately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _smoothenOrientation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__targetOrientation" data-uid="MouseDance.Runtime.SliderBall._targetOrientation">_targetOrientation</h4>
+  <div class="markdown level1 summary"><p>Current facing direction the ball is going towards.
+Only used when <a class="xref" href="MouseDance.Runtime.SliderBall.html#MouseDance_Runtime_SliderBall__smoothenOrientation">_smoothenOrientation</a> is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector3 _targetOrientation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__timeToDie" data-uid="MouseDance.Runtime.SliderBall._timeToDie">_timeToDie</h4>
+  <div class="markdown level1 summary"><p>Absolute time in milliseconds when ball fading is finished.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeToDie</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall__viewCamera" data-uid="MouseDance.Runtime.SliderBall._viewCamera">_viewCamera</h4>
+  <div class="markdown level1 summary"><p>Needed for figuring out the distance between this Slider Ball
+and the mouse cursor (or touch input, for mobile).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Camera _viewCamera</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Camera.html">Camera</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SliderBall_ColourProperty" data-uid="MouseDance.Runtime.SliderBall.ColourProperty">ColourProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly int ColourProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
   
   <a id="MouseDance_Runtime_SliderBall_DistanceToMouse_" data-uid="MouseDance.Runtime.SliderBall.DistanceToMouse*"></a>
   <h4 id="MouseDance_Runtime_SliderBall_DistanceToMouse" data-uid="MouseDance.Runtime.SliderBall.DistanceToMouse">DistanceToMouse</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Distance of mouse cursor to this Slider Ball, in Osu!pixels.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float DistanceToMouse { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual float DistanceToMouse { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -169,7 +915,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsMoving { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool IsMoving { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -191,12 +937,12 @@
   <a id="MouseDance_Runtime_SliderBall_Slider_" data-uid="MouseDance.Runtime.SliderBall.Slider*"></a>
   <h4 id="MouseDance_Runtime_SliderBall_Slider" data-uid="MouseDance.Runtime.SliderBall.Slider">Slider</h4>
   <div class="markdown level1 summary"><p>The Slider that this Ball is rolling through.
-Needed so we can inform the Slider of our roll progress through <a class="xref" href="MouseDance.Runtime.ISlider.html#MouseDance_Runtime_ISlider_OnBallReachedPositionInPath_System_Int32_System_Int32_System_Boolean_System_Single_">OnBallReachedPositionInPath(Int32, Int32, Boolean, Single)</a></p>
+Needed so we can inform the Slider of our roll progress, through <a class="xref" href="MouseDance.Runtime.ISlider.html#MouseDance_Runtime_ISlider_OnBallReachedPositionInPath_System_Int32_System_Int32_System_Boolean_System_Single_">OnBallReachedPositionInPath(Int32, Int32, Boolean, Single)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISlider Slider { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual ISlider Slider { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -224,7 +970,7 @@ Needed so we can inform the Slider of our roll progress through <a class="xref" 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Hide()</code></pre>
   </div>
   
   
@@ -235,7 +981,7 @@ Needed so we can inform the Slider of our roll progress through <a class="xref" 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Move(ISlider slider, int comboCounter, bool showNumber, float radius, double ballSpeed, int numberOfTimes, Vector2 initialPos, List&lt;Vector3&gt; path, Color colour, bool smoothenOrientation)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Move(ISlider slider, int comboCounter, bool showNumber, float radius, double ballSpeed, int numberOfTimes, Vector2 initialPos, List&lt;Vector3&gt; path, Color colour, bool smoothenOrientation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -318,7 +1064,7 @@ Needed so we can inform the Slider of our roll progress through <a class="xref" 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Resize(float radius)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Resize(float radius)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -342,12 +1088,12 @@ Needed so we can inform the Slider of our roll progress through <a class="xref" 
   
   <a id="MouseDance_Runtime_SliderBall_SetInput_" data-uid="MouseDance.Runtime.SliderBall.SetInput*"></a>
   <h4 id="MouseDance_Runtime_SliderBall_SetInput_MouseDance_Runtime_Callbacks_IBeatmapInput_" data-uid="MouseDance.Runtime.SliderBall.SetInput(MouseDance.Runtime.Callbacks.IBeatmapInput)">SetInput(IBeatmapInput)</h4>
-  <div class="markdown level1 summary"><p>Needed for getting the mouse cursor position.</p>
+  <div class="markdown level1 summary"><p>Optional. If user has custom code on how to retrieve the mouse cursor position, this is used to get that.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetInput(IBeatmapInput beatmapInput)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void SetInput(IBeatmapInput beatmapInput)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -362,7 +1108,7 @@ Needed so we can inform the Slider of our roll progress through <a class="xref" 
       <tr>
         <td><a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapInput.html">IBeatmapInput</a></td>
         <td><span class="parametername">beatmapInput</span></td>
-        <td><p>Needed for properly checking mouse cursor position.</p>
+        <td><p>Something that provides mouse cursor position.</p>
 </td>
       </tr>
     </tbody>
@@ -372,12 +1118,13 @@ Needed so we can inform the Slider of our roll progress through <a class="xref" 
   <a id="MouseDance_Runtime_SliderBall_SetViewCamera_" data-uid="MouseDance.Runtime.SliderBall.SetViewCamera*"></a>
   <h4 id="MouseDance_Runtime_SliderBall_SetViewCamera_UnityEngine_Camera_" data-uid="MouseDance.Runtime.SliderBall.SetViewCamera(UnityEngine.Camera)">SetViewCamera(Camera)</h4>
   <div class="markdown level1 summary"><p>Needed for figuring out the distance between this Slider Ball
-and the mouse cursor (or touch input, for mobile).</p>
+and the mouse cursor (or touch input, for mobile).
+The camera is used to help convert mouse cursor position from screen-space into Osu!pixel values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetViewCamera(Camera newViewCam)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void SetViewCamera(Camera newViewCam)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -392,11 +1139,23 @@ and the mouse cursor (or touch input, for mobile).</p>
       <tr>
         <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Camera.html">Camera</a></td>
         <td><span class="parametername">newViewCam</span></td>
-        <td><p>The camera that will be used for figuring out the distance between this ball and mouse cursor.</p>
+        <td><p>The camera that will be used for converting the mouse cursor position values.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="MouseDance_Runtime_SliderBall_Update_" data-uid="MouseDance.Runtime.SliderBall.Update*"></a>
+  <h4 id="MouseDance_Runtime_SliderBall_Update" data-uid="MouseDance.Runtime.SliderBall.Update">Update()</h4>
+  <div class="markdown level1 summary"><p>Called every frame to move and roll the ball, and do the fade out animation, when necessary.
+Each time a destination has been reached, this calls <a class="xref" href="MouseDance.Runtime.ISlider.html#MouseDance_Runtime_ISlider_OnBallReachedPositionInPath_System_Int32_System_Int32_System_Boolean_System_Single_">OnBallReachedPositionInPath(Int32, Int32, Boolean, Single)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Update()</code></pre>
+  </div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="MouseDance.Runtime.ISliderBall.html">ISliderBall</a>

@@ -145,6 +145,861 @@ Hit and miss visual effects on the other hand, are handled by the <a class="xref
   </h3>
   
   
+  <h4 id="MouseDance_Runtime_HitCircle__approachCircle" data-uid="MouseDance.Runtime.HitCircle._approachCircle">_approachCircle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Approach Circle&quot;)]
+[SerializeField]
+[Tooltip(&quot;Used to animate the Approach Circle's size.&quot;)]
+protected RectTransform _approachCircle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectTransform.html">RectTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__approachCircleFinalSize" data-uid="MouseDance.Runtime.HitCircle._approachCircleFinalSize">_approachCircleFinalSize</h4>
+  <div class="markdown level1 summary"><p>Diameter of the Approach Circle at the end of its animation.
+This is usually the same value as the <a class="xref" href="MouseDance.Runtime.HitCircle.html#MouseDance_Runtime_HitCircle__hitCircleSize">_hitCircleSize</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _approachCircleFinalSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__approachCircleFinalSizeMultiplier" data-uid="MouseDance.Runtime.HitCircle._approachCircleFinalSizeMultiplier">_approachCircleFinalSizeMultiplier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;How big the Approach Circle should be at its final position, relative to the Start Cap's size. Default is 1 (same size as the Start Cap size). If your Start Cap has a custom shape and the Approach Circle is still visible at its final position, you may want to set this to a value smaller than 1.&quot;)]
+protected float _approachCircleFinalSizeMultiplier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__approachCircleImage" data-uid="MouseDance.Runtime.HitCircle._approachCircleImage">_approachCircleImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Used to fade-in or fade-out the Approach Circle as needed.&quot;)]
+protected Image _approachCircleImage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__approachCircleOpacity" data-uid="MouseDance.Runtime.HitCircle._approachCircleOpacity">_approachCircleOpacity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Final opacity of the Approach Circle once it's fully faded-in. Normally set to 1.0, but you can set this to less than 1.0 if you want the Approach Circle to be transparent even after it has faded-in.&quot;)]
+[Range(0F, 1F)]
+protected float _approachCircleOpacity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__approachCircleStartSize" data-uid="MouseDance.Runtime.HitCircle._approachCircleStartSize">_approachCircleStartSize</h4>
+  <div class="markdown level1 summary"><p>Diameter of the Approach Circle at the start.
+This is naturally larger than the final size,
+since the Approach Circle shrinks as time goes by.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _approachCircleStartSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__beatmapRunner" data-uid="MouseDance.Runtime.HitCircle._beatmapRunner">_beatmapRunner</h4>
+  <div class="markdown level1 summary"><p>Needed to report to the game when user pressed the Hit Circle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IBeatmapRunner _beatmapRunner</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IBeatmapRunner.html">IBeatmapRunner</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__borderScaleAtSmallestCircleSize" data-uid="MouseDance.Runtime.HitCircle._borderScaleAtSmallestCircleSize">_borderScaleAtSmallestCircleSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;What the Border Image's scale needs to be when this Hit Circle is set to Circle Size 10. Leave at 1.0 if adjustment is not necessary.&quot;)]
+protected float _borderScaleAtSmallestCircleSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__colliderSizeOffset" data-uid="MouseDance.Runtime.HitCircle._colliderSizeOffset">_colliderSizeOffset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Adjustment to the size of the Collider after it is resized according to the Circle Size. This value is added (or subtracted if this value is negative). Leave at 0 if not needed.&quot;)]
+protected float _colliderSizeOffset</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__doShake" data-uid="MouseDance.Runtime.HitCircle._doShake">_doShake</h4>
+  <div class="markdown level1 summary"><p>Whether to do a shake animation right now or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _doShake</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__fadeOutDueToPressed" data-uid="MouseDance.Runtime.HitCircle._fadeOutDueToPressed">_fadeOutDueToPressed</h4>
+  <div class="markdown level1 summary"><p>True: If Hit Circle is currently being faded-out, then the reason for it fading out is because it was pressed.<br>
+False: If Hit Circle is currently being faded-out, then the reason for it fading out is because lifetime was over and it was not pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _fadeOutDueToPressed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__growHitCircleOnShow" data-uid="MouseDance.Runtime.HitCircle._growHitCircleOnShow">_growHitCircleOnShow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Do we animate the Hit Circle growing in size at the same time that it's being faded-in?&quot;)]
+protected bool _growHitCircleOnShow</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__hitCircle" data-uid="MouseDance.Runtime.HitCircle._hitCircle">_hitCircle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Hit Circle&quot;)]
+[SerializeField]
+[Tooltip(&quot;Used to properly set the size of the Hit Circle.&quot;)]
+protected RectTransform _hitCircle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectTransform.html">RectTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__hitCircleBorder" data-uid="MouseDance.Runtime.HitCircle._hitCircleBorder">_hitCircleBorder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Image _hitCircleBorder</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__hitCircleImage" data-uid="MouseDance.Runtime.HitCircle._hitCircleImage">_hitCircleImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Used to fade the Hit Circle in and out as needed.&quot;)]
+protected Image _hitCircleImage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__hitCircleRadiusMultiplier" data-uid="MouseDance.Runtime.HitCircle._hitCircleRadiusMultiplier">_hitCircleRadiusMultiplier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Settings&quot;)]
+[SerializeField]
+[Tooltip(&quot;Multiplier to the Hit Circle size. 1.0 means no change. Greater than 1 means bigger, lesser than 1 means smaller. This multiplier is applied on top of the Osu file's \&quot;Circle Size\&quot; setting, and even on top of the MouseDance.Runtime.HitObjectManager's Circle Radius Multiplier.&quot;)]
+protected float _hitCircleRadiusMultiplier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__hitCircleSize" data-uid="MouseDance.Runtime.HitCircle._hitCircleSize">_hitCircleSize</h4>
+  <div class="markdown level1 summary"><p>Diameter of the Hit Circle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _hitCircleSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__manager" data-uid="MouseDance.Runtime.HitCircle._manager">_manager</h4>
+  <div class="markdown level1 summary"><p>Needed to allow this Hit Circle to be despawned and moved back to pool for reusing,
+and for reporting when user has pressed the Hit Circle right or wrong so it can play the proper sound/visual fx.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HitObjectManager _manager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.HitObjectManager.html">HitObjectManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__originalPosition" data-uid="MouseDance.Runtime.HitCircle._originalPosition">_originalPosition</h4>
+  <div class="markdown level1 summary"><p>We keep track of the position this Hit Circle is initially shown in,
+so that we can return to it after doing a shake animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2 _originalPosition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__positionOffset" data-uid="MouseDance.Runtime.HitCircle._positionOffset">_positionOffset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;If the game is shown or positioned in some special way, you can add an offset to the positions of Hit Circles here. Leave value at (0, 0) if not needed.&quot;)]
+protected Vector2 _positionOffset</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__rectTransform" data-uid="MouseDance.Runtime.HitCircle._rectTransform">_rectTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Used for positioning the Hit Circle.&quot;)]
+protected RectTransform _rectTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectTransform.html">RectTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__shakeEndTime" data-uid="MouseDance.Runtime.HitCircle._shakeEndTime">_shakeEndTime</h4>
+  <div class="markdown level1 summary"><p>Absolute time when to end shaking animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _shakeEndTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__startBorderScaleAfter" data-uid="MouseDance.Runtime.HitCircle._startBorderScaleAfter">_startBorderScaleAfter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Start scaling the Border Image towards \&quot;Border Scale At Smallest Circle Size\&quot; after this Circle Size value. So a value of 5 here means, Border Image scale starts getting adjusted when the Circle Size this Hit Circle is set to is 6 to 10.&quot;)]
+protected int _startBorderScaleAfter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__text" data-uid="MouseDance.Runtime.HitCircle._text">_text</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Used to display the number on the Hit Circle.&quot;)]
+protected TextMeshProUGUI _text</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TMPro.TextMeshProUGUI</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__timeStarted" data-uid="MouseDance.Runtime.HitCircle._timeStarted">_timeStarted</h4>
+  <div class="markdown level1 summary"><p>Absolute time the Hit Circle started showing up.
+This is used to properly calculate the percentage progress of its lifetime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeStarted</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__timeToApproachCircleEnd" data-uid="MouseDance.Runtime.HitCircle._timeToApproachCircleEnd">_timeToApproachCircleEnd</h4>
+  <div class="markdown level1 summary"><p>Absolute time the Approach Circle will finish.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeToApproachCircleEnd</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__timeToApproachCircleFullOpacity" data-uid="MouseDance.Runtime.HitCircle._timeToApproachCircleFullOpacity">_timeToApproachCircleFullOpacity</h4>
+  <div class="markdown level1 summary"><p>Absolute time when the Approach Circle has completely faded-in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeToApproachCircleFullOpacity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__timeToApproachCircleStart" data-uid="MouseDance.Runtime.HitCircle._timeToApproachCircleStart">_timeToApproachCircleStart</h4>
+  <div class="markdown level1 summary"><p>Time when Approach Circle should start doing its animation.
+This is normally same as <a class="xref" href="MouseDance.Runtime.HitCircle.html#MouseDance_Runtime_HitCircle__timeStarted">_timeStarted</a> but can be later,
+in case Hit Circle was shown even way earlier than the usual preempt duration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeToApproachCircleStart</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__timeToDie" data-uid="MouseDance.Runtime.HitCircle._timeToDie">_timeToDie</h4>
+  <div class="markdown level1 summary"><p>Absolute time the Hit Circle should start fading out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeToDie</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__timeToFadeOutFromPressed" data-uid="MouseDance.Runtime.HitCircle._timeToFadeOutFromPressed">_timeToFadeOutFromPressed</h4>
+  <div class="markdown level1 summary"><p>Absolute time when Hit Circle should be at 100% faded-out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeToFadeOutFromPressed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__timeToHitCircleOpacityFull" data-uid="MouseDance.Runtime.HitCircle._timeToHitCircleOpacityFull">_timeToHitCircleOpacityFull</h4>
+  <div class="markdown level1 summary"><p>Absolute time when Opacity will finally be 100%.
+This is also the time that the Hit Circle is supposed to be pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeToHitCircleOpacityFull</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__timeToHitCircleOpacityPartial" data-uid="MouseDance.Runtime.HitCircle._timeToHitCircleOpacityPartial">_timeToHitCircleOpacityPartial</h4>
+  <div class="markdown level1 summary"><p>Absolute time when Hit Circle will finish fading-in at
+Opacity set to <a class="xref" href="MouseDance.Runtime.HitCircle.html#MouseDance_Runtime_HitCircle_HIT_CIRCLE_PARTIAL_OPACITY">HIT_CIRCLE_PARTIAL_OPACITY</a>.
+After this point in time, fading will pause.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeToHitCircleOpacityPartial</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle__timeToHitCircleOpacityWaitEnd" data-uid="MouseDance.Runtime.HitCircle._timeToHitCircleOpacityWaitEnd">_timeToHitCircleOpacityWaitEnd</h4>
+  <div class="markdown level1 summary"><p>Absolute time when pause for fading-in will finish.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeToHitCircleOpacityWaitEnd</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="MouseDance_Runtime_HitCircle_APPROACH_CIRCLE_FADE_IN_MULTIPLIER" data-uid="MouseDance.Runtime.HitCircle.APPROACH_CIRCLE_FADE_IN_MULTIPLIER">APPROACH_CIRCLE_FADE_IN_MULTIPLIER</h4>
   <div class="markdown level1 summary"><p>How long the approach circle fades in.
 This value isn't the actual duration, but a multiplier on the Approach Rate Duration.
@@ -316,6 +1171,136 @@ This value is just guessed, based on playing <em>Osu!</em>.</p>
       </tr>
     </tbody>
   </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle_HIT_CIRCLE_PARTIAL_OPACITY" data-uid="MouseDance.Runtime.HitCircle.HIT_CIRCLE_PARTIAL_OPACITY">HIT_CIRCLE_PARTIAL_OPACITY</h4>
+  <div class="markdown level1 summary"><p>Before the hit circle goes to full opacity, it uses this value,
+pauses for a short while, and only then fade-in to full opacity.
+This value is normalized (0.5 means 50%, 1.0 means 100%).
+This value is just guessed, based on playing <em>Osu!</em>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const float HIT_CIRCLE_PARTIAL_OPACITY = 0.5F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle_PRESSED_FADE_OUT_DURATION" data-uid="MouseDance.Runtime.HitCircle.PRESSED_FADE_OUT_DURATION">PRESSED_FADE_OUT_DURATION</h4>
+  <div class="markdown level1 summary"><p>When Hit Circle is pressed/collected (whether in the correct time window or not), it's faded-out.
+This is how long in milliseconds the fade-out animation takes.
+It's faster than <a class="xref" href="MouseDance.Runtime.HitCircle.html#MouseDance_Runtime_HitCircle_DIE_OFF_FADE_OUT_DURATION">DIE_OFF_FADE_OUT_DURATION</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const float PRESSED_FADE_OUT_DURATION = 200F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle_ShakeAmount" data-uid="MouseDance.Runtime.HitCircle.ShakeAmount">ShakeAmount</h4>
+  <div class="markdown level1 summary"><p>When doing a shake animation, this is how much to move (amplitude) in the x-axis in either direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const float ShakeAmount = 3F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle_ShakeDuration" data-uid="MouseDance.Runtime.HitCircle.ShakeDuration">ShakeDuration</h4>
+  <div class="markdown level1 summary"><p>When doing a shake animation, this is how long to do it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const float ShakeDuration = 300F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_HitCircle_ShakeSpeed" data-uid="MouseDance.Runtime.HitCircle.ShakeSpeed">ShakeSpeed</h4>
+  <div class="markdown level1 summary"><p>When doing a shake animation, this is how fast (frequency) to move.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const float ShakeSpeed = 50F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -328,7 +1313,7 @@ Used by visual effects so that their colour matches the Hit Circle's colour.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color Colour { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Color Colour { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -355,7 +1340,7 @@ This can be used to identify or differentiate this Hit Circle from other Hit Obj
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ComboColourIndex { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual int ComboColourIndex { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -381,7 +1366,7 @@ This can be used to identify or differentiate this Hit Circle from other Hit Obj
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ComboCounter { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual int ComboCounter { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -407,7 +1392,7 @@ This can be used to identify or differentiate this Hit Circle from other Hit Obj
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 EffectsPos { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Vector3 EffectsPos { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -440,7 +1425,7 @@ and not a <a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Index { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual int Index { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -467,7 +1452,7 @@ Disabled Hit Circles are &quot;despawned&quot; and are back into the pool and th
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsEnabled { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool IsEnabled { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -496,7 +1481,7 @@ Important once it's time to despawn this Hit Circle.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string PoolId { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual string PoolId { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -522,7 +1507,7 @@ Important once it's time to despawn this Hit Circle.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Pressed { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool Pressed { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -551,7 +1536,7 @@ For Hit Circles, this always returns false.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool RequiresHold { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool RequiresHold { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -579,7 +1564,7 @@ For Hit Circles, this always returns false.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DoShakeAnimation(string effectsId = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void DoShakeAnimation(string effectsId = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -608,7 +1593,7 @@ For Hit Circles, this always returns false.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Hide()</code></pre>
   </div>
   
   
@@ -664,7 +1649,7 @@ fade-out if pressed correctly, trigger appropriate hit/miss sound/visual fx)</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnPressed(int idxThatNeedsToBePressed)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void OnPressed(int idxThatNeedsToBePressed)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -694,7 +1679,7 @@ If this doesn't match the Hit Circle's own <a class="xref" href="MouseDance.Runt
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnReleased()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void OnReleased()</code></pre>
   </div>
   
   
@@ -706,7 +1691,7 @@ but somehow pressed it wrong (which is determined by a <a class="xref" href="Mou
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnWrongPressed(string effectsId = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void OnWrongPressed(string effectsId = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -735,7 +1720,7 @@ but somehow pressed it wrong (which is determined by a <a class="xref" href="Mou
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Resize(float radius, float radiusMultiplier)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Resize(float radius, float radiusMultiplier)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -772,7 +1757,7 @@ and is called for newly instantiated Hit Circles.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Show(HitObjectManager manager, BeatmapRunner beatmapRunner, string poolId, int idx, int comboCounter, int comboColourIdx, Gradient colour, Color32 borderColour, bool applyColourToApproachCircles, bool showNumber, HitCircle hitCircle, float positionScale, float radius, float radiusMultiplier, float approachStartDelay, float approachRateDuration)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Show(HitObjectManager manager, BeatmapRunner beatmapRunner, string poolId, int idx, int comboCounter, int comboColourIdx, Gradient colour, Color32 borderColour, bool applyColourToApproachCircles, bool showNumber, HitCircle hitCircle, float positionScale, float radius, float radiusMultiplier, float approachStartDelay, float approachRateDuration)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -899,7 +1884,7 @@ This is called on reused Hit Circles.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Show(string poolId, int idx, int comboCounter, int comboColourIdx, Gradient colour, Color32 borderColour, bool applyColourToApproachCircles, bool showNumber, HitCircle hitCircle, float positionScale, float radius, float radiusMultiplier, float approachStartDelay, float approachRateDuration)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Show(string poolId, int idx, int comboCounter, int comboColourIdx, Gradient colour, Color32 borderColour, bool applyColourToApproachCircles, bool showNumber, HitCircle hitCircle, float positionScale, float radius, float radiusMultiplier, float approachStartDelay, float approachRateDuration)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1004,6 +1989,29 @@ Used when the Hit Circle is shown in advance, even earlier than its preempt dura
   </table>
   
   
+  <a id="MouseDance_Runtime_HitCircle_StartShake_" data-uid="MouseDance.Runtime.HitCircle.StartShake*"></a>
+  <h4 id="MouseDance_Runtime_HitCircle_StartShake" data-uid="MouseDance.Runtime.HitCircle.StartShake">StartShake()</h4>
+  <div class="markdown level1 summary"><p>Make this Hit Circle do a shaking animation for <a class="xref" href="MouseDance.Runtime.HitCircle.html#MouseDance_Runtime_HitCircle_ShakeDuration">ShakeDuration</a> seconds.
+You can also call <a class="xref" href="MouseDance.Runtime.HitCircle.html#MouseDance_Runtime_HitCircle_StopShake">StopShake()</a> to stop it prematurely.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void StartShake()</code></pre>
+  </div>
+  
+  
+  <a id="MouseDance_Runtime_HitCircle_StopShake_" data-uid="MouseDance.Runtime.HitCircle.StopShake*"></a>
+  <h4 id="MouseDance_Runtime_HitCircle_StopShake" data-uid="MouseDance.Runtime.HitCircle.StopShake">StopShake()</h4>
+  <div class="markdown level1 summary"><p>Stop this Hit Circle from doing the shaking animation if it's doing that.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void StopShake()</code></pre>
+  </div>
+  
+  
   <a id="MouseDance_Runtime_HitCircle_Update_" data-uid="MouseDance.Runtime.HitCircle.Update*"></a>
   <h4 id="MouseDance_Runtime_HitCircle_Update" data-uid="MouseDance.Runtime.HitCircle.Update">Update()</h4>
   <div class="markdown level1 summary"><p>Update method called by Unity every frame.
@@ -1013,7 +2021,7 @@ This is used to update the Hit Circle's animations
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void Update()</code></pre>
   </div>
   <h3 id="implements">Implements</h3>
   <div>

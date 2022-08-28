@@ -390,7 +390,19 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.BeatmapAreaAdjuster.html",
-          "hash": "/El3fdqILUauW3DxJJE7FuHaVUppekOxHEn8HkiY0QY="
+          "hash": "GQ6/YQnUJkpcAu211Cy1GolLUYZ6+NAaX4/bSWwx0TU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.BeatmapRunner.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.BeatmapRunner.State.html",
+          "hash": "cwykvWrOn3cJd61JUd1mB5/bjvvvvknQrRXCIWUMnzk="
         }
       },
       "is_incremental": false,
@@ -402,7 +414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.BeatmapRunner.html",
-          "hash": "zEgAktA4nAbbYSGPgUZJpW9d/NSBYc9UPhGZyUoTXfo="
+          "hash": "7h9pQochOfJHqgWb9h1lTV6aQsHWQILzGnH8ACopSbk="
         }
       },
       "is_incremental": false,
@@ -451,18 +463,6 @@
         ".html": {
           "relative_path": "api/MouseDance.Runtime.Callbacks.IBeatmapLoaded.html",
           "hash": "H89ryPs/sl0BAy6m/eI3k0IBcVxFmpS+ypvfdqO54us="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MouseDance.Runtime.Callbacks.IBeatmapMultiInput.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MouseDance.Runtime.Callbacks.IBeatmapMultiInput.html",
-          "hash": "P+hZFcBOc//My+m7noJS4uKSdGM+/MNmEcHubv2/nxI="
         }
       },
       "is_incremental": false,
@@ -534,7 +534,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.Callbacks.html",
-          "hash": "W1XotWQoHmbsvWKg/T2NkXViwuLE1h0xlapGJBulMJY="
+          "hash": "254zE1yJN99nzGBwJ99CWYdhe71/3s6t1fcSWkE0X8o="
         }
       },
       "is_incremental": false,
@@ -546,7 +546,31 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.Effects.html",
-          "hash": "k+iSMQFWDvkr+1C4xdxXjBADw7MRiJ7Ffj7k3sn0xwQ="
+          "hash": "jH+Un+5JzaO10ckfbkgVDO47W5GzMwMWRnwLRxfmehs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Experimental.IBeatmapMultiInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Experimental.IBeatmapMultiInput.html",
+          "hash": "VMD8U6SoalmT5AmW6P349uiyyGPppTvAK/1qWzt5IRc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MouseDance.Runtime.Experimental.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MouseDance.Runtime.Experimental.html",
+          "hash": "hYUe64oSyoL8zFgkGYzLs0KWBj+vSxZT7/J6+yF/X0g="
         }
       },
       "is_incremental": false,
@@ -582,7 +606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.HitCircle.html",
-          "hash": "OLT8p1BcW2htmwjWkcONzXclM0xYlzF+JHqxkquKjok="
+          "hash": "7+MILs8+7vroDlylv3B/Ff54eXrEdHrit8d+TWc68Bs="
         }
       },
       "is_incremental": false,
@@ -630,7 +654,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.HitObjectManager.html",
-          "hash": "qwfHvXMhfz0PidYULX7b+A8UvKjdgjjE/aSVTeMbLl0="
+          "hash": "dv5xgbWMPJHIwZZ4azCsbNDWN3T1ZYiJyHUnIIHfY74="
         }
       },
       "is_incremental": false,
@@ -702,7 +726,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.IHitObject.html",
-          "hash": "D5H3f+XIlDa5QR+tX5NWG66krkhZ+z99fbQ7O+Wp1O4="
+          "hash": "k6INtuAHKRUTTnFrKjI6TiIZtkepWLThZvCLIU+JUNs="
         }
       },
       "is_incremental": false,
@@ -714,7 +738,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.IHitObjectWithEvents.html",
-          "hash": "ratBwhprwyphO2He5iuSUXnJDNEYeq9JhKZYaNcA0EI="
+          "hash": "3SckwrFrzF5fp+pNM7lzSb701V67yECH8FfnsbBYiOA="
         }
       },
       "is_incremental": false,
@@ -798,7 +822,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.SDFCurve.html",
-          "hash": "sqq5xDOnhRMr+fVQjTosvT/l1WXJ7KlnKkSgKZXyD0E="
+          "hash": "KfDeh+k9atyRZkraAkVI8QRxb+9s8NezDausAhjur7Y="
         }
       },
       "is_incremental": false,
@@ -822,7 +846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.Slider.html",
-          "hash": "6v9/9YGrKdhsHLfJ/3Kb2GMwSraQV/j8bt30ZxW99M8="
+          "hash": "MYa25h2VdEZhOprxYDRi/ZcHmuIgsivInFBb06KhczM="
         }
       },
       "is_incremental": false,
@@ -834,7 +858,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.SliderBall.html",
-          "hash": "giv64w/lEyxHWb1E2qb8IFtZD0Tr8Rl6+dvbNC8+4aI="
+          "hash": "cbzZU5L9yp9tTH3ABFDRy6LkqtYYeHjA2qTov0l0zWY="
         }
       },
       "is_incremental": false,
@@ -858,7 +882,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.SliderTick.html",
-          "hash": "os/pXGkVt6/vfoaE/eSHeS7fp07ZaT/m+n8EzBqEk1c="
+          "hash": "wgZmTlomilqoDjgVTcwG/7xnrDWgYWQfhfilxXXhRr4="
         }
       },
       "is_incremental": false,
@@ -906,7 +930,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MouseDance.Runtime.html",
-          "hash": "rPvoNmCdiG0KpzLzcvk6iPveFQbogg8P1Bc9xgJhW8g="
+          "hash": "4Vva73cFhEj1oo9p4iC4nPs6+hGwbQn1bEf1K8OL9rE="
         }
       },
       "is_incremental": false,
@@ -918,7 +942,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "+g1GOo/+lT5kw0Ogh1Uab77VbYzgFZbJO0Y9WRndrLw="
+          "hash": "jXzIajSjnc0u7JdV6D30qpn2at1lAZ1U5oCZ81KaXPk="
         }
       },
       "is_incremental": false,
@@ -941,7 +965,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "I4MtVzLb29orlcm007J4TqSygu0nqZ5D5zxihT6xryo="
+          "hash": "ezkQJbBZeXwF230ks6sgG55jA8uF7Uby3QSKqwo+xIg="
         }
       },
       "is_incremental": false,
@@ -988,7 +1012,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/code_usage.html",
-          "hash": "fP4L0QLwodxGXxc8FKHZzZRy+F5oNF2zTKOgxkkSG/8="
+          "hash": "u1Q8OiW8ythTmllwfz/LPbbuiGQsA9ZU8IVnKPksB2s="
         }
       },
       "is_incremental": false,
@@ -1096,7 +1120,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/folder_layout.html",
-          "hash": "3WwLiEqmKK3dE1mwK+9d3EY/2UTZtDrmkYllPQV5PGg="
+          "hash": "OXN5S55xB3ZG8qq233MSvTC3dr+sVzEyJB/GSp92M40="
         }
       },
       "is_incremental": false,
@@ -1276,7 +1300,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/release_notes.html",
-          "hash": "Vf29y7eNNJZpr4nITxnOo/HuuodzHZbf8YQvetruGlc="
+          "hash": "Exht6dbAAsyhQUvg3nPZRxX4GOa48b6IjJio6EJSmkM="
         }
       },
       "is_incremental": false,
@@ -1324,7 +1348,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/slider_ball.html",
-          "hash": "Ggf40iaZQueONyfdftoDYydcd5kUHfN5UNvxU5ucoPs="
+          "hash": "H1itMgaFwg3dzeD4N/RwLWAmQJo/mGt/i83lWGD0pSE="
         }
       },
       "is_incremental": false,
@@ -1456,7 +1480,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/workflow_playtest_unity.html",
-          "hash": "v5uqT6P/Lh7ysGdW0HZel5ZVa5V/xOMEwivbtZxLoUA="
+          "hash": "Cmzwj7pAxe0cziA5BMIpqm87UQ6JC4GsdRHFGBvQRY0="
         }
       },
       "is_incremental": false,
@@ -2085,6 +2109,17 @@
       "output": {
         "resource": {
           "relative_path": "resources/MouseDanceLogo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/MouseDancePrefabs.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/MouseDancePrefabs.png"
         }
       },
       "is_incremental": false,
@@ -2783,7 +2818,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 78,
+          "total_file_count": 80,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

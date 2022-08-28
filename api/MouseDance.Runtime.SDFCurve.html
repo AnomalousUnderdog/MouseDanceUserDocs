@@ -129,6 +129,503 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class SDFCurve : MonoBehaviour</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__camera" data-uid="MouseDance.Runtime.SDFCurve._camera">_camera</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Camera _camera</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Camera.html">Camera</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__canvasTransform" data-uid="MouseDance.Runtime.SDFCurve._canvasTransform">_canvasTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected RectTransform _canvasTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectTransform.html">RectTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__controlPoints" data-uid="MouseDance.Runtime.SDFCurve._controlPoints">_controlPoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;Vector2&gt; _controlPoints</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__curveSmoothnessPercent" data-uid="MouseDance.Runtime.SDFCurve._curveSmoothnessPercent">_curveSmoothnessPercent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Range(0.01F, 1F)]
+[Tooltip(&quot;How many points the curve will have compared to its pixel length. 1.0 means to use 100% of the pixel length value.\n\nThe pixel length is a high value, and we don't need that much points in the curve to produce a smooth-looking curve (you may even have problems in WebGL builds if the amount of points is too high), so a value of 0.1 (10%) is advisable as more than enough, but you can change this value as needed.&quot;)]
+protected float _curveSmoothnessPercent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__materialNonCompute" data-uid="MouseDance.Runtime.SDFCurve._materialNonCompute">_materialNonCompute</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Material _materialNonCompute</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Material.html">Material</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__materialPropertyBlock" data-uid="MouseDance.Runtime.SDFCurve._materialPropertyBlock">_materialPropertyBlock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MaterialPropertyBlock _materialPropertyBlock</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html">MaterialPropertyBlock</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__materialWithCompute" data-uid="MouseDance.Runtime.SDFCurve._materialWithCompute">_materialWithCompute</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Material _materialWithCompute</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Material.html">Material</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__max" data-uid="MouseDance.Runtime.SDFCurve._max">_max</h4>
+  <div class="markdown level1 summary"><p>Bottom-rightmost corner of the curve, in osu!pixels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2 _max</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__meshFilter" data-uid="MouseDance.Runtime.SDFCurve._meshFilter">_meshFilter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected MeshFilter _meshFilter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/MeshFilter.html">MeshFilter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__min" data-uid="MouseDance.Runtime.SDFCurve._min">_min</h4>
+  <div class="markdown level1 summary"><p>Upper-leftmost corner of the curve, in osu!pixels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2 _min</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__points" data-uid="MouseDance.Runtime.SDFCurve._points">_points</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;Vector2&gt; _points</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__positionAdjustLandscape" data-uid="MouseDance.Runtime.SDFCurve._positionAdjustLandscape">_positionAdjustLandscape</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Vector2 _positionAdjustLandscape</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__positionAdjustPortrait" data-uid="MouseDance.Runtime.SDFCurve._positionAdjustPortrait">_positionAdjustPortrait</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Vector2 _positionAdjustPortrait</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__positionsBuffer" data-uid="MouseDance.Runtime.SDFCurve._positionsBuffer">_positionsBuffer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ComputeBuffer _positionsBuffer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/ComputeBuffer.html">ComputeBuffer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__rectTransform" data-uid="MouseDance.Runtime.SDFCurve._rectTransform">_rectTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected RectTransform _rectTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectTransform.html">RectTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__renderer" data-uid="MouseDance.Runtime.SDFCurve._renderer">_renderer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Renderer _renderer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Renderer.html">Renderer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__screenAdjust" data-uid="MouseDance.Runtime.SDFCurve._screenAdjust">_screenAdjust</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected RectTransform _screenAdjust</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectTransform.html">RectTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve__slider" data-uid="MouseDance.Runtime.SDFCurve._slider">_slider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Slider _slider</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OsuParsers.Beatmaps.Objects.Slider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve_SPECIFIED_POINT_COUNT_LIMIT" data-uid="MouseDance.Runtime.SDFCurve.SPECIFIED_POINT_COUNT_LIMIT">SPECIFIED_POINT_COUNT_LIMIT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int SPECIFIED_POINT_COUNT_LIMIT = 2147483647</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_SDFCurve_USE_COMPUTE_KEYWORD" data-uid="MouseDance.Runtime.SDFCurve.USE_COMPUTE_KEYWORD">USE_COMPUTE_KEYWORD</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string USE_COMPUTE_KEYWORD = &quot;USE_COMPUTE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -140,7 +637,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Init(Camera viewCamera, RectTransform canvasTransform, RectTransform screenAdjust)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Init(Camera viewCamera, RectTransform canvasTransform, RectTransform screenAdjust)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -177,13 +674,23 @@ Needed because it should affect how the SDFCurve is positioned and scaled.</p>
   </table>
   
   
+  <a id="MouseDance_Runtime_SDFCurve_OnDestroy_" data-uid="MouseDance.Runtime.SDFCurve.OnDestroy*"></a>
+  <h4 id="MouseDance_Runtime_SDFCurve_OnDestroy" data-uid="MouseDance.Runtime.SDFCurve.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDestroy()</code></pre>
+  </div>
+  
+  
   <a id="MouseDance_Runtime_SDFCurve_Reposition_" data-uid="MouseDance.Runtime.SDFCurve.Reposition*"></a>
   <h4 id="MouseDance_Runtime_SDFCurve_Reposition" data-uid="MouseDance.Runtime.SDFCurve.Reposition">Reposition()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Reposition()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Reposition()</code></pre>
   </div>
   
   
@@ -194,7 +701,7 @@ Needed because it should affect how the SDFCurve is positioned and scaled.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Reposition(Slider slider, bool applyImmediately)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Reposition(Slider slider, bool applyImmediately)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -230,7 +737,7 @@ Set to false if you plan to do it later.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Resize(float radius, float globalSizeMultiplier, float sliderSizeMultiplier, bool applyImmediately)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Resize(float radius, float globalSizeMultiplier, float sliderSizeMultiplier, bool applyImmediately)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -257,7 +764,7 @@ Set to false if you plan to do it later.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
         <td><span class="parametername">sliderSizeMultiplier</span></td>
-        <td><p>Multiplier to the size coming from <span class="xref">MouseDance.Runtime.Slider._sliderThicknessMultiplier</span>.</p>
+        <td><p>Multiplier to the size coming from <a class="xref" href="MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider__sliderThicknessMultiplier">_sliderThicknessMultiplier</a>.</p>
 </td>
       </tr>
       <tr>
@@ -278,7 +785,7 @@ Set to false if you plan to do it later.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetOpacity(float alpha)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void SetOpacity(float alpha)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -307,7 +814,7 @@ Set to false if you plan to do it later.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Show(Slider slider, float radius, float globalSizeMultiplier, float sliderSizeMultiplier, Gradient colour, Color borderColour)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Show(Slider slider, float radius, float globalSizeMultiplier, float sliderSizeMultiplier, Gradient colour, Color borderColour)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -340,7 +847,7 @@ Set to false if you plan to do it later.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
         <td><span class="parametername">sliderSizeMultiplier</span></td>
-        <td><p>Multiplier to the size coming from <span class="xref">MouseDance.Runtime.Slider._sliderThicknessMultiplier</span>.</p>
+        <td><p>Multiplier to the size coming from <a class="xref" href="MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider__sliderThicknessMultiplier">_sliderThicknessMultiplier</a>.</p>
 </td>
       </tr>
       <tr>
@@ -366,7 +873,7 @@ Set to false if you plan to do it later.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Show(Slider slider, float radius, float globalSizeMultiplier, float sliderSizeMultiplier, Color gradientInnerColour, Color gradientOuterColour, Color borderColour)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Show(Slider slider, float radius, float globalSizeMultiplier, float sliderSizeMultiplier, Color gradientInnerColour, Color gradientOuterColour, Color borderColour)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -399,7 +906,7 @@ Set to false if you plan to do it later.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
         <td><span class="parametername">sliderSizeMultiplier</span></td>
-        <td><p>Multiplier to the size coming from <span class="xref">MouseDance.Runtime.Slider._sliderThicknessMultiplier</span>.</p>
+        <td><p>Multiplier to the size coming from <a class="xref" href="MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider__sliderThicknessMultiplier">_sliderThicknessMultiplier</a>.</p>
 </td>
       </tr>
       <tr>

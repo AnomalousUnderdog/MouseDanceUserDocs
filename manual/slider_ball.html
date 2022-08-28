@@ -108,10 +108,15 @@
 <h1 id="slider-ball">Slider Ball</h1>
 
 <p><img src="../resources/SliderBall.png" alt="Slider Ball"></p>
-<p>Sliders feature a ball 3d model rolling through it. When a beatmap is played, only one Slider is &quot;active&quot; at a time, and therefore you only get to see one ball at any given time.</p>
+<p>Sliders feature a ball 3d model rolling through it. This pretty much sets it apart from the other prefabs since it's the only one that uses a 3d model.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This 3d model is set to use a simple unlit shader that works for both Built-In and Universal Render Pipeline. The only limitation is that it receives no lighting. If you want it to have some shading, it's recommended to create a prefab variant of the Slider Ball prefab and swap out the material used into something of your own, one that uses a shader for the render pipeline you're using.</p>
+</div>
+<p>When a beatmap is played, only one Slider is &quot;active&quot; at a time, and therefore you only get to see one ball at any given time.</p>
 <p>So in reality, there is only one ball instantiated in the Unity scene. It is just reused, being moved from one Slider to another.</p>
 <h2 id="3d-model">3d Model</h2>
-<p>Different from all the other prefabs, this prefab holds a 3d model. To get it rendered properly in the UI, the layer of this 3D model GameObject is changed to UI, and we added a <a href="https://docs.unity3d.com/Manual/class-SortingGroup.html"><code>Sorting Group</code></a> component to ensure it shows above the sprites and SDF Curves (in terms of z-order).</p>
+<p>To get the 3d model rendered properly in the UI, the layer of this 3D model GameObject is changed to UI, and we added a <a href="https://docs.unity3d.com/Manual/class-SortingGroup.html"><code>Sorting Group</code></a> component to ensure it shows above the sprites and SDF Curves (in terms of z-order).</p>
 <p><img src="../resources/SliderBall3dModel.png" alt="Slider Ball 3d Model"></p>
 <h2 id="collider">Collider</h2>
 <p><img src="../resources/SliderBallCollider2d.png" alt="Collider"></p>

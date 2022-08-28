@@ -6,10 +6,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Effects
+    <title>Interface IBeatmapMultiInput
    | MouseDance User Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Effects
+    <meta name="title" content="Interface IBeatmapMultiInput
    | MouseDance User Docs ">
     <meta name="generator" content="docfx 2.59.3.0">
     
@@ -106,42 +106,34 @@
                           </div>
                         </div>
 
-                    <article class="content wrap" id="_content" data-uid="MouseDance.Runtime.Effects">
+                    <article class="content wrap" id="_content" data-uid="MouseDance.Runtime.Experimental.IBeatmapMultiInput">
   
   
-  <h1 id="MouseDance_Runtime_Effects" data-uid="MouseDance.Runtime.Effects" class="text-break">Class Effects
+  <h1 id="MouseDance_Runtime_Experimental_IBeatmapMultiInput" data-uid="MouseDance.Runtime.Experimental.IBeatmapMultiInput" class="text-break">Interface IBeatmapMultiInput
   </h1>
-  <div class="markdown level0 summary"><p>Common entry point for any visual effects prefab instantiated by the <a class="xref" href="MouseDance.Runtime.HitObjectManager.html">HitObjectManager</a>.</p>
+  <div class="markdown level0 summary"><p>Implement this if your game allows more than one beatmap being played simultaneously,
+or if you want to allow multi-touch input (in mobile).</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.html">Object</a></div>
-    <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.html">Component</a></div>
-    <div class="level3"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour.html">Behaviour</a></div>
-    <div class="level4"><a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
-    <div class="level5"><span class="xref">Effects</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="MouseDance.Runtime.html">MouseDance.Runtime</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MouseDance.Runtime.Experimental.html">MouseDance.Runtime.Experimental</a></h6>
   <h6><strong>Assembly</strong>: MouseDance.Runtime.dll</h6>
-  <h5 id="MouseDance_Runtime_Effects_syntax">Syntax</h5>
+  <h5 id="MouseDance_Runtime_Experimental_IBeatmapMultiInput_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Effects : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IBeatmapMultiInput</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="properties">Properties
   </h3>
   
   
-  <h4 id="MouseDance_Runtime_Effects__originalScale" data-uid="MouseDance.Runtime.Effects._originalScale">_originalScale</h4>
+  <a id="MouseDance_Runtime_Experimental_IBeatmapMultiInput_InputCount_" data-uid="MouseDance.Runtime.Experimental.IBeatmapMultiInput.InputCount*"></a>
+  <h4 id="MouseDance_Runtime_Experimental_IBeatmapMultiInput_InputCount" data-uid="MouseDance.Runtime.Experimental.IBeatmapMultiInput.InputCount">InputCount</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[SerializeField]
-protected Vector3 _originalScale</code></pre>
+    <pre><code class="lang-csharp hljs">int InputCount { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -151,82 +143,7 @@ protected Vector3 _originalScale</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="MouseDance_Runtime_Effects__particleSystems" data-uid="MouseDance.Runtime.Effects._particleSystems">_particleSystems</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[SerializeField]
-protected ParticleSystem[] _particleSystems</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/ParticleSystem.html">ParticleSystem</a>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="MouseDance_Runtime_Effects__transform" data-uid="MouseDance.Runtime.Effects._transform">_transform</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[SerializeField]
-protected Transform _transform</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Transform.html">Transform</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="MouseDance_Runtime_Effects__useColourOfHitObject" data-uid="MouseDance.Runtime.Effects._useColourOfHitObject">_useColourOfHitObject</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[SerializeField]
-protected bool _useColourOfHitObject</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -235,14 +152,14 @@ protected bool _useColourOfHitObject</code></pre>
   </h3>
   
   
-  <a id="MouseDance_Runtime_Effects_Show_" data-uid="MouseDance.Runtime.Effects.Show*"></a>
-  <h4 id="MouseDance_Runtime_Effects_Show_UnityEngine_Vector3_UnityEngine_Color_System_Single_" data-uid="MouseDance.Runtime.Effects.Show(UnityEngine.Vector3,UnityEngine.Color,System.Single)">Show(Vector3, Color, Single)</h4>
-  <div class="markdown level1 summary"><p>Show the visual effects in the specified position, color, and scale.</p>
+  <a id="MouseDance_Runtime_Experimental_IBeatmapMultiInput_CursorPosition_" data-uid="MouseDance.Runtime.Experimental.IBeatmapMultiInput.CursorPosition*"></a>
+  <h4 id="MouseDance_Runtime_Experimental_IBeatmapMultiInput_CursorPosition_System_Int32_" data-uid="MouseDance.Runtime.Experimental.IBeatmapMultiInput.CursorPosition(System.Int32)">CursorPosition(Int32)</h4>
+  <div class="markdown level1 summary"><p>Called by the <a class="xref" href="MouseDance.Runtime.BeatmapRunner.html">BeatmapRunner</a> to get where the mouse position is.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void Show(Vector3 newWorldPos, Color newColour, float scale)</code></pre>
+    <pre><code class="lang-csharp hljs">Vector2 CursorPosition(int inputIdx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -255,35 +172,127 @@ protected bool _useColourOfHitObject</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a></td>
-        <td><span class="parametername">newWorldPos</span></td>
-        <td><p>Show the visual effects at this world-space position.</p>
-</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">inputIdx</span></td>
+        <td></td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></td>
-        <td><span class="parametername">newColour</span></td>
-        <td><p>Show the visual effects with this colour.</p>
-</td>
+        <th>Type</th>
+        <th>Description</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">scale</span></td>
-        <td><p>Show the visual effects with this scale.</p>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MouseDance_Runtime_Experimental_IBeatmapMultiInput_CursorPosition_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The bottom-left of the screen or window is at (0, 0).
+The top-right of the screen or window is at (Screen.width, Screen.height).</p>
+</div>
+  
+  
+  <a id="MouseDance_Runtime_Experimental_IBeatmapMultiInput_IsPlayerInputDown_" data-uid="MouseDance.Runtime.Experimental.IBeatmapMultiInput.IsPlayerInputDown*"></a>
+  <h4 id="MouseDance_Runtime_Experimental_IBeatmapMultiInput_IsPlayerInputDown_System_Int32_" data-uid="MouseDance.Runtime.Experimental.IBeatmapMultiInput.IsPlayerInputDown(System.Int32)">IsPlayerInputDown(Int32)</h4>
+  <div class="markdown level1 summary"><p>Called by the <a class="xref" href="MouseDance.Runtime.BeatmapRunner.html">BeatmapRunner</a> to check if the user-input was just pressed this frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsPlayerInputDown(int inputIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">inputIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Should return true during the frame that user-input became pressed.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="MouseDance.Runtime.Util.html#MouseDance_Runtime_Util_SetLayerDeep_UnityEngine_Component_UnityEngine_LayerMask_">Util.SetLayerDeep(Component, LayerMask)</a>
+  <h5 id="MouseDance_Runtime_Experimental_IBeatmapMultiInput_IsPlayerInputDown_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This should only return true during the frame when the button has just been pressed.
+This should not keep returning true while the button is held down.</p>
+</div>
+  
+  
+  <a id="MouseDance_Runtime_Experimental_IBeatmapMultiInput_IsPlayerInputUp_" data-uid="MouseDance.Runtime.Experimental.IBeatmapMultiInput.IsPlayerInputUp*"></a>
+  <h4 id="MouseDance_Runtime_Experimental_IBeatmapMultiInput_IsPlayerInputUp_System_Int32_" data-uid="MouseDance.Runtime.Experimental.IBeatmapMultiInput.IsPlayerInputUp(System.Int32)">IsPlayerInputUp(Int32)</h4>
+  <div class="markdown level1 summary"><p>Called by the <a class="xref" href="MouseDance.Runtime.BeatmapRunner.html">BeatmapRunner</a> to check if user-input was just released this frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsPlayerInputUp(int inputIdx)</code></pre>
   </div>
-  <div>
-      <a class="xref" href="MouseDance.Runtime.Util.html#MouseDance_Runtime_Util_SetLayerDeep_UnityEngine_Component_System_Int32_">Util.SetLayerDeep(Component, Int32)</a>
-  </div>
-  <div>
-      <a class="xref" href="MouseDance.Runtime.Util.html#MouseDance_Runtime_Util_SetLayerDeep_UnityEngine_Component_UnityEngine_LayerMask_System_Collections_Generic_Stack_UnityEngine_Transform__">Util.SetLayerDeep(Component, LayerMask, Stack&lt;Transform&gt;)</a>
-  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">inputIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Should return true if user-input just released the button this frame.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MouseDance_Runtime_Experimental_IBeatmapMultiInput_IsPlayerInputUp_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This should only return true during the frame when the button has been released.
+This should not keep returning true while the button is released.</p>
+</div>
 </article>
               
                 </div>

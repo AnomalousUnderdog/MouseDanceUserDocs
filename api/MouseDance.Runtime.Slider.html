@@ -142,6 +142,1315 @@ It makes use of an <a class="xref" href="MouseDance.Runtime.SDFCurve.html">SDFCu
 It directs the <a class="xref" href="MouseDance.Runtime.SliderBall.html">SliderBall</a> to roll through it when the time comes.
 Hit and miss visual effects are handled by the <a class="xref" href="MouseDance.Runtime.HitObjectManager.html">HitObjectManager</a>.</p>
 </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__approachCircle" data-uid="MouseDance.Runtime.Slider._approachCircle">_approachCircle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Approach Circle&quot;)]
+[SerializeField]
+[Tooltip(&quot;Used to animate the Approach Circle's size.&quot;)]
+protected RectTransform _approachCircle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectTransform.html">RectTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__approachCircleFinalSize" data-uid="MouseDance.Runtime.Slider._approachCircleFinalSize">_approachCircleFinalSize</h4>
+  <div class="markdown level1 summary"><p>Diameter of the Approach Circle at the end of its animation.
+This is usually the same value as the <a class="xref" href="MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider__sliderThickness">_sliderThickness</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _approachCircleFinalSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__approachCircleFinalSizeMultiplier" data-uid="MouseDance.Runtime.Slider._approachCircleFinalSizeMultiplier">_approachCircleFinalSizeMultiplier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;How big the Approach Circle should be at its final position, relative to the Start Cap's size. Default is 1 (same size as the Start Cap size). If your Start Cap has a custom shape and the Approach Circle is still visible at its final position, you may want to set this to a value smaller than 1.&quot;)]
+protected float _approachCircleFinalSizeMultiplier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__approachCircleImage" data-uid="MouseDance.Runtime.Slider._approachCircleImage">_approachCircleImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Used to fade-in or fade-out the Approach Circle as needed.&quot;)]
+protected Image _approachCircleImage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__approachCircleOpacity" data-uid="MouseDance.Runtime.Slider._approachCircleOpacity">_approachCircleOpacity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Final opacity of the Approach Circle once it's fully faded-in. Normally set to 1.0, but you can set this to less than 1.0 if you want the Approach Circle to be transparent even after it has faded-in.&quot;)]
+[Range(0F, 1F)]
+protected float _approachCircleOpacity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__approachCircleStartSize" data-uid="MouseDance.Runtime.Slider._approachCircleStartSize">_approachCircleStartSize</h4>
+  <div class="markdown level1 summary"><p>Diameter of the Approach Circle at the start.
+This is naturally larger than the final size,
+since the Approach Circle shrinks as time goes by.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _approachCircleStartSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__ball" data-uid="MouseDance.Runtime.Slider._ball">_ball</h4>
+  <div class="markdown level1 summary"><p>Reference to the Slider Ball that will move through the Slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ISliderBall _ball</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.ISliderBall.html">ISliderBall</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__ballColour" data-uid="MouseDance.Runtime.Slider._ballColour">_ballColour</h4>
+  <div class="markdown level1 summary"><p>Colour the Slider Ball will be in, once it starts moving through this Slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Color _ballColour</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__ballNowMoving" data-uid="MouseDance.Runtime.Slider._ballNowMoving">_ballNowMoving</h4>
+  <div class="markdown level1 summary"><p>Whether Slider Ball has finally started to move through this Slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _ballNowMoving</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__ballRadius" data-uid="MouseDance.Runtime.Slider._ballRadius">_ballRadius</h4>
+  <div class="markdown level1 summary"><p>Size the Slider Ball will be in, once it starts moving through this Slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _ballRadius</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__ballSpeed" data-uid="MouseDance.Runtime.Slider._ballSpeed">_ballSpeed</h4>
+  <div class="markdown level1 summary"><p>Speed of Ball in osu! pixels per millisecond</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected double _ballSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__ballTravelDuration" data-uid="MouseDance.Runtime.Slider._ballTravelDuration">_ballTravelDuration</h4>
+  <div class="markdown level1 summary"><p>Duration it takes for Ball to travel the Slider once, in milliseconds.
+To get the total duration, this is multiplied by <a class="xref" href="MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider__numberOfTimes">_numberOfTimes</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _ballTravelDuration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__beatmapRunner" data-uid="MouseDance.Runtime.Slider._beatmapRunner">_beatmapRunner</h4>
+  <div class="markdown level1 summary"><p>Needed to report to the game when user pressed the slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IBeatmapRunner _beatmapRunner</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IBeatmapRunner.html">IBeatmapRunner</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__borderScaleAtSmallestCircleSize" data-uid="MouseDance.Runtime.Slider._borderScaleAtSmallestCircleSize">_borderScaleAtSmallestCircleSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;What the Border Image's scale needs to be when this Slider is set to Circle Size 10. Leave at 1.0 if adjustment is not necessary.&quot;)]
+protected float _borderScaleAtSmallestCircleSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__colliderSizeOffset" data-uid="MouseDance.Runtime.Slider._colliderSizeOffset">_colliderSizeOffset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Adjustment to the size of the Collider after it is resized according to the Circle Size. This value is added (or subtracted if this value is negative). Leave at 0 if not needed.&quot;)]
+protected float _colliderSizeOffset</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__curveSmoothnessPercent" data-uid="MouseDance.Runtime.Slider._curveSmoothnessPercent">_curveSmoothnessPercent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Range(0.01F, 1F)]
+[Tooltip(&quot;How many points the curve will have compared to its pixel length. 1.0 means to use 100% of the pixel length value.\n\nThe pixel length is a high value, and we don't need that much points in the curve to produce a smooth-looking curve (you may even have problems in WebGL builds if the amount of points is too high), so a value of 0.1 (10%) is advisable as more than enough, but you can change this value as needed.&quot;)]
+protected float _curveSmoothnessPercent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__curveType" data-uid="MouseDance.Runtime.Slider._curveType">_curveType</h4>
+  <div class="markdown level1 summary"><p>What kind of Osu curve this Slider is showing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CurveType _curveType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OsuParsers.Enums.Beatmaps.CurveType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__endCapBorder" data-uid="MouseDance.Runtime.Slider._endCapBorder">_endCapBorder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Image _endCapBorder</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__endCapImage" data-uid="MouseDance.Runtime.Slider._endCapImage">_endCapImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Image _endCapImage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__endCapRepeatArrow" data-uid="MouseDance.Runtime.Slider._endCapRepeatArrow">_endCapRepeatArrow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Needed so we can orient the Repeat Arrow in the correct direction.&quot;)]
+protected Transform _endCapRepeatArrow</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Transform.html">Transform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__endCapRepeatArrowImage" data-uid="MouseDance.Runtime.Slider._endCapRepeatArrowImage">_endCapRepeatArrowImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Repeat Arrow (Arrow shown at the End Cap)&quot;)]
+[SerializeField]
+[Tooltip(&quot;Needed so we can show the Repeat Arrow when needed.&quot;)]
+protected Image _endCapRepeatArrowImage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__growHitCircleOnShow" data-uid="MouseDance.Runtime.Slider._growHitCircleOnShow">_growHitCircleOnShow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Do we animate the Start Cap growing in size at the same time that it's being faded-in?&quot;)]
+protected bool _growHitCircleOnShow</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__headScore" data-uid="MouseDance.Runtime.Slider._headScore">_headScore</h4>
+  <div class="markdown level1 summary"><p>Determines whether player did a perfect press on the Slider head (start cap) or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _headScore</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__lineEndCap" data-uid="MouseDance.Runtime.Slider._lineEndCap">_lineEndCap</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;End Cap (Circle that's positioned at the end of the Slider)&quot;)]
+[SerializeField]
+protected RectTransform _lineEndCap</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectTransform.html">RectTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__manager" data-uid="MouseDance.Runtime.Slider._manager">_manager</h4>
+  <div class="markdown level1 summary"><p>Needed to allow this Slider to be despawned and moved back to pool for reusing,
+and for reporting when user has pressed the slider right or wrong so it can play the proper sound/visual fx.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HitObjectManager _manager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.HitObjectManager.html">HitObjectManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__numberOfSliderPartsPressed" data-uid="MouseDance.Runtime.Slider._numberOfSliderPartsPressed">_numberOfSliderPartsPressed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _numberOfSliderPartsPressed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__numberOfTimes" data-uid="MouseDance.Runtime.Slider._numberOfTimes">_numberOfTimes</h4>
+  <div class="markdown level1 summary"><p>Number of times Ball has to travel through the Slider.
+This should be at least 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _numberOfTimes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__pointBuffer" data-uid="MouseDance.Runtime.Slider._pointBuffer">_pointBuffer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;Vector2&gt; _pointBuffer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__points" data-uid="MouseDance.Runtime.Slider._points">_points</h4>
+  <div class="markdown level1 summary"><p>Local-space positions of each point in the slider's line.
+This is the path that the ball needs to move through.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;Vector3&gt; _points</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__positionOffset" data-uid="MouseDance.Runtime.Slider._positionOffset">_positionOffset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;If the game is shown or positioned in some special way, you can add an offset to the positions of sliders here. Leave value at (0, 0) if not needed.&quot;)]
+protected Vector2 _positionOffset</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__rectTransform" data-uid="MouseDance.Runtime.Slider._rectTransform">_rectTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Used for positioning the entire Slider.&quot;)]
+protected RectTransform _rectTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectTransform.html">RectTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__reportedSuccess" data-uid="MouseDance.Runtime.Slider._reportedSuccess">_reportedSuccess</h4>
+  <div class="markdown level1 summary"><p>Flag to indicate if we already reported hit to the BeatmapRunner or not, to prevent duplicate calls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _reportedSuccess</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__sdfCurve" data-uid="MouseDance.Runtime.Slider._sdfCurve">_sdfCurve</h4>
+  <div class="markdown level1 summary"><p>This is the main body of the Slider that the player sees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SDFCurve _sdfCurve</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.SDFCurve.html">SDFCurve</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__sliderThickness" data-uid="MouseDance.Runtime.Slider._sliderThickness">_sliderThickness</h4>
+  <div class="markdown level1 summary"><p>Thickness of the slider, in diameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _sliderThickness</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__sliderThicknessMultiplier" data-uid="MouseDance.Runtime.Slider._sliderThicknessMultiplier">_sliderThicknessMultiplier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Settings&quot;)]
+[SerializeField]
+[Tooltip(&quot;Multiplier to the slider thickness. 1.0 means no change. Greater than 1 means bigger, lesser than 1 means smaller. This multiplier is applied on top of the Osu file's \&quot;Circle Size\&quot; setting, and even on top of the MouseDance.Runtime.HitObjectManager's Circle Radius Multiplier.&quot;)]
+protected float _sliderThicknessMultiplier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__startBorderScaleAfter" data-uid="MouseDance.Runtime.Slider._startBorderScaleAfter">_startBorderScaleAfter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Start scaling the Border Image towards \&quot;Border Scale At Smallest Circle Size\&quot; after this Circle Size value. So a value of 5 here means, Border Image scale starts getting adjusted when the Circle Size this Slider is set to is from 6 to 10.&quot;)]
+protected int _startBorderScaleAfter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__startCap" data-uid="MouseDance.Runtime.Slider._startCap">_startCap</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Start Cap (Circle that's positioned at the start of the Slider)&quot;)]
+[SerializeField]
+[Tooltip(&quot;Used to properly set the size of the Start Cap.&quot;)]
+protected RectTransform _startCap</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectTransform.html">RectTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__startCapBorder" data-uid="MouseDance.Runtime.Slider._startCapBorder">_startCapBorder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Image _startCapBorder</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__startCapFadeOutDuration" data-uid="MouseDance.Runtime.Slider._startCapFadeOutDuration">_startCapFadeOutDuration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Duration how long to do a fade-out of the Start Cap, once the Ball is finally moving through the Slider.&quot;)]
+protected float _startCapFadeOutDuration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__startCapImage" data-uid="MouseDance.Runtime.Slider._startCapImage">_startCapImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Used to fade the Start Cap in and out as needed.&quot;)]
+protected Image _startCapImage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__text" data-uid="MouseDance.Runtime.Slider._text">_text</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Used to display the number on the Slider.&quot;)]
+protected TextMeshProUGUI _text</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TMPro.TextMeshProUGUI</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__tickCount" data-uid="MouseDance.Runtime.Slider._tickCount">_tickCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _tickCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__tickIndices" data-uid="MouseDance.Runtime.Slider._tickIndices">_tickIndices</h4>
+  <div class="markdown level1 summary"><p>Indices in the <a class="xref" href="MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider__points">_points</a> list that each SliderTick is representing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;int&gt; _tickIndices</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__ticks" data-uid="MouseDance.Runtime.Slider._ticks">_ticks</h4>
+  <div class="markdown level1 summary"><p>List of all SliderTick prefabs that the Slider is currently using.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;SliderTick&gt; _ticks</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MouseDance.Runtime.SliderTick.html">SliderTick</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__timeBallMove" data-uid="MouseDance.Runtime.Slider._timeBallMove">_timeBallMove</h4>
+  <div class="markdown level1 summary"><p>Absolute time that the ball will start to move through the Slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeBallMove</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__timeStarted" data-uid="MouseDance.Runtime.Slider._timeStarted">_timeStarted</h4>
+  <div class="markdown level1 summary"><p>Absolute time the Slider started showing up.
+This is used to properly calculate the percentage progress of its lifetime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeStarted</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__timeToApproachCircleEnd" data-uid="MouseDance.Runtime.Slider._timeToApproachCircleEnd">_timeToApproachCircleEnd</h4>
+  <div class="markdown level1 summary"><p>Absolute time the Approach Circle for the Slider will finish.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeToApproachCircleEnd</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__timeToApproachCircleFullOpacity" data-uid="MouseDance.Runtime.Slider._timeToApproachCircleFullOpacity">_timeToApproachCircleFullOpacity</h4>
+  <div class="markdown level1 summary"><p>Absolute time when the Approach Circle has completely faded-in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeToApproachCircleFullOpacity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__timeToDie" data-uid="MouseDance.Runtime.Slider._timeToDie">_timeToDie</h4>
+  <div class="markdown level1 summary"><p>Absolute time the Slider should start fading out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeToDie</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__timeToFullOpacity" data-uid="MouseDance.Runtime.Slider._timeToFullOpacity">_timeToFullOpacity</h4>
+  <div class="markdown level1 summary"><p>Absolute time when the Slider has completely faded-in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timeToFullOpacity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_Slider__wasEverReleased" data-uid="MouseDance.Runtime.Slider._wasEverReleased">_wasEverReleased</h4>
+  <div class="markdown level1 summary"><p>We need to keep track of if ever player released the mouse button when pressing this slider,
+because doing so prevents them from getting a perfect score for this slider, even if they managed
+to hit all the slider parts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _wasEverReleased</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -154,7 +1463,7 @@ Used by visual effects so that their colour matches the Slider's colour.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color Colour { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Color Colour { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -181,7 +1490,7 @@ This can be used to identify or differentiate this Slider from other Hit Objects
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ComboColourIndex { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual int ComboColourIndex { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -207,7 +1516,7 @@ This can be used to identify or differentiate this Slider from other Hit Objects
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ComboCounter { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual int ComboCounter { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -234,7 +1543,7 @@ For Sliders, this position is the Slider's tail-end.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 EffectsPos { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Vector3 EffectsPos { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -267,7 +1576,7 @@ and not a <a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Index { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual int Index { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -294,7 +1603,7 @@ Disabled Sliders are &quot;despawned&quot; and are back into the pool and theref
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsEnabled { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool IsEnabled { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -323,7 +1632,7 @@ Important once it's time to despawn this Slider.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string PoolId { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual string PoolId { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -349,7 +1658,7 @@ Important once it's time to despawn this Slider.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Pressed { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool Pressed { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -370,6 +1679,33 @@ False: This Slider is yet to be pressed.</p>
   </table>
   
   
+  <a id="MouseDance_Runtime_Slider_RequiredBallDistanceToMouse_" data-uid="MouseDance.Runtime.Slider.RequiredBallDistanceToMouse*"></a>
+  <h4 id="MouseDance_Runtime_Slider_RequiredBallDistanceToMouse" data-uid="MouseDance.Runtime.Slider.RequiredBallDistanceToMouse">RequiredBallDistanceToMouse</h4>
+  <div class="markdown level1 summary"><p>How close the mouse cursor (or touch input, on mobile) needs to be to the ball for it to count as a &quot;hit&quot;.
+Used in <a class="xref" href="MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider_OnBallReachedPositionInPath_System_Int32_System_Int32_System_Boolean_System_Single_">OnBallReachedPositionInPath(Int32, Int32, Boolean, Single)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float RequiredBallDistanceToMouse { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="MouseDance_Runtime_Slider_RequiresHold_" data-uid="MouseDance.Runtime.Slider.RequiresHold*"></a>
   <h4 id="MouseDance_Runtime_Slider_RequiresHold" data-uid="MouseDance.Runtime.Slider.RequiresHold">RequiresHold</h4>
   <div class="markdown level1 summary"><p>Does this Hit Object need to be pressed for a long time?
@@ -378,7 +1714,7 @@ For Sliders, this always returns true.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool RequiresHold { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool RequiresHold { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -406,7 +1742,7 @@ For Sliders, this always returns true.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Hide()</code></pre>
   </div>
   
   
@@ -455,12 +1791,12 @@ For Sliders, this always returns true.</p>
   
   <a id="MouseDance_Runtime_Slider_OnBallReachedPositionInPath_" data-uid="MouseDance.Runtime.Slider.OnBallReachedPositionInPath*"></a>
   <h4 id="MouseDance_Runtime_Slider_OnBallReachedPositionInPath_System_Int32_System_Int32_System_Boolean_System_Single_" data-uid="MouseDance.Runtime.Slider.OnBallReachedPositionInPath(System.Int32,System.Int32,System.Boolean,System.Single)">OnBallReachedPositionInPath(Int32, Int32, Boolean, Single)</h4>
-  <div class="markdown level1 summary"><p>Called by the <a class="xref" href="MouseDance.Runtime.SliderBall.html">SliderBall</a> to notify this Slider of its progress rolling through it.</p>
+  <div class="markdown level1 summary"><p>Called by the <a class="xref" href="MouseDance.Runtime.SliderBall.html">SliderBall</a> to notify this Slider of the ball's progress rolling through.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnBallReachedPositionInPath(int pathIdx, int numberOfTimes, bool forwardDirection, float ballDistanceToMouse)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void OnBallReachedPositionInPath(int pathIdx, int numberOfTimes, bool forwardDirection, float ballDistanceToMouse)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -504,12 +1840,15 @@ This is important because a hit is only considered if the mouse cursor is near e
   
   <a id="MouseDance_Runtime_Slider_OnPressed_" data-uid="MouseDance.Runtime.Slider.OnPressed*"></a>
   <h4 id="MouseDance_Runtime_Slider_OnPressed_System_Int32_" data-uid="MouseDance.Runtime.Slider.OnPressed(System.Int32)">OnPressed(Int32)</h4>
-  <div class="markdown level1 summary"><p>Called by the <a class="xref" href="MouseDance.Runtime.BeatmapRunner.html">BeatmapRunner</a> to notify this Slider that its start cap (head) has been pressed by the player.</p>
+  <div class="markdown level1 summary"><p>Called by the <a class="xref" href="MouseDance.Runtime.BeatmapRunner.html">BeatmapRunner</a> to notify this Slider that its start cap (head) has been
+pressed by the player.
+This lets the Slider know whether the head had been collected properly. This is important since it's part of
+how the player's score is calculated for this Slider.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnPressed(int idxThatNeedsToBePressed)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void OnPressed(int idxThatNeedsToBePressed)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -540,7 +1879,7 @@ while it's already in-the-process of moving through this Slider.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnPressedBody()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void OnPressedBody()</code></pre>
   </div>
   
   
@@ -551,7 +1890,7 @@ while it's already in-the-process of moving through this Slider.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnReachedEnd()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void OnReachedEnd()</code></pre>
   </div>
   
   
@@ -562,7 +1901,7 @@ while it's already in-the-process of moving through this Slider.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnReleased()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void OnReleased()</code></pre>
   </div>
   
   
@@ -572,7 +1911,7 @@ while it's already in-the-process of moving through this Slider.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Resize(float radius, float radiusMultiplier)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Resize(float radius, float radiusMultiplier)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -605,7 +1944,7 @@ while it's already in-the-process of moving through this Slider.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Resize(float radius, float radiusMultiplier, bool applyToSdfCurve)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Resize(float radius, float radiusMultiplier, bool applyToSdfCurve)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -648,7 +1987,7 @@ and is called for newly instantiated Sliders.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Show(HitObjectManager manager, IBeatmapRunner beatmapRunner, ISliderBall ball, string poolId, int idx, int comboCounter, int comboColourIdx, Gradient colour, Color32 borderColour, Color32 repeatArrowColour, Color32 ballColour, bool applyColourToApproachCircles, bool showNumber, double beatLength, Slider slider, float positionScale, float radius, float radiusMultiplier, float approachRateDuration, double sliderMultiplier, double sliderTickRate)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Show(HitObjectManager manager, IBeatmapRunner beatmapRunner, ISliderBall ball, string poolId, int idx, int comboCounter, int comboColourIdx, Gradient colour, Color32 borderColour, Color32 repeatArrowColour, Color32 ballColour, bool applyColourToApproachCircles, bool showNumber, double beatLength, Slider slider, float positionScale, float radius, float radiusMultiplier, float approachRateDuration, double sliderMultiplier, double sliderTickRate)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -794,21 +2133,6 @@ Default is 1 (1 Slider Tick per 1 beat).
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="MouseDance_Runtime_Slider_Show_" data-uid="MouseDance.Runtime.Slider.Show*"></a>
@@ -819,7 +2143,7 @@ This is called on reused Sliders.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Show(string poolId, int idx, int comboCounter, int comboColourIdx, Gradient colour, Color32 borderColour, Color32 repeatArrowColour, Color32 ballColour, bool applyColourToApproachCircles, bool showNumber, double beatLength, Slider slider, float positionScale, float radius, float radiusMultiplier, float approachRateDuration, double sliderMultiplier, double sliderTickRate)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Show(string poolId, int idx, int comboCounter, int comboColourIdx, Gradient colour, Color32 borderColour, Color32 repeatArrowColour, Color32 ballColour, bool applyColourToApproachCircles, bool showNumber, double beatLength, Slider slider, float positionScale, float radius, float radiusMultiplier, float approachRateDuration, double sliderMultiplier, double sliderTickRate)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -946,21 +2270,6 @@ Default is 1 (1 Slider Tick per 1 beat).
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="MouseDance_Runtime_Slider_Update_" data-uid="MouseDance.Runtime.Slider.Update*"></a>
@@ -972,7 +2281,7 @@ This is used to update the Slider's animations
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Update()</code></pre>
   </div>
   <h3 id="implements">Implements</h3>
   <div>

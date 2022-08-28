@@ -140,6 +140,907 @@ keeps track of song's current time to figure out when new Hit Objects should be 
 detects user-input to see if player hit a Hit Object,
 and keeps track of all Hit Objects that player was able to hit.</p>
 </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__audioSource" data-uid="MouseDance.Runtime.BeatmapRunner._audioSource">_audioSource</h4>
+  <div class="markdown level1 summary"><p>Where song is played.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Where song is played.&quot;)]
+protected AudioSource _audioSource</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/AudioSource.html">AudioSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__beatmapEnd" data-uid="MouseDance.Runtime.BeatmapRunner._beatmapEnd">_beatmapEnd</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IBeatmapEnd _beatmapEnd</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapEnd.html">IBeatmapEnd</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__beatmapInput" data-uid="MouseDance.Runtime.BeatmapRunner._beatmapInput">_beatmapInput</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IBeatmapInput _beatmapInput</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapInput.html">IBeatmapInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__beatmapLoaded" data-uid="MouseDance.Runtime.BeatmapRunner._beatmapLoaded">_beatmapLoaded</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IBeatmapLoaded _beatmapLoaded</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapLoaded.html">IBeatmapLoaded</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__clickedHitObject" data-uid="MouseDance.Runtime.BeatmapRunner._clickedHitObject">_clickedHitObject</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IClickedHitObject _clickedHitObject</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.Callbacks.IClickedHitObject.html">IClickedHitObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__currentState" data-uid="MouseDance.Runtime.BeatmapRunner._currentState">_currentState</h4>
+  <div class="markdown level1 summary"><p>Whether the BeatmapRunner is currently playing or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BeatmapRunner.State _currentState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.BeatmapRunner.State.html">BeatmapRunner.State</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__customCollectRule" data-uid="MouseDance.Runtime.BeatmapRunner._customCollectRule">_customCollectRule</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ICustomCollectRule _customCollectRule</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.Callbacks.ICustomCollectRule.html">ICustomCollectRule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__firstHitObjectTime" data-uid="MouseDance.Runtime.BeatmapRunner._firstHitObjectTime">_firstHitObjectTime</h4>
+  <div class="markdown level1 summary"><p>The Start Time of the Beatmap's first Hit Object (in milliseconds).
+This is used as an &quot;anchor point&quot; to &quot;paste&quot; the
+&quot;3, 2, 1, Go!&quot; countdown animation in time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _firstHitObjectTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__heldHitObject" data-uid="MouseDance.Runtime.BeatmapRunner._heldHitObject">_heldHitObject</h4>
+  <div class="markdown level1 summary"><p>Hit object that the player has pressed but not released their button press yet.
+Needed for sliders and flick hit circles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IHitObjectWithEvents _heldHitObject</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObjectWithEvents.html">IHitObjectWithEvents</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__hitObjectManager" data-uid="MouseDance.Runtime.BeatmapRunner._hitObjectManager">_hitObjectManager</h4>
+  <div class="markdown level1 summary"><p>Allows us to spawn hit objects on-screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Needed for spawning hit objects on-screen.&quot;)]
+protected HitObjectManager _hitObjectManager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.HitObjectManager.html">HitObjectManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__hitTimingAccuracy" data-uid="MouseDance.Runtime.BeatmapRunner._hitTimingAccuracy">_hitTimingAccuracy</h4>
+  <div class="markdown level1 summary"><p>How close to the Hit Object's time did the player get when they pressed on a Hit Object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;float&gt; _hitTimingAccuracy</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MouseDance_Runtime_BeatmapRunner__hitTimingAccuracy_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Values inside are normalized, indicating if user pressed Hit Object within correct time window.
+-1.0 to +1.0 is a hit.
+Any value outside that (lesser than -1.0 or greater than +1.0) means miss
+(negative for too early, positive for too late).
+0.0 means user pressed exactly at Hit Object time.</p>
+</div>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__inTimeHitObjectIndex" data-uid="MouseDance.Runtime.BeatmapRunner._inTimeHitObjectIndex">_inTimeHitObjectIndex</h4>
+  <div class="markdown level1 summary"><p>Next hit object whose time is up or will be up.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _inTimeHitObjectIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__isPaused" data-uid="MouseDance.Runtime.BeatmapRunner._isPaused">_isPaused</h4>
+  <div class="markdown level1 summary"><p>If Beatmap processing is currently paused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isPaused</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MouseDance_Runtime_BeatmapRunner__isPaused_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>That means the song will be paused,
+no hit objects will be spawned,
+and user-input is not checked.</p>
+</div>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__mainBeatmap" data-uid="MouseDance.Runtime.BeatmapRunner._mainBeatmap">_mainBeatmap</h4>
+  <div class="markdown level1 summary"><p>Data coming from the osu file.
+Indicates each and every Hit Object that will come up.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Beatmap _mainBeatmap</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OsuParsers.Beatmaps.Beatmap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__mouseInputCamera" data-uid="MouseDance.Runtime.BeatmapRunner._mouseInputCamera">_mouseInputCamera</h4>
+  <div class="markdown level1 summary"><p>Camera used in raycasting, for checking if the user pressed a hit object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Camera used in raycasting, for checking if the user pressed a hit object.&quot;)]
+protected Camera _mouseInputCamera</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Camera.html">Camera</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__nextHitObjectIndexThatNeedsToBePressed" data-uid="MouseDance.Runtime.BeatmapRunner._nextHitObjectIndexThatNeedsToBePressed">_nextHitObjectIndexThatNeedsToBePressed</h4>
+  <div class="markdown level1 summary"><p>Next hit object that player needs to press.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _nextHitObjectIndexThatNeedsToBePressed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__playDelay" data-uid="MouseDance.Runtime.BeatmapRunner._playDelay">_playDelay</h4>
+  <div class="markdown level1 summary"><p>Delay to playing the song, in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _playDelay</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MouseDance_Runtime_BeatmapRunner__playDelay_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use this if you want a delay before playing the song.
+Useful if the song starts too suddenly and you want a
+pause in the beginning to give the player time to prepare.</p>
+</div>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__preemptDuration" data-uid="MouseDance.Runtime.BeatmapRunner._preemptDuration">_preemptDuration</h4>
+  <div class="markdown level1 summary"><p>Time in milliseconds when any hit object shows up in advance.
+This makes use of the Approach Rate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _preemptDuration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MouseDance_Runtime_BeatmapRunner__preemptDuration_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="MouseDance.Runtime.BeatmapUtil.html#MouseDance_Runtime_BeatmapUtil_GetPreemptDuration_System_Single_">GetPreemptDuration(Single)</a></div>
+  </div>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__pressedHitObjects" data-uid="MouseDance.Runtime.BeatmapRunner._pressedHitObjects">_pressedHitObjects</h4>
+  <div class="markdown level1 summary"><p>Indices of all hit objects that the player has successfully pressed.
+This is the indices of the list in <a class="xref" href="MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner_HitObjects">HitObjects</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly HashSet&lt;int&gt; _pressedHitObjects</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__pressedHitObjectsBuffer" data-uid="MouseDance.Runtime.BeatmapRunner._pressedHitObjectsBuffer">_pressedHitObjectsBuffer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;IHitObjectWithEvents&gt; _pressedHitObjectsBuffer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MouseDance.Runtime.IHitObjectWithEvents.html">IHitObjectWithEvents</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__score100HitWindowHalf" data-uid="MouseDance.Runtime.BeatmapRunner._score100HitWindowHalf">_score100HitWindowHalf</h4>
+  <div class="markdown level1 summary"><p>Amount of time in milliseconds before or after a hit object's time that gives 100 score.
+This is in the middle, between the 50 and 300 score hit-windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _score100HitWindowHalf</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MouseDance_Runtime_BeatmapRunner__score100HitWindowHalf_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre><code>                                       X = hit/collect
+            before hit time            ↓              after hit time
+├────────────────┬─────────────┬───────┼───────┬─────────────┬────────────────┤
+                    100 score                     100 score</code></pre>
+</div>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__score300HitWindowHalf" data-uid="MouseDance.Runtime.BeatmapRunner._score300HitWindowHalf">_score300HitWindowHalf</h4>
+  <div class="markdown level1 summary"><p>Amount of time in milliseconds before or after a hit object's time that gives 300 score.
+This is the shortest (most difficult) among the hit-windows, since it's the highest score.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _score300HitWindowHalf</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MouseDance_Runtime_BeatmapRunner__score300HitWindowHalf_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre><code>                                       X = hit/collect
+            before hit time            ↓              after hit time
+├────────────────┬─────────────┬───────┼───────┬─────────────┬────────────────┤
+                                   300 score</code></pre>
+</div>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__score50HitWindowHalf" data-uid="MouseDance.Runtime.BeatmapRunner._score50HitWindowHalf">_score50HitWindowHalf</h4>
+  <div class="markdown level1 summary"><p>Amount of time in milliseconds before or after a hit object's hit time that gives 50 score.
+This is the longest (most generous) among the hit-windows, since it's the lowest score.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _score50HitWindowHalf</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MouseDance_Runtime_BeatmapRunner__score50HitWindowHalf_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre><code>                                       X = hit/collect
+            before hit time            ↓              after hit time
+├────────────────┬─────────────┬───────┼───────┬─────────────┬────────────────┤
+     50 score                                                     50 score</code></pre>
+</div>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__scoreCalculator" data-uid="MouseDance.Runtime.BeatmapRunner._scoreCalculator">_scoreCalculator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IBeatmapScoreCalculator _scoreCalculator</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapScoreCalculator.html">IBeatmapScoreCalculator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__showHitCircleInAdvance" data-uid="MouseDance.Runtime.BeatmapRunner._showHitCircleInAdvance">_showHitCircleInAdvance</h4>
+  <div class="markdown level1 summary"><p>Index of which hit circle needs to be shown in advance, earlier even than the preempt duration.
+Normally used only in the start of each phase. -1 means do not use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _showHitCircleInAdvance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__sliderPercent" data-uid="MouseDance.Runtime.BeatmapRunner._sliderPercent">_sliderPercent</h4>
+  <div class="markdown level1 summary"><p>How much slider parts did the player collect for the specified slider, in percent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;float&gt; _sliderPercent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MouseDance_Runtime_BeatmapRunner__sliderPercent_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Values are within 0.0 to 1.0. 1.0 means 100% all collected. 0.5 means 50%, etc.
+-1 if the Slider was missed or if index specified is not for a Slider at all.</p>
+</div>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__songStartCountdown" data-uid="MouseDance.Runtime.BeatmapRunner._songStartCountdown">_songStartCountdown</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ISongStartCountdown _songStartCountdown</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.Callbacks.ISongStartCountdown.html">ISongStartCountdown</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__startCountdownAnimationPlayed" data-uid="MouseDance.Runtime.BeatmapRunner._startCountdownAnimationPlayed">_startCountdownAnimationPlayed</h4>
+  <div class="markdown level1 summary"><p>Flag to let us know if the &quot;3, 2, 1, Go!&quot; animation has already been played or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _startCountdownAnimationPlayed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__timePlayStart" data-uid="MouseDance.Runtime.BeatmapRunner._timePlayStart">_timePlayStart</h4>
+  <div class="markdown level1 summary"><p>Needed so the current time of the song can be expressed as a negative value (time until song starts).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _timePlayStart</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner__upcomingHitObjectIndex" data-uid="MouseDance.Runtime.BeatmapRunner._upcomingHitObjectIndex">_upcomingHitObjectIndex</h4>
+  <div class="markdown level1 summary"><p>Next hit object that will show up.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _upcomingHitObjectIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner_NewLines" data-uid="MouseDance.Runtime.BeatmapRunner.NewLines">NewLines</h4>
+  <div class="markdown level1 summary"><p>Used when parsing the osu file in mobile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly char[] NewLines</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner_PREEMPT_IN_ADVANCE_ADDED_PERCENT" data-uid="MouseDance.Runtime.BeatmapRunner.PREEMPT_IN_ADVANCE_ADDED_PERCENT">PREEMPT_IN_ADVANCE_ADDED_PERCENT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const float PREEMPT_IN_ADVANCE_ADDED_PERCENT = 0F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner_PREEMPT_IN_ADVANCE_PERCENT" data-uid="MouseDance.Runtime.BeatmapRunner.PREEMPT_IN_ADVANCE_PERCENT">PREEMPT_IN_ADVANCE_PERCENT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const float PREEMPT_IN_ADVANCE_PERCENT = 1F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapRunner_SHOW_HIT_CIRCLE_ADVANCE_NUMBER" data-uid="MouseDance.Runtime.BeatmapRunner.SHOW_HIT_CIRCLE_ADVANCE_NUMBER">SHOW_HIT_CIRCLE_ADVANCE_NUMBER</h4>
+  <div class="markdown level1 summary"><p>How many hit circles to be shown in advance, used in conjunction with <a class="xref" href="MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner__showHitCircleInAdvance">_showHitCircleInAdvance</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int SHOW_HIT_CIRCLE_ADVANCE_NUMBER = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -152,7 +1053,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanPressNow { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool CanPressNow { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,7 +1074,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_GetBeatmapEndType_" data-uid="MouseDance.Runtime.BeatmapRunner.GetBeatmapEndType*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_GetBeatmapEndType" data-uid="MouseDance.Runtime.BeatmapRunner.GetBeatmapEndType">GetBeatmapEndType</h4>
-  <div class="markdown level1 summary"><p>If we have a <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapEnd.html">IBeatmapEnd</a> callback registered, this is its type.</p>
+  <div class="markdown level1 summary"><p>If we have an <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapEnd.html">IBeatmapEnd</a> callback registered, this is its type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -199,7 +1100,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_GetBeatmapInputType_" data-uid="MouseDance.Runtime.BeatmapRunner.GetBeatmapInputType*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_GetBeatmapInputType" data-uid="MouseDance.Runtime.BeatmapRunner.GetBeatmapInputType">GetBeatmapInputType</h4>
-  <div class="markdown level1 summary"><p>If we have a <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapInput.html">IBeatmapInput</a> callback registered, this is its type.</p>
+  <div class="markdown level1 summary"><p>If we have an <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapInput.html">IBeatmapInput</a> callback registered, this is its type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -225,7 +1126,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_GetBeatmapLoadedType_" data-uid="MouseDance.Runtime.BeatmapRunner.GetBeatmapLoadedType*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_GetBeatmapLoadedType" data-uid="MouseDance.Runtime.BeatmapRunner.GetBeatmapLoadedType">GetBeatmapLoadedType</h4>
-  <div class="markdown level1 summary"><p>If we have a <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapLoaded.html">IBeatmapLoaded</a> callback registered, this is its type.</p>
+  <div class="markdown level1 summary"><p>If we have an <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapLoaded.html">IBeatmapLoaded</a> callback registered, this is its type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -251,7 +1152,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_GetClickedHitObjectType_" data-uid="MouseDance.Runtime.BeatmapRunner.GetClickedHitObjectType*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_GetClickedHitObjectType" data-uid="MouseDance.Runtime.BeatmapRunner.GetClickedHitObjectType">GetClickedHitObjectType</h4>
-  <div class="markdown level1 summary"><p>If we have a <a class="xref" href="MouseDance.Runtime.Callbacks.IClickedHitObject.html">IClickedHitObject</a> callback registered, this is its type.</p>
+  <div class="markdown level1 summary"><p>If we have an <a class="xref" href="MouseDance.Runtime.Callbacks.IClickedHitObject.html">IClickedHitObject</a> callback registered, this is its type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -277,7 +1178,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_GetCustomCollectRuleType_" data-uid="MouseDance.Runtime.BeatmapRunner.GetCustomCollectRuleType*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_GetCustomCollectRuleType" data-uid="MouseDance.Runtime.BeatmapRunner.GetCustomCollectRuleType">GetCustomCollectRuleType</h4>
-  <div class="markdown level1 summary"><p>If we have a <a class="xref" href="MouseDance.Runtime.Callbacks.ICustomCollectRule.html">ICustomCollectRule</a> callback registered, this is its type.</p>
+  <div class="markdown level1 summary"><p>If we have an <a class="xref" href="MouseDance.Runtime.Callbacks.ICustomCollectRule.html">ICustomCollectRule</a> callback registered, this is its type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -303,7 +1204,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_GetHitObjectSizeCalculatorType_" data-uid="MouseDance.Runtime.BeatmapRunner.GetHitObjectSizeCalculatorType*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_GetHitObjectSizeCalculatorType" data-uid="MouseDance.Runtime.BeatmapRunner.GetHitObjectSizeCalculatorType">GetHitObjectSizeCalculatorType</h4>
-  <div class="markdown level1 summary"><p>If we have a <a class="xref" href="MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator.html">IHitObjectSizeCalculator</a> callback registered, this is its type.</p>
+  <div class="markdown level1 summary"><p>If we have an <a class="xref" href="MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator.html">IHitObjectSizeCalculator</a> callback registered, this is its type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -329,7 +1230,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_GetScoreCalculatorType_" data-uid="MouseDance.Runtime.BeatmapRunner.GetScoreCalculatorType*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_GetScoreCalculatorType" data-uid="MouseDance.Runtime.BeatmapRunner.GetScoreCalculatorType">GetScoreCalculatorType</h4>
-  <div class="markdown level1 summary"><p>If we have a <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapScoreCalculator.html">IBeatmapScoreCalculator</a> callback registered, this is its type.</p>
+  <div class="markdown level1 summary"><p>If we have an <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapScoreCalculator.html">IBeatmapScoreCalculator</a> callback registered, this is its type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -355,7 +1256,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_GetSongStartCountdownType_" data-uid="MouseDance.Runtime.BeatmapRunner.GetSongStartCountdownType*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_GetSongStartCountdownType" data-uid="MouseDance.Runtime.BeatmapRunner.GetSongStartCountdownType">GetSongStartCountdownType</h4>
-  <div class="markdown level1 summary"><p>If we have a <a class="xref" href="MouseDance.Runtime.Callbacks.ISongStartCountdown.html">ISongStartCountdown</a> callback registered, this is its type.</p>
+  <div class="markdown level1 summary"><p>If we have an <a class="xref" href="MouseDance.Runtime.Callbacks.ISongStartCountdown.html">ISongStartCountdown</a> callback registered, this is its type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -381,7 +1282,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_HasBeatmapEnd_" data-uid="MouseDance.Runtime.BeatmapRunner.HasBeatmapEnd*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_HasBeatmapEnd" data-uid="MouseDance.Runtime.BeatmapRunner.HasBeatmapEnd">HasBeatmapEnd</h4>
-  <div class="markdown level1 summary"><p>Whether we have a <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapEnd.html">IBeatmapEnd</a> callback registered.</p>
+  <div class="markdown level1 summary"><p>Whether we have an <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapEnd.html">IBeatmapEnd</a> callback registered.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -407,7 +1308,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_HasBeatmapLoadedCallback_" data-uid="MouseDance.Runtime.BeatmapRunner.HasBeatmapLoadedCallback*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_HasBeatmapLoadedCallback" data-uid="MouseDance.Runtime.BeatmapRunner.HasBeatmapLoadedCallback">HasBeatmapLoadedCallback</h4>
-  <div class="markdown level1 summary"><p>Whether we have a <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapLoaded.html">IBeatmapLoaded</a> callback registered.</p>
+  <div class="markdown level1 summary"><p>Whether we have an <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapLoaded.html">IBeatmapLoaded</a> callback registered.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -433,7 +1334,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_HasClickedHitObject_" data-uid="MouseDance.Runtime.BeatmapRunner.HasClickedHitObject*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_HasClickedHitObject" data-uid="MouseDance.Runtime.BeatmapRunner.HasClickedHitObject">HasClickedHitObject</h4>
-  <div class="markdown level1 summary"><p>Whether we have a <a class="xref" href="MouseDance.Runtime.Callbacks.IClickedHitObject.html">IClickedHitObject</a> callback registered.</p>
+  <div class="markdown level1 summary"><p>Whether we have an <a class="xref" href="MouseDance.Runtime.Callbacks.IClickedHitObject.html">IClickedHitObject</a> callback registered.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -459,7 +1360,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_HasCustomCollectRule_" data-uid="MouseDance.Runtime.BeatmapRunner.HasCustomCollectRule*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_HasCustomCollectRule" data-uid="MouseDance.Runtime.BeatmapRunner.HasCustomCollectRule">HasCustomCollectRule</h4>
-  <div class="markdown level1 summary"><p>Whether we have a <a class="xref" href="MouseDance.Runtime.Callbacks.ICustomCollectRule.html">ICustomCollectRule</a> callback registered.</p>
+  <div class="markdown level1 summary"><p>Whether we have an <a class="xref" href="MouseDance.Runtime.Callbacks.ICustomCollectRule.html">ICustomCollectRule</a> callback registered.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -485,7 +1386,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_HasHitObjectSizeCalculator_" data-uid="MouseDance.Runtime.BeatmapRunner.HasHitObjectSizeCalculator*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_HasHitObjectSizeCalculator" data-uid="MouseDance.Runtime.BeatmapRunner.HasHitObjectSizeCalculator">HasHitObjectSizeCalculator</h4>
-  <div class="markdown level1 summary"><p>Whether we have a <a class="xref" href="MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator.html">IHitObjectSizeCalculator</a> callback registered.</p>
+  <div class="markdown level1 summary"><p>Whether we have an <a class="xref" href="MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator.html">IHitObjectSizeCalculator</a> callback registered.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -511,7 +1412,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_HasInput_" data-uid="MouseDance.Runtime.BeatmapRunner.HasInput*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_HasInput" data-uid="MouseDance.Runtime.BeatmapRunner.HasInput">HasInput</h4>
-  <div class="markdown level1 summary"><p>Whether we have a <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapInput.html">IBeatmapInput</a> callback registered.</p>
+  <div class="markdown level1 summary"><p>Whether we have an <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapInput.html">IBeatmapInput</a> callback registered.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -537,7 +1438,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_HasScoreCalculator_" data-uid="MouseDance.Runtime.BeatmapRunner.HasScoreCalculator*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_HasScoreCalculator" data-uid="MouseDance.Runtime.BeatmapRunner.HasScoreCalculator">HasScoreCalculator</h4>
-  <div class="markdown level1 summary"><p>Whether we have a <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapScoreCalculator.html">IBeatmapScoreCalculator</a> callback registered.</p>
+  <div class="markdown level1 summary"><p>Whether we have an <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapScoreCalculator.html">IBeatmapScoreCalculator</a> callback registered.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -563,7 +1464,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   
   <a id="MouseDance_Runtime_BeatmapRunner_HasSongStartCountdown_" data-uid="MouseDance.Runtime.BeatmapRunner.HasSongStartCountdown*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_HasSongStartCountdown" data-uid="MouseDance.Runtime.BeatmapRunner.HasSongStartCountdown">HasSongStartCountdown</h4>
-  <div class="markdown level1 summary"><p>Whether we have a <a class="xref" href="MouseDance.Runtime.Callbacks.ISongStartCountdown.html">ISongStartCountdown</a> callback registered.</p>
+  <div class="markdown level1 summary"><p>Whether we have an <a class="xref" href="MouseDance.Runtime.Callbacks.ISongStartCountdown.html">ISongStartCountdown</a> callback registered.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -594,7 +1495,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;HitObject&gt; HitObjects { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IReadOnlyList&lt;HitObject&gt; HitObjects { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -620,7 +1521,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool PlayerWin { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool PlayerWin { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -646,7 +1547,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long Score { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual long Score { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -672,7 +1573,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool SongEnded { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool SongEnded { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -698,7 +1599,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float SongProgress { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual float SongProgress { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -715,8 +1616,220 @@ Returns false if the game hasn't started yet, or if the game has already finishe
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="MouseDance_Runtime_BeatmapRunner_SortHitObjectByIndex_" data-uid="MouseDance.Runtime.BeatmapRunner.SortHitObjectByIndex*"></a>
+  <h4 id="MouseDance_Runtime_BeatmapRunner_SortHitObjectByIndex" data-uid="MouseDance.Runtime.BeatmapRunner.SortHitObjectByIndex">SortHitObjectByIndex</h4>
+  <div class="markdown level1 summary"><p>Sort by <a class="xref" href="MouseDance.Runtime.IHitObject.html#MouseDance_Runtime_IHitObject_Index">Index</a> ascending (lower Index values come first).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Comparison&lt;IHitObjectWithEvents&gt; SortHitObjectByIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.comparison-1">Comparison</a>&lt;<a class="xref" href="MouseDance.Runtime.IHitObjectWithEvents.html">IHitObjectWithEvents</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="MouseDance_Runtime_BeatmapRunner__LoadAndStart_" data-uid="MouseDance.Runtime.BeatmapRunner._LoadAndStart*"></a>
+  <h4 id="MouseDance_Runtime_BeatmapRunner__LoadAndStart_System_String_" data-uid="MouseDance.Runtime.BeatmapRunner._LoadAndStart(System.String)">_LoadAndStart(String)</h4>
+  <div class="markdown level1 summary"><p>Loads the audio file specified inside the <a class="xref" href="MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner__mainBeatmap">_mainBeatmap</a>'s
+<span class="xref">OsuParsers.Beatmaps.Sections.BeatmapGeneralSection.AudioFilename</span> using
+<a class="xref" href="https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequestMultimedia.GetAudioClip.html">GetAudioClip(String, AudioType)</a>,
+and then starts playing the Beatmap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerator _LoadAndStart(string osuFilePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">osuFilePath</span></td>
+        <td><p>Needed so we can get the full path.
+The audio filename specified in a beatmap is relative from the .osu file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MouseDance_Runtime_BeatmapRunner__LoadAndStart_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Supports the audio types in <a class="xref" href="https://docs.unity3d.com/ScriptReference/AudioType.html">AudioType</a>.</p>
+</div>
+  
+  
+  <a id="MouseDance_Runtime_BeatmapRunner_CalculateScore_" data-uid="MouseDance.Runtime.BeatmapRunner.CalculateScore*"></a>
+  <h4 id="MouseDance_Runtime_BeatmapRunner_CalculateScore_MouseDance_Runtime_IHitObject_System_Int32_OsuParsers_Beatmaps_Beatmap_" data-uid="MouseDance.Runtime.BeatmapRunner.CalculateScore(MouseDance.Runtime.IHitObject,System.Int32,OsuParsers.Beatmaps.Beatmap)">CalculateScore(IHitObject, Int32, Beatmap)</h4>
+  <div class="markdown level1 summary"><p>Default formula for calculating the score that the player will get for pressing a Hit Circle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int CalculateScore(IHitObject hitCircle, int gotHitCircleValue, Beatmap beatmap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObject.html">IHitObject</a></td>
+        <td><span class="parametername">hitCircle</span></td>
+        <td><p>The Hit Circle that was pressed that we're calculating score for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">gotHitCircleValue</span></td>
+        <td><p>The 50, 100, or 300 score that the player got for pressing this Hit Circle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">OsuParsers.Beatmaps.Beatmap</span></td>
+        <td><span class="parametername">beatmap</span></td>
+        <td><p>Entire beatmap. Apart from data on all the Hit Objects,
+this includes difficulty properties, among other things.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>How much is to be added to the player's score.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_BeatmapRunner_CalculateScore_" data-uid="MouseDance.Runtime.BeatmapRunner.CalculateScore*"></a>
+  <h4 id="MouseDance_Runtime_BeatmapRunner_CalculateScore_MouseDance_Runtime_IHitObject_System_Int32_System_Int32_System_Int32_System_Boolean_OsuParsers_Beatmaps_Beatmap_" data-uid="MouseDance.Runtime.BeatmapRunner.CalculateScore(MouseDance.Runtime.IHitObject,System.Int32,System.Int32,System.Int32,System.Boolean,OsuParsers.Beatmaps.Beatmap)">CalculateScore(IHitObject, Int32, Int32, Int32, Boolean, Beatmap)</h4>
+  <div class="markdown level1 summary"><p>Default formula for calculating the score that the player will get for finishing a Slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int CalculateScore(IHitObject slider, int gotSliderHeadScore, int collectedSliderParts, int totalSliderParts, bool pressWasEverReleased, Beatmap beatmap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MouseDance.Runtime.IHitObject.html">IHitObject</a></td>
+        <td><span class="parametername">slider</span></td>
+        <td><p>The Slider we're calculating score for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">gotSliderHeadScore</span></td>
+        <td><p>The 50, 100, or 300 score that the player got when they pressed this Slider's head.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">collectedSliderParts</span></td>
+        <td><p>Amount of Slider parts that the player collected (head, ticks, tail, repeats).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">totalSliderParts</span></td>
+        <td><p>Total number of parts the Slider has (head, ticks, tail, repeats).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">pressWasEverReleased</span></td>
+        <td><p>Even if player has their mouse down right now,
+did player ever release their press of the button throughout the Slider?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">OsuParsers.Beatmaps.Beatmap</span></td>
+        <td><span class="parametername">beatmap</span></td>
+        <td><p>Entire beatmap. Apart from data on all the Hit Objects,
+this includes difficulty properties, among other things.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>How much is to be added to the player's score.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="MouseDance_Runtime_BeatmapRunner_CanCollectSliderPart_" data-uid="MouseDance.Runtime.BeatmapRunner.CanCollectSliderPart*"></a>
@@ -726,7 +1839,7 @@ Returns false if the game hasn't started yet, or if the game has already finishe
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanCollectSliderPart(IHitObject slider)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool CanCollectSliderPart(IHitObject slider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -774,7 +1887,7 @@ to collect the Slider part using <a class="xref" href="MouseDance.Runtime.Callba
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float GetHitAccuracy(int hitObjectIdx)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual float GetHitAccuracy(int hitObjectIdx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -823,7 +1936,7 @@ Any value outside that (lesser than -1.0 or greater than +1.0) means miss
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float GetSliderPercentComplete(int sliderIdx)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual float GetSliderPercentComplete(int sliderIdx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -861,6 +1974,64 @@ Any value outside that (lesser than -1.0 or greater than +1.0) means miss
   </table>
   
   
+  <a id="MouseDance_Runtime_BeatmapRunner_GetTimeWindowPercent_" data-uid="MouseDance.Runtime.BeatmapRunner.GetTimeWindowPercent*"></a>
+  <h4 id="MouseDance_Runtime_BeatmapRunner_GetTimeWindowPercent_System_Int32_" data-uid="MouseDance.Runtime.BeatmapRunner.GetTimeWindowPercent(System.Int32)">GetTimeWindowPercent(Int32)</h4>
+  <div class="markdown level1 summary"><p>For the specified Hit Object Index, this returns how far the current time is from the Hit Object's hit/collect time.
+0.0 means current time is exactly at Hit Object's hit/collect time.
+-1.0 to +1.0 is within the Hit Object's time window.
+Anything beyond that is outside the time window and is therefore a miss.
+Lesser than -1.0 is too early, greater than +1.0 is too late.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float GetTimeWindowPercent(int idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>index of Hit Object to check</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MouseDance_Runtime_BeatmapRunner_InitializeBeatmapData_" data-uid="MouseDance.Runtime.BeatmapRunner.InitializeBeatmapData*"></a>
+  <h4 id="MouseDance_Runtime_BeatmapRunner_InitializeBeatmapData" data-uid="MouseDance.Runtime.BeatmapRunner.InitializeBeatmapData">InitializeBeatmapData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeBeatmapData()</code></pre>
+  </div>
+  
+  
   <a id="MouseDance_Runtime_BeatmapRunner_LoadAndStart_" data-uid="MouseDance.Runtime.BeatmapRunner.LoadAndStart*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_LoadAndStart_OsuParsers_Beatmaps_Beatmap_UnityEngine_AudioClip_" data-uid="MouseDance.Runtime.BeatmapRunner.LoadAndStart(OsuParsers.Beatmaps.Beatmap,UnityEngine.AudioClip)">LoadAndStart(Beatmap, AudioClip)</h4>
   <div class="markdown level1 summary"><p>Use of the specified Beatmap, and the song from the AudioClip specified
@@ -870,7 +2041,7 @@ Use this if you already have a Beatmap loaded/generated somewhere else.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LoadAndStart(Beatmap beatmap, AudioClip song)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void LoadAndStart(Beatmap beatmap, AudioClip song)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -901,13 +2072,14 @@ This overrides the AudioFilename specified in the osu file.</p>
   
   <a id="MouseDance_Runtime_BeatmapRunner_LoadAndStart_" data-uid="MouseDance.Runtime.BeatmapRunner.LoadAndStart*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_LoadAndStart_System_String_" data-uid="MouseDance.Runtime.BeatmapRunner.LoadAndStart(System.String)">LoadAndStart(String)</h4>
-  <div class="markdown level1 summary"><p>Load the .osu file specified, and the song indicated inside it (AudioFilename property),
-then start playing.</p>
+  <div class="markdown level1 summary"><p>Load the .osu file specified, and the song indicated inside it
+(<span class="xref">OsuParsers.Beatmaps.Sections.BeatmapGeneralSection.AudioFilename</span> property),
+then start playing the Beatmap.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LoadAndStart(string osuFilePath)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void LoadAndStart(string osuFilePath)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -932,12 +2104,13 @@ then start playing.</p>
   <a id="MouseDance_Runtime_BeatmapRunner_LoadAndStart_" data-uid="MouseDance.Runtime.BeatmapRunner.LoadAndStart*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_LoadAndStart_System_String_UnityEngine_AudioClip_" data-uid="MouseDance.Runtime.BeatmapRunner.LoadAndStart(System.String,UnityEngine.AudioClip)">LoadAndStart(String, AudioClip)</h4>
   <div class="markdown level1 summary"><p>Load the .osu file specified, and the song from the AudioClip specified
-(the AudioFilename specified in the osu file is ignored), then start playing.</p>
+(the <span class="xref">OsuParsers.Beatmaps.Sections.BeatmapGeneralSection.AudioFilename</span>
+specified in the osu file is ignored), then start playing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LoadAndStart(string osuFilePath, AudioClip song)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void LoadAndStart(string osuFilePath, AudioClip song)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -974,7 +2147,7 @@ This overrides the AudioFilename specified in the osu file.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LoadAndStart(TextAsset osuFile, AudioClip song)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void LoadAndStart(TextAsset osuFile, AudioClip song)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1003,6 +2176,35 @@ This overrides the AudioFilename specified in the osu file.</p>
   </table>
   
   
+  <a id="MouseDance_Runtime_BeatmapRunner_LoadToMainBeatmap_" data-uid="MouseDance.Runtime.BeatmapRunner.LoadToMainBeatmap*"></a>
+  <h4 id="MouseDance_Runtime_BeatmapRunner_LoadToMainBeatmap_System_String_" data-uid="MouseDance.Runtime.BeatmapRunner.LoadToMainBeatmap(System.String)">LoadToMainBeatmap(String)</h4>
+  <div class="markdown level1 summary"><p>Load the contents of the .osu file specified into <a class="xref" href="MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner__mainBeatmap">_mainBeatmap</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void LoadToMainBeatmap(string osuFilePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">osuFilePath</span></td>
+        <td><p>Full path to the .osu file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="MouseDance_Runtime_BeatmapRunner_OnUserFinishedSlider_" data-uid="MouseDance.Runtime.BeatmapRunner.OnUserFinishedSlider*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_OnUserFinishedSlider_MouseDance_Runtime_IHitObjectWithEvents_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="MouseDance.Runtime.BeatmapRunner.OnUserFinishedSlider(MouseDance.Runtime.IHitObjectWithEvents,System.Int32,System.Int32,System.Int32,System.Boolean)">OnUserFinishedSlider(IHitObjectWithEvents, Int32, Int32, Int32, Boolean)</h4>
   <div class="markdown level1 summary"><p>Called by <a class="xref" href="MouseDance.Runtime.Slider.html#MouseDance_Runtime_Slider_OnReachedEnd">OnReachedEnd()</a> to let the BeatmapRunner know that user has their mouse down on the Slider as it finished,
@@ -1011,7 +2213,7 @@ so that it can calculate the score that the player gets for this Slider and tall
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnUserFinishedSlider(IHitObjectWithEvents slider, int headScore, int collected, int total, bool pressWasEverReleased)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void OnUserFinishedSlider(IHitObjectWithEvents slider, int headScore, int collected, int total, bool pressWasEverReleased)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1068,7 +2270,7 @@ score was received for it.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public (float, int) OnUserPressedHitCircle(IHitObjectWithEvents hitCircle)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual (float, int) OnUserPressedHitCircle(IHitObjectWithEvents hitCircle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1120,7 +2322,7 @@ and what the equivalent score would be for that head press.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public (float, int) OnUserPressedSliderHead(int idx)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual (float, int) OnUserPressedSliderHead(int idx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1175,7 +2377,7 @@ and user-input is not checked.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Pause(bool pause)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Pause(bool pause)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1203,7 +2405,7 @@ and user-input is not checked.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RecalculateDisplayedHitObjectSize()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void RecalculateDisplayedHitObjectSize()</code></pre>
   </div>
   
   
@@ -1217,13 +2419,13 @@ This assumes a song has already been loaded via
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Restart()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Restart()</code></pre>
   </div>
   
   
   <a id="MouseDance_Runtime_BeatmapRunner_SetBeatmapEnd_" data-uid="MouseDance.Runtime.BeatmapRunner.SetBeatmapEnd*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_SetBeatmapEnd_MouseDance_Runtime_Callbacks_IBeatmapEnd_" data-uid="MouseDance.Runtime.BeatmapRunner.SetBeatmapEnd(MouseDance.Runtime.Callbacks.IBeatmapEnd)">SetBeatmapEnd(IBeatmapEnd)</h4>
-  <div class="markdown level1 summary"><p>Assign what receives the callback event when the game ends.
+  <div class="markdown level1 summary"><p>Optional. Assign what receives the callback event when the game ends.
 See <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapEnd.html">IBeatmapEnd</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1254,7 +2456,7 @@ Use null if you no longer want BeatmapRunner from sending this notification.</p>
   
   <a id="MouseDance_Runtime_BeatmapRunner_SetCustomCollectRule_" data-uid="MouseDance.Runtime.BeatmapRunner.SetCustomCollectRule*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_SetCustomCollectRule_MouseDance_Runtime_Callbacks_ICustomCollectRule_" data-uid="MouseDance.Runtime.BeatmapRunner.SetCustomCollectRule(MouseDance.Runtime.Callbacks.ICustomCollectRule)">SetCustomCollectRule(ICustomCollectRule)</h4>
-  <div class="markdown level1 summary"><p>Assign what calculates any custom rule regarding hit object collection.
+  <div class="markdown level1 summary"><p>Optional. Assign what calculates any custom rule regarding hit object collection.
 See <a class="xref" href="MouseDance.Runtime.Callbacks.ICustomCollectRule.html">ICustomCollectRule</a>.
 Call this before starting the beatmap.</p>
 </div>
@@ -1285,7 +2487,7 @@ Call this before starting the beatmap.</p>
   
   <a id="MouseDance_Runtime_BeatmapRunner_SetHitObjectSizeCalculator_" data-uid="MouseDance.Runtime.BeatmapRunner.SetHitObjectSizeCalculator*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_SetHitObjectSizeCalculator_MouseDance_Runtime_Callbacks_IHitObjectSizeCalculator_" data-uid="MouseDance.Runtime.BeatmapRunner.SetHitObjectSizeCalculator(MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator)">SetHitObjectSizeCalculator(IHitObjectSizeCalculator)</h4>
-  <div class="markdown level1 summary"><p>Assign what calculates hit object size.
+  <div class="markdown level1 summary"><p>Optional. Assign what calculates hit object size.
 See <a class="xref" href="MouseDance.Runtime.Callbacks.IHitObjectSizeCalculator.html">IHitObjectSizeCalculator</a>.
 Call this before starting the beatmap.</p>
 </div>
@@ -1316,9 +2518,10 @@ Call this before starting the beatmap.</p>
   
   <a id="MouseDance_Runtime_BeatmapRunner_SetInput_" data-uid="MouseDance.Runtime.BeatmapRunner.SetInput*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_SetInput_MouseDance_Runtime_Callbacks_IBeatmapInput_" data-uid="MouseDance.Runtime.BeatmapRunner.SetInput(MouseDance.Runtime.Callbacks.IBeatmapInput)">SetInput(IBeatmapInput)</h4>
-  <div class="markdown level1 summary"><p>Assign what dictates whether user-input has been pressed or not.
+  <div class="markdown level1 summary"><p>Optional. Assign what dictates whether user-input has been pressed or not.
 See <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapInput.html">IBeatmapInput</a>.
-Call this before starting the beatmap.</p>
+Call this before starting the beatmap.
+If not assigned, the BeatmapRunner will use default hardcoded controls.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1348,7 +2551,7 @@ Set to null if you want BeatmapRunner to go back to using defaults.</p>
   
   <a id="MouseDance_Runtime_BeatmapRunner_SetOnBeatmapLoaded_" data-uid="MouseDance.Runtime.BeatmapRunner.SetOnBeatmapLoaded*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_SetOnBeatmapLoaded_MouseDance_Runtime_Callbacks_IBeatmapLoaded_" data-uid="MouseDance.Runtime.BeatmapRunner.SetOnBeatmapLoaded(MouseDance.Runtime.Callbacks.IBeatmapLoaded)">SetOnBeatmapLoaded(IBeatmapLoaded)</h4>
-  <div class="markdown level1 summary"><p>Set the object that you want to be notified of the event when a Beatmap has been loaded (with LoadAndStart)
+  <div class="markdown level1 summary"><p>Optional. Assign the object that you want to be notified of the event when a Beatmap has been loaded (with LoadAndStart)
 but right before the game is actually started.
 See <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapLoaded.html">IBeatmapLoaded</a>.
 This event can be used to edit the beatmap as much as you want before it is used.</p>
@@ -1381,7 +2584,7 @@ Use null if you no longer want the BeatmapRunner to send the notification.</p>
   
   <a id="MouseDance_Runtime_BeatmapRunner_SetOnClickedHitObject_" data-uid="MouseDance.Runtime.BeatmapRunner.SetOnClickedHitObject*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_SetOnClickedHitObject_MouseDance_Runtime_Callbacks_IClickedHitObject_" data-uid="MouseDance.Runtime.BeatmapRunner.SetOnClickedHitObject(MouseDance.Runtime.Callbacks.IClickedHitObject)">SetOnClickedHitObject(IClickedHitObject)</h4>
-  <div class="markdown level1 summary"><p>Assign what receives the callback event when player clicks on a Hit Object, whether hit or miss.
+  <div class="markdown level1 summary"><p>Optional. Assign what receives the callback event when player clicks on a Hit Object, whether hit or miss.
 See <a class="xref" href="MouseDance.Runtime.Callbacks.IClickedHitObject.html">IClickedHitObject</a>.
 Call this before starting the beatmap.</p>
 </div>
@@ -1412,7 +2615,7 @@ Call this before starting the beatmap.</p>
   
   <a id="MouseDance_Runtime_BeatmapRunner_SetScoreCalculator_" data-uid="MouseDance.Runtime.BeatmapRunner.SetScoreCalculator*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_SetScoreCalculator_MouseDance_Runtime_Callbacks_IBeatmapScoreCalculator_" data-uid="MouseDance.Runtime.BeatmapRunner.SetScoreCalculator(MouseDance.Runtime.Callbacks.IBeatmapScoreCalculator)">SetScoreCalculator(IBeatmapScoreCalculator)</h4>
-  <div class="markdown level1 summary"><p>Assign what calculates the score that the player will get for hitting a Hit Object.
+  <div class="markdown level1 summary"><p>Optional. Assign what calculates the score that the player will get for hitting a Hit Object.
 See <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapScoreCalculator.html">IBeatmapScoreCalculator</a>.
 Call this before starting the beatmap.</p>
 </div>
@@ -1443,7 +2646,7 @@ Call this before starting the beatmap.</p>
   
   <a id="MouseDance_Runtime_BeatmapRunner_SetSongStartCountdown_" data-uid="MouseDance.Runtime.BeatmapRunner.SetSongStartCountdown*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_SetSongStartCountdown_MouseDance_Runtime_Callbacks_ISongStartCountdown_" data-uid="MouseDance.Runtime.BeatmapRunner.SetSongStartCountdown(MouseDance.Runtime.Callbacks.ISongStartCountdown)">SetSongStartCountdown(ISongStartCountdown)</h4>
-  <div class="markdown level1 summary"><p>Assign what receives the callback event when countdown animation should begin.
+  <div class="markdown level1 summary"><p>Optional. Assign what receives the callback event when countdown animation should begin.
 See <a class="xref" href="MouseDance.Runtime.Callbacks.ISongStartCountdown.html">ISongStartCountdown</a>.
 Call this right before starting the beatmap.</p>
 </div>
@@ -1473,6 +2676,42 @@ Set to null if you no longer want BeatmapRunner to send this event.</p>
   </table>
   
   
+  <a id="MouseDance_Runtime_BeatmapRunner_Update_" data-uid="MouseDance.Runtime.BeatmapRunner.Update*"></a>
+  <h4 id="MouseDance_Runtime_BeatmapRunner_Update" data-uid="MouseDance.Runtime.BeatmapRunner.Update">Update()</h4>
+  <div class="markdown level1 summary"><p>Called automatically by Unity every frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Update()</code></pre>
+  </div>
+  
+  
+  <a id="MouseDance_Runtime_BeatmapRunner_UpdateInput_" data-uid="MouseDance.Runtime.BeatmapRunner.UpdateInput*"></a>
+  <h4 id="MouseDance_Runtime_BeatmapRunner_UpdateInput" data-uid="MouseDance.Runtime.BeatmapRunner.UpdateInput">UpdateInput()</h4>
+  <div class="markdown level1 summary"><p>Called every frame to check if the user-input has been pressed.
+This is also where <a class="xref" href="MouseDance.Runtime.Callbacks.IBeatmapInput.html">IBeatmapInput</a> is used, if it was assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateInput()</code></pre>
+  </div>
+  
+  
+  <a id="MouseDance_Runtime_BeatmapRunner_UpdateSong_" data-uid="MouseDance.Runtime.BeatmapRunner.UpdateSong*"></a>
+  <h4 id="MouseDance_Runtime_BeatmapRunner_UpdateSong" data-uid="MouseDance.Runtime.BeatmapRunner.UpdateSong">UpdateSong()</h4>
+  <div class="markdown level1 summary"><p>Called every frame (in <a class="xref" href="MouseDance.Runtime.BeatmapRunner.html#MouseDance_Runtime_BeatmapRunner_Update">Update()</a>) to check if we should spawn a Hit Object now,
+and when we need to check if a Hit Object has been missed. This is also where the
+<a class="xref" href="MouseDance.Runtime.Callbacks.ISongStartCountdown.html#MouseDance_Runtime_Callbacks_ISongStartCountdown_OnStartCountdown">OnStartCountdown()</a> is called, if it was assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateSong()</code></pre>
+  </div>
+  
+  
   <a id="MouseDance_Runtime_BeatmapRunner_WasHit_" data-uid="MouseDance.Runtime.BeatmapRunner.WasHit*"></a>
   <h4 id="MouseDance_Runtime_BeatmapRunner_WasHit_System_Int32_" data-uid="MouseDance.Runtime.BeatmapRunner.WasHit(System.Int32)">WasHit(Int32)</h4>
   <div class="markdown level1 summary"><p>Did the player successfully press the hit object with the specified index?
@@ -1481,7 +2720,7 @@ Index value corresponds to the list in <a class="xref" href="MouseDance.Runtime.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool WasHit(int hitObjectIdx)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool WasHit(int hitObjectIdx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

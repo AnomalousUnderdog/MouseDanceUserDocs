@@ -136,6 +136,179 @@ But during portrait mode, you may want to anchor the area closer to the bottom o
 That is what the BeatmapAreaAdjuster can do.</p>
 <p>This component should be attached to the UI Canvas so that it can receive <a href="https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnRectTransformDimensionsChange">OnRectTransformDimensionsChange</a> events.</p>
 </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapAreaAdjuster__canvasTransform" data-uid="MouseDance.Runtime.BeatmapAreaAdjuster._canvasTransform">_canvasTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Used to obtain the screen size.&quot;)]
+protected RectTransform _canvasTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectTransform.html">RectTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapAreaAdjuster__screenAdjust" data-uid="MouseDance.Runtime.BeatmapAreaAdjuster._screenAdjust">_screenAdjust</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;The Beatmap Area that we will adjust.&quot;)]
+protected RectTransform _screenAdjust</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectTransform.html">RectTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapAreaAdjuster__screenPosLandscape" data-uid="MouseDance.Runtime.BeatmapAreaAdjuster._screenPosLandscape">_screenPosLandscape</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Offset to the Beatmap Area's position when the screen is in landscape. Leave at (0,0) if you don't want any offset.&quot;)]
+protected Vector2 _screenPosLandscape</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapAreaAdjuster__screenPosPortrait" data-uid="MouseDance.Runtime.BeatmapAreaAdjuster._screenPosPortrait">_screenPosPortrait</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Offset to the Beatmap Area's position when the screen is in portrait and the aspect ratio is something else (one that isn't specified directly here). Leave at (0,0) if you don't want any offset.&quot;)]
+protected Vector2 _screenPosPortrait</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapAreaAdjuster__screenPosPortrait10by16" data-uid="MouseDance.Runtime.BeatmapAreaAdjuster._screenPosPortrait10by16">_screenPosPortrait10by16</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Offset to the Beatmap Area's position when the screen is in portrait and the aspect ratio detected is 10:16. Leave at (0,0) if you don't want any offset.&quot;)]
+[InspectorName(&quot;Screen Pos Portrait 10:16&quot;)]
+protected Vector2 _screenPosPortrait10by16</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MouseDance_Runtime_BeatmapAreaAdjuster__screenPosPortrait2by3" data-uid="MouseDance.Runtime.BeatmapAreaAdjuster._screenPosPortrait2by3">_screenPosPortrait2by3</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Tooltip(&quot;Offset to the Beatmap Area's position when the screen is in portrait and the aspect ratio detected is 2:3. Leave at (0,0) if you don't want any offset.&quot;)]
+[InspectorName(&quot;Screen Pos Portrait 2:3&quot;)]
+protected Vector2 _screenPosPortrait2by3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MouseDance_Runtime_BeatmapAreaAdjuster_OnRectTransformDimensionsChange_" data-uid="MouseDance.Runtime.BeatmapAreaAdjuster.OnRectTransformDimensionsChange*"></a>
+  <h4 id="MouseDance_Runtime_BeatmapAreaAdjuster_OnRectTransformDimensionsChange" data-uid="MouseDance.Runtime.BeatmapAreaAdjuster.OnRectTransformDimensionsChange">OnRectTransformDimensionsChange()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ContextMenu(&quot;Adjust&quot;)]
+protected virtual void OnRectTransformDimensionsChange()</code></pre>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="MouseDance.Runtime.Util.html#MouseDance_Runtime_Util_SetLayerDeep_UnityEngine_Component_UnityEngine_LayerMask_">Util.SetLayerDeep(Component, LayerMask)</a>

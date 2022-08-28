@@ -125,46 +125,6 @@
 </style>
 <h2 id="folder-layout">Folder Layout</h2>
 <div class="flex-container">
-  <div><div class="folder">Demo</div></div>
-  <div>Files that show how MouseDance can be used. These include images, songs, source code, etc. You can delete these and/or keep the files that you want for your own game.</div>
-</div>
-<div class="flex-container">
-  <div><div class="folder">Demo/Animation</div></div>
-  <div>Contains a sample “Ready, Get Set, Go!” kind of UI animation, used in the beginning of the demos. You could swap this out for your own “3, 2, 1” countdown animation, or perhaps even a progress bar kind of animation. You could also just do away with any countdown animation altogether, but that isn’t recommended as it doesn’t give players any warning to prepare themselves.</div>
-</div>
-<div class="flex-container">
-  <div><div class="folder">Demo/Images</div></div>
-  <div>Contains sprites used for a custom-shaped Hit Circle, used in the demos.</div>
-</div>
-<div class="flex-container">
-  <div><div class="folder">Demo/Materials</div></div>
-  <div>Contains material needed for a custom Slider Ball, used in the demos.</div>
-</div>
-<div class="flex-container">
-  <div><div class="folder">Demo/MouseCursor</div></div>
-  <div>Custom Mouse Cursor textures, used in the demos.</div>
-</div>
-<div class="flex-container">
-  <div><div class="folder">Demo/Prefabs</div></div>
-  <div>Prefabs used by the demo scenes. These are examples on how a Beatmap Runner and Beatmap Canvas is set up, as well as custom Hit Object prefabs. You can use them as-is, or change them to your needs.</div>
-</div>
-<div class="flex-container">
-  <div><div class="folder">Demo/Scenes</div></div>
-  <div>All the scenes for the demos. The scenes are numbered, in more or less increasing amounts of complexity in its usage of <i>Osu!</i> mechanics.</div>
-</div>
-<div class="flex-container">
-  <div><div class="folder">Demo/Scripts</div></div>
-  <div>Code used by the demos to show how MouseDance is used. Look through here to see the code needed to load an .osu file, start the game, pause it, get the player’s score in the end in order to display it, etc.</div>
-</div>
-<div class="flex-container">
-  <div><div class="folder">Demo/Songs</div></div>
-  <div>Sample songs and .osu files used by the demos. The songs are courtesy of <a href="https://incompetech.com/music/royalty-free/music.html">Kevin MacLeod</a>, licensed in <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons 4.0.</a></div>
-</div>
-<div class="flex-container">
-  <div><div class="folder">Demo/Sounds</div></div>
-  <div>Different kinds of sound effects used for hit/miss. These sound effects are all <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a> licensed. You could swap these out for your own sound effects, if you prefer.</div>
-</div>
-<div class="flex-container">
   <div><div class="folder">Docs</div></div>
   <div>Offline copy of the documentation as pdf files. Note that as pdf, the animated gif illustrations found in some manual pages won't be animated anymore.</div>
 </div>
@@ -178,7 +138,7 @@
 </div>
 <div class="flex-container">
   <div><div class="folder">Materials</div></div>
-  <div>Materials used for the Hit Objects, and hit/miss particle effects.</div>
+  <div>Materials used for the Hit Objects and Particle Effects.</div>
 </div>
 <div class="flex-container">
   <div><div class="folder">Models</div></div>
@@ -186,7 +146,7 @@
 </div>
 <div class="flex-container">
   <div><div class="folder">Prefabs</div></div>
-  <div>Prefabs of the Hit Objects, and hit/miss particle effects.</div>
+  <div>Prefabs of Hit Objects and Particle Effects. Also contains some ScriptableObject assets related to these prefabs.</div>
 </div>
 <div class="flex-container">
   <div><div class="folder">Scripts</div></div>
@@ -214,7 +174,45 @@
 </div>
 <div class="flex-container">
   <div><div class="folder">Shaders</div></div>
-  <div>Shader files needed to make the SDF curves in MouseDance work. This is used by the Sliders.</div>
+  <div>Shader files needed to make the SDF curves in MouseDance work (these are render-pipeline-agnostic). This is used by the Sliders. This also has shaders for simple unlit materials (also render-pipeline-agnostic) used by the Slider Ball and the particle effects.</div>
+</div>
+<h2 id="inside-the-demo-urp-assets">Inside the Demo URP Assets</h2>
+<p>Contents of the Demo URP Assets.unitypackage. These are files that show how MouseDance can be used. If you've seen the WebGL demo, these are the assets used to build that. You can use these as a starting point, delete it, and/or keep the files that you want for your own game.</p>
+<div class="flex-container">
+  <div><div class="folder">Animation</div></div>
+  <div>Contains a sample “Ready, Get Set, Go!” kind of UI animation, used in the beginning of the demos. You could swap this out for your own “3, 2, 1” countdown animation, or perhaps even a progress bar kind of animation. You could also just do away with any countdown animation altogether, but that isn’t recommended as it doesn’t give players any warning to prepare themselves.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Images</div></div>
+  <div>Contains sprites used for the demo scene GUI, and custom Hit Objects, used in the demos.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Materials</div></div>
+  <div>Contains materials used in the demos.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">MouseCursor</div></div>
+  <div>Custom Mouse Cursor textures, used in the demos.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Prefabs</div></div>
+  <div>Prefabs used by the demo scenes. These are examples on how a Beatmap Runner and Beatmap Canvas is set up, and custom Hit Object prefabs (with ScriptableObject assets related to them). You can use them as-is, or change them to your needs.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Scenes</div></div>
+  <div>All the scenes for the demos. The scenes are numbered, in more or less increasing amounts of complexity in its usage of <i>Osu!</i> mechanics.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Scripts</div></div>
+  <div>Code used by the demos to show how MouseDance is used. Look through here to see the code needed to load an .osu file, start the game, pause it, get the player’s score in the end in order to display it, etc.</div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Songs</div></div>
+  <div>Sample songs and .osu files used by the demos. The songs are courtesy of <a href="https://incompetech.com/music/royalty-free/music.html">Kevin MacLeod</a>, licensed in <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons 4.0.</a></div>
+</div>
+<div class="flex-container">
+  <div><div class="folder">Sounds</div></div>
+  <div>Different kinds of sound effects used for hit/miss. These sound effects are all <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a> licensed. You could swap these out for your own sound effects, if you prefer.</div>
 </div>
 </article>
               
